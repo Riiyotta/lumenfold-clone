@@ -1,0 +1,21 @@
+{
+  "id": "primitive.icon",
+  "kind": "primitive",
+  "description": "Line icon set: chevron, arrow, check, plus, play, menu, close, laurel.",
+  "implementedBy": "src/components/ui.jsx",
+  "props": {
+    "name": [
+      "chevron",
+      "arrow",
+      "check",
+      "plus",
+      "play",
+      "menu",
+      "close",
+      "laurel"
+    ]
+  },
+  "citations": [
+    "cite.ui-icons"
+  ]
+}

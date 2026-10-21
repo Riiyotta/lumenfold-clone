@@ -1,0 +1,96 @@
+{
+  "id": "features.playbook-demo",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Playbook-to-agents tabbed canvas demo: tab bar over a 500px node canvas with a live status footer.",
+  "archetype": "tabs",
+  "contentRef": "#/definitions/content_tabs",
+  "requiredContent": [
+    "title",
+    "tabs"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[].label": 4,
+    "tabs[].title": 14,
+    "tabs[].body": 58,
+    "tabs[].items[]": 14
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product/gtm.jsx > PlaybookDemo",
+      "usedBy": [
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap",
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change",
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "tab-swap": "interaction",
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed",
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "catalog.app-icon",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product/gtm.jsx > PlaybookDemo",
+    "iaScope": "The GTM landing only.",
+    "citations": [
+      "cite.spec-product"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample tabbed section",
+    "tabs": [
+      {
+        "label": "First",
+        "body": "First tab copy."
+      },
+      {
+        "label": "Second",
+        "body": "Second tab copy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "features.statement-band",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Statement band: one large centred positioning sentence in a bordered row.",
+  "archetype": "message",
+  "contentRef": "#/definitions/content_message",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product/gtm.jsx > StatementBand",
+      "usedBy": [
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product/gtm.jsx > StatementBand",
+    "iaScope": "The GTM landing only.",
+    "citations": [
+      "cite.spec-product"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample message"
+  }
+}

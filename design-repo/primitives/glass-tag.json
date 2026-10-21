@@ -1,0 +1,16 @@
+{
+  "id": "primitive.glass-tag",
+  "kind": "primitive",
+  "description": "Small frosted tag (10px text) and indigo variant (12px #4b40d6).",
+  "implementedBy": "src/index.css .glass-tag",
+  "props": {
+    "label": "string<=3 words",
+    "tone": [
+      "neutral",
+      "indigo"
+    ]
+  },
+  "citations": [
+    "cite.css-glass"
+  ]
+}

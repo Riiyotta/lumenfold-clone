@@ -1,0 +1,85 @@
+{
+  "id": "content.about-story",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "About story: centred pill, then a two-column split of a square photo and an h3 with prose, list and inline links.",
+  "archetype": "article",
+  "contentRef": "#/definitions/content_article",
+  "requiredContent": [
+    "blocks"
+  ],
+  "maxWords": {
+    "title": 14,
+    "dek": 34,
+    "blocks[].text": 75
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/company/AboutUs.jsx > Story",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "photo.company-place"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.about-us"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/company/AboutUs.jsx > Story",
+    "iaScope": "The about page only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "blocks": [
+      {
+        "kind": "h2",
+        "text": "Sample heading"
+      },
+      {
+        "kind": "p",
+        "text": "A sample paragraph of article copy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "hero.sdg-road",
+  "kind": "section",
+  "category": "HERO",
+  "purpose": "Open the page with its single promise and primary action.",
+  "description": "Self-driving GTM \"road\" hero: centred h1 and lead, an SVG road with clickable autonomy-level markers, a readout box, use-case switcher pills, CTA row and a grayscale trust strip.",
+  "archetype": "hero",
+  "contentRef": "#/definitions/content_hero",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "breadcrumb[]": 5,
+    "title": 14,
+    "titleAccent": 4,
+    "subtitle": 7,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "note": 10,
+    "byline": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Hero (Road, Trust)",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up",
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state",
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "mount-fade-up": "mount",
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals",
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.self-driving-gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Hero (Road, Trust)",
+    "iaScope": "The self-driving GTM manifesto only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h1",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample page headline",
+    "body": "One short sentence of supporting copy for the sample page.",
+    "primaryCta": "Start building free"
+  }
+}

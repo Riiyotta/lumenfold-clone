@@ -1,0 +1,92 @@
+{
+  "id": "features.launch-swiper",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Launch swiper: dark section with pill, h2 and body above a centred one-per-view swiper of large rounded launch cards.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/AgentDrop.jsx > Launches",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "carousel"
+    ],
+    "reducedMotionFallback": {
+      "carousel": "static-first-frame"
+    },
+    "trigger": {
+      "carousel": "interaction"
+    },
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "photo.product-scene"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.agent-drop"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/AgentDrop.jsx > Launches",
+    "iaScope": "The Agent Drop microsite only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

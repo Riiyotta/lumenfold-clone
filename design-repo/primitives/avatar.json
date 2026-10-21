@@ -1,0 +1,13 @@
+{
+  "id": "primitive.avatar",
+  "kind": "primitive",
+  "description": "Illustrated SVG avatar from a seed (assetRole people.illustrated-avatar).",
+  "implementedBy": "src/components/ui.jsx > Avatar",
+  "props": {
+    "seed": "integer",
+    "size": "px"
+  },
+  "citations": [
+    "cite.ui-avatar"
+  ]
+}

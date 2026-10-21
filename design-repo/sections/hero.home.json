@@ -1,0 +1,99 @@
+{
+  "id": "hero.home",
+  "kind": "section",
+  "category": "HERO",
+  "purpose": "Open the page with its single promise and primary action.",
+  "description": "Homepage launch hero (InventLaunchHero): mascot with halo, centred h1, sub-copy and CTA pair.",
+  "archetype": "hero",
+  "contentRef": "#/definitions/content_hero",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "breadcrumb[]": 5,
+    "title": 14,
+    "titleAccent": 4,
+    "subtitle": 7,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "note": 10,
+    "byline": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Hero.jsx",
+      "usedBy": [
+        "home"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up",
+      "mascot-idle"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state",
+      "mascot-idle": "static-first-frame"
+    },
+    "trigger": {
+      "mount-fade-up": "mount",
+      "mascot-idle": "in-view"
+    },
+    "citations": [
+      "cite.cs-continuous",
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "brand.mascot",
+    "video.poster",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "7/5 split text|mascot",
+    "md": "single column: text, mascot, bubble",
+    "base": "h1 2 lines, subtitle 20px, mascot 140px"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Hero.jsx",
+    "iaScope": "Homepage only.",
+    "citations": [
+      "cite.cs-hero",
+      "cite.cs-method"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 452,
+      "1280": 426,
+      "768": 693,
+      "375": 696
+    }
+  },
+  "a11y": {
+    "headingLevel": "h1",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample page headline",
+    "body": "One short sentence of supporting copy for the sample page.",
+    "primaryCta": "Start building free"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "primitive.wordmark",
+  "kind": "primitive",
+  "description": "Generated fictional wordmark: one of six glyph shapes + invented name (assetRole proof.customer-wordmark / proof.press-mark).",
+  "implementedBy": "src/components/ui.jsx > Wordmark",
+  "props": {
+    "name": "invented name, never a real brand",
+    "size": [
+      "sm",
+      "md",
+      "lg"
+    ]
+  },
+  "citations": [
+    "cite.ui-wordmark"
+  ]
+}

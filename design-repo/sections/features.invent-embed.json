@@ -1,0 +1,87 @@
+{
+  "id": "features.invent-embed",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Invent embed demo: grain frame of linked and unlinked app cards plus a dashed add card.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product/invent.jsx > EmbedDemo",
+      "usedBy": [
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "catalog.app-icon",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.invent"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product/invent.jsx > EmbedDemo",
+    "iaScope": "The invent landing only.",
+    "citations": [
+      "cite.spec-product"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

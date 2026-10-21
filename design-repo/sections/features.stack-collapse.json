@@ -1,0 +1,109 @@
+{
+  "id": "features.stack-collapse",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "StackCollapse: an isometric layered-stack diagram beside a cycling highlighted list (about 1.8s per row), closed by its own grain CTA card or marquee.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "enterprise": {
+      "description": "Closed by its own grain CTA card.",
+      "implementedBy": "src/components/company/enterprise.jsx > StackCollapse",
+      "usedBy": [
+        "company"
+      ],
+      "citation": "cite.spec-company"
+    },
+    "use-case-cta-tile": {
+      "description": "Embeds the catalog CtaTile in the function palette.",
+      "implementedBy": "src/components/catalog/usecase.jsx > StackCollapse",
+      "usedBy": [
+        "catalog"
+      ],
+      "citation": "cite.spec-catalog"
+    },
+    "invent": {
+      "description": "Title/body/rows props; closed by a marquee.",
+      "implementedBy": "src/components/product/invent.jsx > StackCollapse",
+      "usedBy": [
+        "product"
+      ],
+      "citation": "cite.spec-product"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "sequential-highlight"
+    ],
+    "reducedMotionFallback": {
+      "sequential-highlight": "show-final-state"
+    },
+    "trigger": {
+      "sequential-highlight": "in-view"
+    },
+    "citations": [
+      "cite.autonomy-io"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram",
+    "people.illustrated-avatar",
+    "catalog.app-icon"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.enterprise",
+      "template.use-case-detail",
+      "template.invent"
+    ],
+    "routeCount": 58
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/company/enterprise.jsx > StackCollapse (parallel copy: src/components/catalog/usecase.jsx > StackCollapse, which embeds its closing CtaTile; src/components/product/invent.jsx > StackCollapse)",
+    "iaScope": "Enterprise, every use-case detail page and the invent landing.",
+    "citations": [
+      "cite.spec-company",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

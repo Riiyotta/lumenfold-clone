@@ -1,0 +1,13 @@
+{
+  "id": "primitive.seal",
+  "kind": "primitive",
+  "description": "Generic text certification seal (assetRole badge.certification-seal).",
+  "implementedBy": "src/components/Enterprise.jsx > Seal; src/components/Footer.jsx > Seal",
+  "props": {
+    "label": "generic text, never a real certification body mark"
+  },
+  "citations": [
+    "cite.seal-enterprise",
+    "cite.seal-footer"
+  ]
+}

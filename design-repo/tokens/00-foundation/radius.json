@@ -1,0 +1,49 @@
+{
+  "radius": {
+    "none": {
+      "$value": "0px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "sm": {
+      "$value": "4px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "button": {
+      "$value": "0.3rem",
+      "$type": "dimension",
+      "citation": "cite.tw-radius"
+    },
+    "md": {
+      "$value": "6px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "lg": {
+      "$value": "8px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "xl": {
+      "$value": "12px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "2xl": {
+      "$value": "16px",
+      "$type": "dimension",
+      "citation": "cite.cta-content"
+    },
+    "bubble": {
+      "$value": "18px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension",
+      "citation": "cite.cs-radii"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "conversion.waitlist-form",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "BDR waitlist form page: copy and four bullets on the left, a six-field form card with consent on the right.",
+  "archetype": "form",
+  "contentRef": "#/definitions/content_form",
+  "requiredContent": [
+    "title",
+    "fields",
+    "submitLabel",
+    "successMessage"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 58,
+    "fields[].label": 5,
+    "fields[].options[]": 3,
+    "submitLabel": 3,
+    "successMessage": 11,
+    "consent": 30
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/BdrWaitlist.jsx > WaitlistForm (first Row)",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "mount-fade-up": "mount"
+    },
+    "citations": [
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.bdr-waitlist"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/BdrWaitlist.jsx > WaitlistForm (first Row)",
+    "iaScope": "The BDR waitlist page only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample form",
+    "fields": [
+      {
+        "label": "Work email",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "submitLabel": "Send",
+    "successMessage": "Thanks, we will be in touch."
+  },
+  "formPolicy": {
+    "visualOnly": true,
+    "note": "No submission endpoint exists anywhere in the clone; the schema has no action/endpoint field.",
+    "citations": [
+      "cite.form-visual",
+      "cite.form-prevent"
+    ]
+  }
+}

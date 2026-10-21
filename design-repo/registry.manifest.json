@@ -1,0 +1,63 @@
+{
+  "repositoryId": "lumenfold-design-repo",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion is machine-checked: verify_all.py fails if it differs from tokens/llm/component-allowlist.json#version. pageSpecVersion is enforced as a const in the schema. repositoryVersion is documentation-only and hand-maintained; nothing checks it.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "humanDesignApproval": false,
+  "brand": "Lumenfold (fictional)",
+  "sourceProject": {
+    "description": "React 18.3 + Vite 5 + Tailwind v3 + framer-motion 11 + react-router-dom 6 design-system clone of relevanceai.com, rebranded as Lumenfold.",
+    "sourceIsRealCompany": true,
+    "citations": [
+      "cite.pkg",
+      "cite.pkg-dev",
+      "cite.pkg-motion",
+      "cite.cs-scope"
+    ]
+  },
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light"
+  ],
+  "counts": {
+    "tokens": 183,
+    "primitives": 14,
+    "components": 14,
+    "sections": 169,
+    "templates": 53,
+    "routes": 296,
+    "assetRoles": 13,
+    "rules": 22,
+    "citations": 135,
+    "redirects": 4,
+    "exclusions": 7
+  },
+  "entryPoints": [
+    "README.md",
+    "CHANGELOG.md",
+    "registry.manifest.json",
+    "tokens/llm/component-allowlist.json",
+    "tokens/llm/token-catalog.json",
+    "tokens/llm/token-policy.json",
+    "tokens/themes/light.json",
+    "assets/asset-roles.json",
+    "templates/templates.json",
+    "templates/routes.json",
+    "compatibility/graph.json",
+    "schema/pagespec.schema.json",
+    "schema/example.pagespec.json",
+    "schema/semantic_validate.py",
+    "schema/tests/adversarial_test.py",
+    "extraction/measured-values.json",
+    "extraction/verify_all.py"
+  ],
+  "directories": {
+    "primitives": "primitives/",
+    "components": "components/",
+    "sections": "sections/",
+    "tokens": "tokens/"
+  }
+}

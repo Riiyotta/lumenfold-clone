@@ -1,0 +1,211 @@
+{
+  "button": {
+    "primary": {
+      "background": {
+        "$value": "radial-gradient(circle, {action.primary-from}, {action.primary-to})",
+        "$type": "gradient",
+        "citation": "cite.cs-gradients"
+      },
+      "background-hover": {
+        "$value": "radial-gradient(circle, {action.primary-hover-from}, {action.primary-to})",
+        "$type": "gradient",
+        "citation": "cite.css-btn"
+      },
+      "border-top": {
+        "$value": "{action.primary-border-top}",
+        "$type": "color",
+        "citation": "cite.css-btn"
+      },
+      "border-bottom": {
+        "$value": "{action.primary-to}",
+        "$type": "color",
+        "citation": "cite.css-btn"
+      },
+      "shadow": {
+        "$value": "{elevation.button}",
+        "$type": "shadow",
+        "citation": "cite.css-btn"
+      },
+      "shadow-hover": {
+        "$value": "{elevation.button-hover}",
+        "$type": "shadow",
+        "citation": "cite.css-btn"
+      },
+      "gradient-tween": {
+        "$value": "{motion.duration.button-gradient}",
+        "$type": "duration",
+        "citation": "cite.css-btn-var"
+      }
+    },
+    "secondary": {
+      "border": {
+        "$value": "{border.default}",
+        "$type": "color",
+        "citation": "cite.css-btn"
+      },
+      "background-hover": {
+        "$value": "#6056ff1a",
+        "$type": "color",
+        "citation": "cite.css-btn",
+        "$description": "Indigo at 10%."
+      }
+    },
+    "radius": {
+      "$value": "{radius.button}",
+      "$type": "dimension",
+      "citation": "cite.tw-radius"
+    },
+    "radius-pill": {
+      "$value": "{radius.full}",
+      "$type": "dimension",
+      "citation": "cite.cs-buttons"
+    },
+    "height": {
+      "$value": "42px",
+      "$type": "dimension",
+      "citation": "cite.cs-buttons"
+    },
+    "tap-scale": {
+      "$value": 0.98,
+      "$type": "number",
+      "citation": "cite.cs-buttons"
+    }
+  },
+  "glass": {
+    "pill-bg": {
+      "$value": "rgba(255,255,255,0.7)",
+      "$type": "color",
+      "citation": "cite.css-glass"
+    },
+    "tag-bg": {
+      "$value": "rgba(255,255,255,0.55)",
+      "$type": "color",
+      "citation": "cite.css-glass"
+    },
+    "border": {
+      "$value": "rgba(255,255,255,0.6)",
+      "$type": "color",
+      "citation": "cite.css-glass"
+    },
+    "blur": {
+      "$value": "{blur.glass}",
+      "$type": "dimension",
+      "citation": "cite.css-glass"
+    }
+  },
+  "grain": {
+    "violet": {
+      "$value": {
+        "deep": "138,105,255",
+        "second": "109,74,255",
+        "warm": "199,207,255",
+        "base": [
+          "#e6e6fb",
+          "#e2e3fa",
+          "#dfe2fa"
+        ]
+      },
+      "$type": "gradient",
+      "citation": "cite.css-grain"
+    },
+    "pink": {
+      "$value": {
+        "deep": "207,161,251",
+        "second": "244,114,182",
+        "warm": "125,170,255",
+        "base": [
+          "#f0ddff",
+          "#f6e3fb",
+          "#fbe8f5"
+        ]
+      },
+      "$type": "gradient",
+      "citation": "cite.css-grain"
+    },
+    "blue": {
+      "$value": {
+        "deep": "116,187,224",
+        "second": "167,139,250",
+        "warm": "110,231,183",
+        "base": [
+          "#bbe2ff",
+          "#cbeaff",
+          "#d6f0f5"
+        ]
+      },
+      "$type": "gradient",
+      "citation": "cite.css-grain"
+    },
+    "noise-opacity": {
+      "$value": 0.45,
+      "$type": "number",
+      "citation": "cite.css-grain"
+    },
+    "noise-size": {
+      "$value": "180px",
+      "$type": "dimension",
+      "citation": "cite.css-grain"
+    },
+    "function-palettes": {
+      "$value": [
+        "sales",
+        "cs",
+        "marketing",
+        "hr",
+        "support",
+        "operations",
+        "research"
+      ],
+      "$type": "enum",
+      "citation": "cite.palettes",
+      "$description": "Function palettes (sales == violet values)."
+    }
+  },
+  "nav": {
+    "bar-bg": {
+      "$value": "rgba(255,255,255,0.8)",
+      "$type": "color",
+      "citation": "cite.nav-bar"
+    },
+    "bar-blur": {
+      "$value": "{blur.nav}",
+      "$type": "dimension",
+      "citation": "cite.nav-bar"
+    },
+    "megamenu-shadow": {
+      "$value": "{elevation.mega-menu}",
+      "$type": "shadow",
+      "citation": "cite.cs-header"
+    }
+  },
+  "tabs": {
+    "track-shadow": {
+      "$value": "{elevation.segmented-track}",
+      "$type": "shadow",
+      "citation": "cite.ui-pilltabs"
+    },
+    "track-radius": {
+      "$value": "{radius.lg}",
+      "$type": "dimension",
+      "citation": "cite.ui-pilltabs"
+    },
+    "tab-radius": {
+      "$value": "{radius.md}",
+      "$type": "dimension",
+      "citation": "cite.ui-pilltabs"
+    }
+  },
+  "card": {
+    "radius": {
+      "$value": "{radius.none}",
+      "$type": "dimension",
+      "citation": "cite.cs-radii",
+      "$description": "Section cards and grid cells are square."
+    },
+    "border": {
+      "$value": "{border.default}",
+      "$type": "color",
+      "citation": "cite.cs-radii"
+    }
+  }
+}

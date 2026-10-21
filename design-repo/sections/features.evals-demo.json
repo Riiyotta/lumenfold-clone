@@ -1,0 +1,86 @@
+{
+  "id": "features.evals-demo",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "GTM evals demo: frame with a left score panel and animated bar chart, and a right list of test rows resolving with spring status dots.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product/gtm.jsx > EvalsDemo",
+      "usedBy": [
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product/gtm.jsx > EvalsDemo",
+    "iaScope": "The GTM landing only.",
+    "citations": [
+      "cite.spec-product"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

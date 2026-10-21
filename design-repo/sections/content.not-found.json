@@ -1,0 +1,75 @@
+{
+  "id": "content.not-found",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Not-found message: h1, one line of copy and a back-to-home button.",
+  "archetype": "message",
+  "contentRef": "#/definitions/content_message",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/App.jsx > NotFound",
+      "usedBy": [
+        "shell"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "none"
+    ],
+    "reducedMotionFallback": {
+      "none": "not-applicable"
+    },
+    "trigger": {
+      "none": "none"
+    },
+    "citations": [
+      "cite.css-reduced-motion"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.not-found"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "code-only",
+    "implementedBy": "src/App.jsx > NotFound",
+    "iaScope": "The catch-all route only.",
+    "citations": [
+      "cite.app-notfound"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample message"
+  }
+}

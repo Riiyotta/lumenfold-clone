@@ -1,0 +1,90 @@
+{
+  "id": "features.sdg-framework",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Self-driving GTM framework: two-column header, a four-cell \"highway\" track with level pins, and four level cards with illustration, unlock and example boxes.",
+  "archetype": "tabs",
+  "contentRef": "#/definitions/content_tabs",
+  "requiredContent": [
+    "title",
+    "tabs"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[].label": 4,
+    "tabs[].title": 14,
+    "tabs[].body": 58,
+    "tabs[].items[]": 14
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Framework",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "sequential-highlight"
+    ],
+    "reducedMotionFallback": {
+      "sequential-highlight": "show-final-state"
+    },
+    "trigger": {
+      "sequential-highlight": "in-view"
+    },
+    "citations": [
+      "cite.autonomy-io"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.self-driving-gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Framework",
+    "iaScope": "The self-driving GTM manifesto only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample tabbed section",
+    "tabs": [
+      {
+        "label": "First",
+        "body": "First tab copy."
+      },
+      {
+        "label": "Second",
+        "body": "Second tab copy."
+      }
+    ]
+  }
+}

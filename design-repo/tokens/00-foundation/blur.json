@@ -1,0 +1,20 @@
+{
+  "blur": {
+    "glass": {
+      "$value": "8px",
+      "$type": "dimension",
+      "citation": "cite.tw-blur"
+    },
+    "glass-lg": {
+      "$value": "10px",
+      "$type": "dimension",
+      "citation": "cite.tw-blur"
+    },
+    "nav": {
+      "$value": "12px",
+      "$type": "dimension",
+      "citation": "cite.cs-blur",
+      "$description": "Tailwind backdrop-blur-md on the nav bar (cite.nav-bar)."
+    }
+  }
+}

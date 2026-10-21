@@ -1,0 +1,13 @@
+{
+  "id": "primitive.link-arrow",
+  "kind": "primitive",
+  "description": "Inline text link with chevron/arrow that nudges 2px on group hover (150ms).",
+  "implementedBy": "src/components/ui.jsx > Chevron/Arrow",
+  "props": {
+    "label": "string<=4 words"
+  },
+  "citations": [
+    "cite.ui-icons",
+    "cite.cs-hovers"
+  ]
+}

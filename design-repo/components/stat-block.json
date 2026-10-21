@@ -1,0 +1,10 @@
+{
+  "id": "component.stat-block",
+  "kind": "component",
+  "description": "Inline value (Sora 16/24 600) + muted label.",
+  "implementedBy": "src/components/CaseStudies.jsx",
+  "composes": [],
+  "citations": [
+    "cite.cs-cases"
+  ]
+}

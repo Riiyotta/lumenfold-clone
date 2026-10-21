@@ -1,0 +1,162 @@
+{
+  "id": "shell.footer",
+  "kind": "section",
+  "category": "SHELL",
+  "purpose": "Global chrome: orient and route the visitor on every page.",
+  "description": "Site footer: link columns, newsletter/brand block and legal row, rendered below <main>.",
+  "archetype": "footer",
+  "contentRef": "#/definitions/content_footer",
+  "requiredContent": [
+    "tagline",
+    "legal",
+    "groups"
+  ],
+  "maxWords": {
+    "tagline": 5,
+    "legal": 11,
+    "groups[].heading": 3,
+    "groups[].links[]": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Footer.jsx",
+      "usedBy": [
+        "academy",
+        "catalog",
+        "company",
+        "content",
+        "home",
+        "product",
+        "product-legacy",
+        "shell"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": true
+  },
+  "motion": {
+    "patterns": [
+      "hover-only"
+    ],
+    "reducedMotionFallback": {
+      "hover-only": "instant-state-change"
+    },
+    "trigger": {
+      "hover-only": "interaction"
+    },
+    "citations": [
+      "cite.cs-hovers"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "brand.logo",
+    "badge.certification-seal"
+  ],
+  "responsive": {
+    "lg": "brand column + 4-col links",
+    "md": "3-col links",
+    "base": "2-col links"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.pricing",
+      "template.enterprise",
+      "template.about-us",
+      "template.careers",
+      "template.customers-index",
+      "template.customer-story",
+      "template.book-a-demo",
+      "template.contact-support",
+      "template.partners",
+      "template.legal",
+      "template.blog-index",
+      "template.text-index",
+      "template.blog-article",
+      "template.guide-article",
+      "template.topic-article",
+      "template.note-article",
+      "template.hub-index",
+      "template.event-detail",
+      "template.comparison-index",
+      "template.comparison-page",
+      "template.changelog",
+      "template.faq-page",
+      "template.academy-lesson",
+      "template.integrations-index",
+      "template.integration-detail",
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.workflows-index",
+      "template.workflow-detail",
+      "template.seo-article",
+      "template.feature-detail",
+      "template.phone-agent",
+      "template.workforce",
+      "template.bulk-run",
+      "template.tools",
+      "template.gtm",
+      "template.invent",
+      "template.slack",
+      "template.features-catalog",
+      "template.self-driving-gtm",
+      "template.legacy-agent-landing",
+      "template.legacy-sdr-landing",
+      "template.legacy-feature-page",
+      "template.legacy-use-case",
+      "template.legacy-home-clone",
+      "template.api-landing",
+      "template.multi-agents",
+      "template.bdr-waitlist",
+      "template.agent-drop",
+      "template.agents-at-work",
+      "template.not-found"
+    ],
+    "routeCount": 295
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Footer.jsx",
+    "iaScope": "Mounted once in App.jsx, so every route carries it; legacy originals that had their own footer (or none) are rebuilt with this one.",
+    "citations": [
+      "cite.cs-footer",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product",
+      "cite.spec-product-legacy",
+      "cite.app-notfound"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 789,
+      "1280": 669,
+      "768": 1061,
+      "375": 1361
+    }
+  },
+  "a11y": {
+    "headingLevel": "none",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "tagline": "AI agents for every team",
+    "legal": "Sample legal line for the fictional brand.",
+    "groups": [
+      {
+        "heading": "Platform",
+        "links": [
+          "Overview",
+          "Agents"
+        ]
+      }
+    ]
+  }
+}

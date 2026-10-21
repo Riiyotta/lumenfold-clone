@@ -1,0 +1,13 @@
+/* T11 Academy Lesson: dark surface variant of the DS rail row (rails #3d4559 instead of #e6e7ea). */
+.ac-row > div { border-color: #3d4559; }
+
+/* .text-rich-text_darkmode, layered on the shared Prose renderer (.blog-prose). */
+.blog-prose.ac-prose { color: #9fa4b4; }
+.blog-prose.ac-prose h1, .blog-prose.ac-prose h2, .blog-prose.ac-prose h3 { color: #f9f9f9; }
+.blog-prose.ac-prose h3 { font-size: 36px; font-weight: 600; line-height: 1.2; }
+.blog-prose.ac-prose p { color: #9fa4b4; font-size: 16px; line-height: 24px; }
+.blog-prose.ac-prose li { color: #9fa4b4; font-size: 16px; line-height: 24px; margin-bottom: 8px; }
+.blog-prose.ac-prose strong { color: #f9f9f9; }
+
+/* Lesson video: blurred swatch sits under the poster; both fade at 200ms (spec media table). */
+.ac-swatch { filter: blur(24px); transform: scale(1.1); }

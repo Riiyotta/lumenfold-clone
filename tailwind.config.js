@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    screens: { sm: '640px', md: '768px', lg: '1024px', header: '1100px', xl: '1280px', desktop: '1440px', wide: '1800px' },
+    extend: {
+      colors: {
+        'surface-light': '#ffffff',
+        'surface-secondary-light': '#f9f9f9',
+        'surface-dark': '#0d162f',
+        ink: '#0d162f',
+        muted: '#868a97',
+        tertiary: '#707287',
+        line: '#e6e7ea',
+        'line-dark': '#cfd0d5',
+        indigo: { brand: '#6056ff', dark: '#3b32f9', light: '#7281ff', ghost: '#eef2ff' },
+        'tile-base': '#f6f5f9',
+        'status-green': '#027a48',
+        'eval-teal': '#0e9384',
+        'accent-text': '#4b40d6',
+        'chip-muted': '#5b6070',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Sora', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: { button: '0.3rem' },
+      boxShadow: {
+        button: '0 .1rem .4rem rgba(59,50,249,.25)',
+        'button-hover': '0 .2rem .6rem rgba(59,50,249,.35)',
+        glass: '0 1px 2px rgba(13,22,47,0.06), 0 6px 18px -4px rgba(13,22,47,0.14), inset 0 1px 0 rgba(255,255,255,0.9)',
+        'glass-sm': 'inset 0 1px 0 rgba(255,255,255,0.8), 0 2px 8px rgba(13,22,47,0.07)',
+        'glass-pill': 'inset 0 1px 0 rgba(255,255,255,0.8), 0 4px 14px rgba(13,22,47,0.14)',
+        'segmented-track': 'inset 0 0 0 1px rgba(13,22,47,0.06), inset 0 2px 4px rgba(13,22,47,0.05)',
+        'mega-menu': '0 24px 56px -12px rgba(13,22,47,0.16)',
+        'app-card-top': '0 -6px 16px -8px rgba(13,22,47,0.10), 0 -1px 3px -1px rgba(13,22,47,0.06)',
+        'calendar-active': '0 1px 4px rgba(96,86,255,0.35)',
+      },
+      backdropBlur: { glass: '8px', 'glass-lg': '10px' },
+      maxWidth: { content: '1300px' },
+      transitionTimingFunction: { 'out-quint': 'cubic-bezier(0.23, 1, 0.32, 1)' },
+    },
+  },
+  plugins: [],
+}

@@ -1,0 +1,12 @@
+{
+  "id": "component.card-base",
+  "kind": "component",
+  "description": "Square-cornered hairline card; hover lift for resource cards.",
+  "implementedBy": "src/components/content/parts.jsx > ContentCard; src/components/LearnMore.jsx",
+  "composes": [
+    "primitive.link-arrow"
+  ],
+  "citations": [
+    "cite.cs-learnmore"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "primitive.input",
+  "kind": "primitive",
+  "description": "Native form field styles (rounded-lg, indigo focus ring).",
+  "implementedBy": "src/components/company/shared.jsx > NativeForm",
+  "props": {
+    "type": [
+      "text",
+      "email",
+      "tel",
+      "select",
+      "textarea",
+      "checkbox"
+    ]
+  },
+  "citations": [
+    "cite.form-visual"
+  ]
+}

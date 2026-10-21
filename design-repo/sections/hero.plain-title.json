@@ -1,0 +1,83 @@
+{
+  "id": "hero.plain-title",
+  "kind": "section",
+  "category": "HERO",
+  "purpose": "Open the page with its single promise and primary action.",
+  "description": "Bare article title: a single semibold h1 at the top of the article column, no back link, date, author or cover.",
+  "archetype": "hero",
+  "contentRef": "#/definitions/content_hero",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "breadcrumb[]": 5,
+    "title": 14,
+    "titleAccent": 4,
+    "subtitle": 7,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "note": 10,
+    "byline": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/content/Article.jsx > TopicArticle",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "none"
+    ],
+    "reducedMotionFallback": {
+      "none": "not-applicable"
+    },
+    "trigger": {
+      "none": "none"
+    },
+    "citations": [
+      "cite.css-reduced-motion"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.topic-article"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/content/Article.jsx > TopicArticle",
+    "iaScope": "Topic explainer articles only.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h1",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample page headline",
+    "body": "One short sentence of supporting copy for the sample page.",
+    "primaryCta": "Start building free"
+  }
+}

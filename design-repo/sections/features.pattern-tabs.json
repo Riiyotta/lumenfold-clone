@@ -1,0 +1,91 @@
+{
+  "id": "features.pattern-tabs",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Multi-agent pattern tabs: centred pill tabs switching a product mock of an agent-team pattern (violet, pink, blue).",
+  "archetype": "tabs",
+  "contentRef": "#/definitions/content_tabs",
+  "requiredContent": [
+    "title",
+    "tabs"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[].label": 4,
+    "tabs[].title": 14,
+    "tabs[].body": 58,
+    "tabs[].items[]": 14
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/B6.jsx > PatternTabs",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram",
+    "people.illustrated-avatar"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.multi-agents"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/B6.jsx > PatternTabs",
+    "iaScope": "The multi-agents page only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample tabbed section",
+    "tabs": [
+      {
+        "label": "First",
+        "body": "First tab copy."
+      },
+      {
+        "label": "Second",
+        "body": "Second tab copy."
+      }
+    ]
+  }
+}

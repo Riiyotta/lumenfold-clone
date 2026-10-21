@@ -1,0 +1,105 @@
+{
+  "id": "features.deploy-paths",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Deploy paths: three expanding tiles (violet, pink, blue) showing ways to deploy an agent: an avatar/node graph with a dashed empty slot, a typing-input pill, and a stack of model chips.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "catalog-tiles": {
+      "description": "Three expanding tiles with deploy illustrations.",
+      "implementedBy": "src/components/catalog/sections.jsx > DeployPaths",
+      "usedBy": [
+        "catalog"
+      ],
+      "citation": "cite.spec-catalog"
+    },
+    "workforce-tiles": {
+      "description": "Workforce ExpandTiles fed the deploy data.",
+      "implementedBy": "src/components/product/workforce.jsx > ExpandTiles (deploy data)",
+      "usedBy": [
+        "product"
+      ],
+      "citation": "cite.spec-product"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "expand-tiles"
+    ],
+    "reducedMotionFallback": {
+      "expand-tiles": "instant-state-change"
+    },
+    "trigger": {
+      "expand-tiles": "interaction"
+    },
+    "citations": [
+      "cite.cs-tiles"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.workforce"
+    ],
+    "routeCount": 58
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/catalog/sections.jsx > DeployPaths (parallel copy: src/components/product/workforce.jsx > ExpandTiles fed the deploy data)",
+    "iaScope": "Agents landing, every use-case detail page and the workforce page.",
+    "citations": [
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

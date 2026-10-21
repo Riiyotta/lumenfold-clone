@@ -1,0 +1,91 @@
+{
+  "id": "content.legacy-faq",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Legacy FAQ: decorative line art and an accordion whose plus icon rotates; rebuilt on Lumenfold tokens but kept distinct from the DS FAQ accordion.",
+  "archetype": "faq",
+  "contentRef": "#/definitions/content_faq",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 34,
+    "link": 4,
+    "items[].q": 12,
+    "items[].a": 44
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product-legacy/shared.jsx > FAQ",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "accordion"
+    ],
+    "reducedMotionFallback": {
+      "accordion": "instant-state-change"
+    },
+    "trigger": {
+      "accordion": "interaction"
+    },
+    "citations": [
+      "cite.faq-content"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-feature-page",
+      "template.legacy-home-clone",
+      "template.agents-at-work"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product-legacy/shared.jsx > FAQ",
+    "iaScope": "The schedule-work page, the AI-ops home clone and the agents-at-work hub.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Questions teams ask us",
+    "items": [
+      {
+        "q": "Is this a sample question?",
+        "a": "Yes, this is a sample answer."
+      },
+      {
+        "q": "Another one?",
+        "a": "Another sample answer."
+      }
+    ]
+  }
+}

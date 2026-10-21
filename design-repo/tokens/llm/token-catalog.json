@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "referenceable": {
+    "semantic": [
+      "action.primary-border-top",
+      "action.primary-from",
+      "action.primary-hover-from",
+      "action.primary-to",
+      "border.default",
+      "border.inverse",
+      "border.strong",
+      "status.online",
+      "surface.alt",
+      "surface.ghost",
+      "surface.inverse",
+      "surface.page",
+      "surface.panel",
+      "surface.tile",
+      "text.accent",
+      "text.chip",
+      "text.chip-accent",
+      "text.icon-muted",
+      "text.inverse",
+      "text.positive",
+      "text.primary",
+      "text.secondary",
+      "text.tab-active",
+      "text.tab-inactive",
+      "text.tertiary"
+    ],
+    "component": [
+      "button.primary",
+      "button.secondary",
+      "card",
+      "glass",
+      "grain.blue",
+      "grain.function-palettes",
+      "grain.pink",
+      "grain.violet",
+      "nav",
+      "tabs"
+    ],
+    "layout": [
+      "layout.content-max",
+      "layout.content-padding",
+      "layout.section-py",
+      "layout.heading-mb"
+    ]
+  },
+  "categories": [
+    "color",
+    "typography",
+    "radius",
+    "spacing",
+    "breakpoint",
+    "elevation",
+    "blur",
+    "motion"
+  ]
+}

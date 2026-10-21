@@ -1,0 +1,12 @@
+{
+  "id": "component.quote-block",
+  "kind": "component",
+  "description": "Blockquote 24/39 with name/role and optional button.",
+  "implementedBy": "src/components/Testimonials.jsx",
+  "composes": [
+    "primitive.button"
+  ],
+  "citations": [
+    "cite.cs-testimonials"
+  ]
+}

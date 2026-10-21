@@ -1,0 +1,10 @@
+{
+  "id": "primitive.logo",
+  "kind": "primitive",
+  "description": "Original Lumenfold hex mark + \"lumenfold\" wordmark (assetRole brand.logo).",
+  "implementedBy": "src/components/ui.jsx > Logo/LogoMark",
+  "props": {},
+  "citations": [
+    "cite.ui-logomark"
+  ]
+}

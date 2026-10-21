@@ -1,0 +1,3822 @@
+{
+  "version": "1.0.0",
+  "note": "One template per page shape. nodes[] are structured; required/repeatable/variants are enforced by schema/semantic_validate.py. Source order: ia.json sections (spot-checked against src/pages/*), with the /specialist-agents footer corrected from src/App.jsx.",
+  "templates": {
+    "template.home": {
+      "id": "template.home",
+      "name": "Homepage",
+      "group": "home",
+      "routeCount": 1,
+      "evidenceLevel": "measured (Playwright, CLONE_SPEC) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.cs-method",
+        "cite.home-order"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.home",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.how-we-work",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.case-studies",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.use-case-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.cost-hero",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.autonomy-framework",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.integrations-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.featured-in",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.learn-more",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.pricing": {
+      "id": "template.pricing",
+      "name": "Pricing",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.pricing-plan",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "story-links"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "centered-narrow"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.enterprise": {
+      "id": "template.enterprise",
+      "name": "Enterprise",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.enterprise",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "story-links"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.agent-governance",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.stack-collapse",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "enterprise"
+          ]
+        },
+        {
+          "section": "proof.case-studies",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.production-gap",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.integrations-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.competitor-comparison",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.about-us": {
+      "id": "template.about-us",
+      "name": "About us",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.about",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.about-story",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.careers": {
+      "id": "template.careers",
+      "name": "Careers",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.careers",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.careers-about",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.careers-values",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.careers-roles",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.customers-index": {
+      "id": "template.customers-index",
+      "name": "Customers index",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.customers",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.customer-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.story-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.customer-story": {
+      "id": "template.customer-story",
+      "name": "Customer story",
+      "group": "company",
+      "routeCount": 6,
+      "routePattern": "/customers/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.story-banner",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.story-article",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.tasks-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.book-a-demo": {
+      "id": "template.book-a-demo",
+      "name": "Book a demo",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.demo-form",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "story-links"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.contact-support": {
+      "id": "template.contact-support",
+      "name": "Contact support",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.support-form",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "story-links"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.partners": {
+      "id": "template.partners",
+      "name": "Partners",
+      "group": "company",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.partners",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.partners-feature-card",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.partners-benefits",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "centered-narrow"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "conversion.partner-apply",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.legal": {
+      "id": "template.legal",
+      "name": "Legal document",
+      "group": "company",
+      "routeCount": 3,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-company",
+        "cite.routes-company"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.legal-doc",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.blog-index": {
+      "id": "template.blog-index",
+      "name": "Blog index",
+      "group": "content",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.title-band",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.blog-filter-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.text-index": {
+      "id": "template.text-index",
+      "name": "Legacy text index",
+      "group": "content",
+      "routeCount": 2,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.title-band",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.text-card-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.blog-article": {
+      "id": "template.blog-article",
+      "name": "Blog article",
+      "group": "content",
+      "routeCount": 12,
+      "routePattern": "/blog/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.post-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.article-with-aside",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.related-posts",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.blog-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.guide-article": {
+      "id": "template.guide-article",
+      "name": "Guide article",
+      "group": "content",
+      "routeCount": 4,
+      "routePattern": "/learn/:slug | /prompt-engineering/:slug",
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.guide",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.article-with-aside",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.topic-article": {
+      "id": "template.topic-article",
+      "name": "Topic article (bare)",
+      "group": "content",
+      "routeCount": 3,
+      "routePattern": "/topics/:slug",
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.plain-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.prose-body",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.note-article": {
+      "id": "template.note-article",
+      "name": "Note post (minimal)",
+      "group": "content",
+      "routeCount": 2,
+      "routePattern": "/posts/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.post-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.prose-body",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.hub-index": {
+      "id": "template.hub-index",
+      "name": "Hub index",
+      "group": "content",
+      "routeCount": 2,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.hub-grain",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.hub-row-list",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.hub-card-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.event-detail": {
+      "id": "template.event-detail",
+      "name": "Event detail",
+      "group": "content",
+      "routeCount": 6,
+      "routePattern": "/events/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.event-register",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.autonomy-framework",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.autonomy-timeline",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standalone"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.comparison-index": {
+      "id": "template.comparison-index",
+      "name": "Comparison index",
+      "group": "content",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.comparison-index",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.comparison-page": {
+      "id": "template.comparison-page",
+      "name": "Comparison page",
+      "group": "content",
+      "routeCount": 4,
+      "routePattern": "/vs/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.comparison",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.fit-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.differences",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.exemplar-run",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.comparison-table",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.switch-steps",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "single-open"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.changelog": {
+      "id": "template.changelog",
+      "name": "Changelog feed",
+      "group": "content",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.changelog-feed",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.faq-page": {
+      "id": "template.faq-page",
+      "name": "FAQ page",
+      "group": "content",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-content"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.faq-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "multi-open"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "violet"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.academy-lesson": {
+      "id": "template.academy-lesson",
+      "name": "Academy lesson",
+      "group": "academy",
+      "routeCount": 8,
+      "routePattern": "/relevance-academy/:slug",
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-content",
+        "cite.routes-academy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.academy-lesson",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.academy-lesson-body",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "iaNote": "T11. 8 lessons from src/content/academy.js; /relevance-academy redirects to the first lesson."
+    },
+    "template.integrations-index": {
+      "id": "template.integrations-index",
+      "name": "Integrations index",
+      "group": "catalog",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.integrations-catalog",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.integrations-filter-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.integrations-power",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "single-open"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.integration-detail": {
+      "id": "template.integration-detail",
+      "name": "Integration detail",
+      "group": "catalog",
+      "routeCount": 120,
+      "routePattern": "/integrations/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.integration-detail",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.integration-actions",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.integration-setup",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.use-case-detail": {
+      "id": "template.use-case-detail",
+      "name": "Use-case detail",
+      "group": "catalog",
+      "routeCount": 56,
+      "routePattern": "/use-cases/:slug",
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.use-case",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.use-case-how-it-works",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.evals-panel",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "catalog-panel"
+          ]
+        },
+        {
+          "section": "features.deploy-paths",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "catalog-tiles"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.related-rail",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.stack-collapse",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "use-case-cta-tile"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.agents-landing": {
+      "id": "template.agents-landing",
+      "name": "Agents landing",
+      "group": "catalog",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.agents",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.how-we-work",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.deploy-paths",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "catalog-tiles"
+          ]
+        },
+        {
+          "section": "proof.case-studies",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.agent-comparison",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.evals-panel",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "catalog-panel"
+          ]
+        },
+        {
+          "section": "features.cost-hero",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.integrations-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.use-case-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.competitor-picker-table",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "single-open"
+          ]
+        },
+        {
+          "section": "conversion.tasks-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.workflows-index": {
+      "id": "template.workflows-index",
+      "name": "Workflows index (legacy)",
+      "group": "catalog",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.workflow-card-list",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "workflow"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.workflow-detail": {
+      "id": "template.workflow-detail",
+      "name": "Workflow detail (legacy)",
+      "group": "catalog",
+      "routeCount": 12,
+      "routePattern": "/workflows/:slug",
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-uc",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "workflow"
+          ]
+        },
+        {
+          "section": "proof.legacy-logo-row",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-values",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.with-without",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-vertical-tabs",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.email-capture",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.seo-article": {
+      "id": "template.seo-article",
+      "name": "SEO article with TOC (legacy)",
+      "group": "catalog",
+      "routeCount": 12,
+      "routePattern": "/llm-models/:slug | /industry/:slug",
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-catalog",
+        "cite.routes-catalog"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.seo-banner",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.toc-article",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "workflow"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.feature-detail": {
+      "id": "template.feature-detail",
+      "name": "Feature detail",
+      "group": "product",
+      "routeCount": 4,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.feature",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.showcase-row",
+          "required": true,
+          "repeatable": true,
+          "variants": [
+            "default"
+          ],
+          "maxRepeat": 2
+        },
+        {
+          "section": "features.icon-card-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "single-open"
+          ]
+        },
+        {
+          "section": "catalog.more-features",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.phone-agent": {
+      "id": "template.phone-agent",
+      "name": "Feature detail (video variant)",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.feature",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.showcase-row",
+          "required": true,
+          "repeatable": true,
+          "variants": [
+            "default"
+          ],
+          "maxRepeat": 2
+        },
+        {
+          "section": "features.icon-card-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.workforce": {
+      "id": "template.workforce",
+      "name": "Workforce landing",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.split-title-canvas",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.workforce-how-it-works",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.deploy-paths",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "workforce-tiles"
+          ]
+        },
+        {
+          "section": "features.integrations-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.faq-accordion",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "single-open"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.bulk-run": {
+      "id": "template.bulk-run",
+      "name": "Bulk run (stub)",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.tools": {
+      "id": "template.tools",
+      "name": "Tools list (stub)",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.tools-list",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.grain-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "function-palette"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.gtm": {
+      "id": "template.gtm",
+      "name": "GTM landing",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.gtm",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.statement-band",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.platform-framing",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.case-studies",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.value-prop-pairs",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.playbook-demo",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.evals-demo",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.tasks-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.invent": {
+      "id": "template.invent",
+      "name": "Invent landing",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.invent",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.inline-video",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.use-case-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.invent-signals",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.evals-panel",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "invent-floor"
+          ]
+        },
+        {
+          "section": "features.invent-embed",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.stack-collapse",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "invent"
+          ]
+        },
+        {
+          "section": "content.learn-more",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.invent-get-started",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.slack": {
+      "id": "template.slack",
+      "name": "Slack landing",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.slack-chat",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "features.slack-two-up",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.integrations-showcase",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.slack-use-cases",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.slack-split-explainer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.enterprise-security",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.slack-programmatic-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.featured-in",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.slack-final-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.features-catalog": {
+      "id": "template.features-catalog",
+      "name": "Features catalog",
+      "group": "product",
+      "routeCount": 1,
+      "evidenceLevel": "derived from SSR HTML/CSS/JS recon (not rendered; heights derived) + built",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.spec-product",
+        "cite.routes-product"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.features-text",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "catalog.feature-catalog",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-wall",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.self-driving-gtm": {
+      "id": "template.self-driving-gtm",
+      "name": "Self-driving GTM manifesto",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.sdg-road",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdg-framework",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.autonomy-timeline",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "framework-embedded"
+          ]
+        },
+        {
+          "section": "features.sdg-dimensions",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.sdg-industry-benchmark",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.sdg-customer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.sdg-final-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.specialist-agents": {
+      "id": "template.specialist-agents",
+      "name": "Specialist agents article",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": false,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy",
+        "cite.app-nofooter"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.longform-article",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "iaNote": "The original has no footer; the clone shell mounts one on every route.",
+      "correction": "ia.json lists shell.footer here, but src/App.jsx NO_FOOTER omits the footer on /specialist-agents (cite.app-nofooter). Corrected in this repo; ia.json note is stale (cite.ia-specialist-stale)."
+    },
+    "template.legacy-agent-landing": {
+      "id": "template.legacy-agent-landing",
+      "name": "Legacy agent landing",
+      "group": "product-legacy",
+      "routeCount": 2,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-centered",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-logo-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-feature-compare",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-bento-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-what-it-does",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-testimonial-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "iaNote": "On /seo-agent the features-list block also embeds a sticky stack of step cards."
+    },
+    "template.legacy-sdr-landing": {
+      "id": "template.legacy-sdr-landing",
+      "name": "Legacy SDR landing",
+      "group": "product-legacy",
+      "routeCount": 2,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-centered",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-marquee",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdr-roi-stats",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdr-before-after",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.sdr-featured-case-study",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdr-outbound-features",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdr-how-it-works",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.sdr-team-player",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.sdr-timeline-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "iaNote": "Order shown is /inbound; /outbound swaps the ROI stats and before/after blocks."
+    },
+    "template.legacy-feature-page": {
+      "id": "template.legacy-feature-page",
+      "name": "Legacy feature page",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.dark-card",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-layout-rows",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-feature-bento",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.legacy-faq",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-product-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-next-steps",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-customer-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-logo-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.legacy-use-case": {
+      "id": "template.legacy-use-case",
+      "name": "Legacy use-case page",
+      "group": "product-legacy",
+      "routeCount": 2,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-uc",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "use-case"
+          ]
+        },
+        {
+          "section": "proof.legacy-logo-row",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-values",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-vertical-tabs",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-case-study",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-testimonial-card",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-all-features",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-team",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ],
+      "iaNote": "proof.legacy-case-study renders only on /for-market-research."
+    },
+    "template.legacy-home-clone": {
+      "id": "template.legacy-home-clone",
+      "name": "Legacy home clone (AI ops)",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-centered",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-customer-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.logo-marquee",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-sticky-stack",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.template-slider",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.key-features-sticky",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.scale-your-team",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.press-marquee",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.legacy-faq",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.awards-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-testimonial-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.legacy-statement",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.api-landing": {
+      "id": "template.api-landing",
+      "name": "API landing (legacy B6)",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.legacy-centered",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.api-bento",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.multi-agents": {
+      "id": "template.multi-agents",
+      "name": "Multi-agents landing (legacy B6)",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.multi-agents-banner",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.template-tabs",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.pattern-tabs",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.legacy-bento-cards",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-testimonial-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.bdr-waitlist": {
+      "id": "template.bdr-waitlist",
+      "name": "BDR waitlist",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.waitlist-form",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "proof.legacy-logo-row",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.agent-drop": {
+      "id": "template.agent-drop",
+      "name": "Agent Drop microsite",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.agent-drop",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "features.launch-swiper",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.folder-scroll",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-footer-cta",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legacy-b7"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.agents-at-work": {
+      "id": "template.agents-at-work",
+      "name": "Agents at work hub",
+      "group": "product-legacy",
+      "routeCount": 1,
+      "evidenceLevel": "legacy-Webflow original: layout evidence only, rebuilt on current Lumenfold tokens; recon derived from HTML/CSS, not rendered",
+      "legacyWebflowOriginal": true,
+      "footer": true,
+      "citations": [
+        "cite.spec-product-legacy",
+        "cite.routes-legacy"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "hero.agents-at-work",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.watch-now",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.speaker-session-hub",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.legacy-faq",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.legacy-next-steps",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "conversion.start-button-row",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    },
+    "template.not-found": {
+      "id": "template.not-found",
+      "name": "Not found",
+      "group": "shell",
+      "routeCount": 1,
+      "evidenceLevel": "code-only (src/App.jsx)",
+      "legacyWebflowOriginal": false,
+      "footer": true,
+      "citations": [
+        "cite.app-notfound",
+        "cite.app-notfound"
+      ],
+      "nodes": [
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "content.not-found",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "default"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "content.faq-accordion",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "FAQ accordion: heading block (h2, short body, optional inline link) over a square-cornered, hairline-divided accordion with 32px plus/minus discs; single-open by default (multi-open on the FAQ page); emits FAQPage JSON-LD.",
+  "archetype": "faq",
+  "contentRef": "#/definitions/content_faq",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 34,
+    "link": 4,
+    "items[].q": 12,
+    "items[].a": 44
+  },
+  "variants": {
+    "single-open": {
+      "description": "Full-width single-open accordion, 0.2s height.",
+      "implementedBy": "src/components/content/FAQSection.jsx; src/components/product/lib.jsx > FAQSection; src/components/catalog/sections.jsx > Faq",
+      "usedBy": [
+        "content",
+        "product",
+        "catalog"
+      ],
+      "citation": "cite.faq-content"
+    },
+    "multi-open": {
+      "description": "Multi-open accordion, 0.3s height (FAQ page only).",
+      "implementedBy": "src/components/content/FAQSection.jsx (multi, duration .3)",
+      "usedBy": [
+        "template.faq-page"
+      ],
+      "citation": "cite.faq-page-multi"
+    },
+    "centered-narrow": {
+      "description": "Centred max-w-3xl accordion with no heading block of its own.",
+      "implementedBy": "src/components/company/shared.jsx > FAQ",
+      "usedBy": [
+        "company"
+      ],
+      "citation": "cite.faq-company"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "accordion"
+    ],
+    "reducedMotionFallback": {
+      "accordion": "instant-state-change"
+    },
+    "trigger": {
+      "accordion": "interaction"
+    },
+    "citations": [
+      "cite.faq-content"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "md": "question 18/29.25, px-6",
+    "base": "question 16/26, px-4"
+  },
+  "usedBy": {
+    "templates": [
+      "template.pricing",
+      "template.partners",
+      "template.comparison-page",
+      "template.faq-page",
+      "template.integrations-index",
+      "template.agents-landing",
+      "template.feature-detail",
+      "template.workforce"
+    ],
+    "routeCount": 14
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/content/FAQSection.jsx (parallel copies: src/components/company/shared.jsx > FAQ, src/components/product/lib.jsx > FAQSection, src/components/catalog/sections.jsx > Faq)",
+    "iaScope": "Pricing, partners, comparison pages, the FAQ page, the integrations index, the agents landing, feature details and workforce.",
+    "citations": [
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Questions teams ask us",
+    "items": [
+      {
+        "q": "Is this a sample question?",
+        "a": "Yes, this is a sample answer."
+      },
+      {
+        "q": "Another one?",
+        "a": "Another sample answer."
+      }
+    ]
+  }
+}

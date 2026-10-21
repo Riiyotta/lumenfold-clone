@@ -1,0 +1,15 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Generated package — rebuilt from design-repo/, never committed
+design-repo.zip
+
+# Saved copy of the original third-party site (real company's copyrighted assets) — local reference only
+Specialist AI Agents for Every Task _ Relevance AI.html
+Specialist AI Agents for Every Task _ Relevance AI_files/
+
+# OS / editor noise
+.DS_Store
+__MACOSX/
+*.log

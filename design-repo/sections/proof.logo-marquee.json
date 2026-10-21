@@ -1,0 +1,92 @@
+{
+  "id": "proof.logo-marquee",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Legacy logo marquee: three duplicated rows of customer logos scrolling horizontally.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product-legacy/shared.jsx > LogoMarquee",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "marquee"
+    ],
+    "reducedMotionFallback": {
+      "marquee": "static-first-frame"
+    },
+    "trigger": {
+      "marquee": "continuous"
+    },
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-sdr-landing",
+      "template.legacy-home-clone"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product-legacy/shared.jsx > LogoMarquee",
+    "iaScope": "SDR landings and the AI-ops home clone.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "content.speaker-session-hub",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Speaker and session hub: wandering cursor avatars over a speaker card grid, three photo sliders and a click-to-play session video grid.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/AgentsAtWork.jsx > Cursors + Speakers + Slider + Sessions",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "carousel",
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "carousel": "static-first-frame",
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "carousel": "interaction",
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed",
+      "cite.spec-product-legacy"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "photo.product-scene",
+    "video.poster"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.agents-at-work"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/AgentsAtWork.jsx > Cursors + Speakers + Slider + Sessions",
+    "iaScope": "The agents-at-work hub only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

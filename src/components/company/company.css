@@ -1,0 +1,86 @@
+/* Company / conversion pages. Values from specs/PAGES_COMPANY.md; colours match tailwind tokens. */
+
+/* ---------- Story article prose (§5.2) ---------- */
+.story-content { color: #0d162f; }
+.story-content h2 { font-family: Sora, system-ui, sans-serif; font-size: 1.5rem; font-weight: 600; margin: 2.5rem 0 1rem; scroll-margin-top: 6rem; }
+.story-content h3 { font-family: Sora, system-ui, sans-serif; font-size: 1.25rem; font-weight: 600; margin: 2rem 0 .75rem; }
+.story-content h4 { font-family: Sora, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; margin: 1.5rem 0 .5rem; }
+.story-content p { font-size: 1rem; line-height: 1.75; margin-bottom: 1.5rem; }
+.story-content > p:first-child { font-size: 1.125rem; line-height: 1.75; }
+.story-content ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.story-content ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.story-content li { font-size: 1rem; line-height: 1.75; margin-bottom: .5rem; }
+.story-content a { color: #6056ff; text-decoration: underline; text-underline-offset: 2px; transition: color .2s; }
+.story-content a:hover { color: #3b32f9; }
+.story-content blockquote { border-left: 4px solid #6056ff; padding: .5rem 0 .5rem 1.5rem; margin: 2rem 0; font-style: italic; }
+.story-content blockquote p { font-size: 1.125rem; color: #868a97; margin: 0; }
+.story-content strong { font-weight: 600; }
+.story-content hr { border: 0; border-top: 1px solid #e6e7ea; margin: 2.5rem 0; }
+.story-content img { border-radius: .75rem; margin: 2rem 0; width: 100%; }
+.story-content figcaption { font-size: .875rem; color: #868a97; text-align: center; margin: .5rem 0 2rem; }
+.story-video { position: relative; padding-bottom: 56.25%; border-radius: .75rem; margin: 2rem 0; overflow: hidden; }
+.story-content .story-video img { margin: 0; border-radius: 0; } /* the play tile image fills the 16:9 frame */
+@media (min-width: 768px) {
+  .story-content h2 { font-size: 1.875rem; }
+  .story-content h3 { font-size: 1.5rem; }
+  .story-content h4 { font-size: 1.25rem; }
+  .story-content p, .story-content li { font-size: 1.125rem; }
+  .story-content > p:first-child { font-size: 1.25rem; }
+  .story-content blockquote p { font-size: 1.25rem; }
+}
+
+/* ---------- Legal layout + prose (§7). Prefixed co- so it cannot collide with other groups' blog prose. ---------- */
+.co-post-layout { max-width: 56rem; margin: 0 auto; display: flex; gap: 3rem; }
+.co-post-sidebar { width: 12rem; flex-shrink: 0; }
+.co-post-content { flex: 1; min-width: 0; }
+.co-toc { position: sticky; top: 6rem; }
+.co-toc-title { font-family: Sora, system-ui, sans-serif; font-size: .6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #868a97; margin-bottom: .75rem; }
+.co-toc-list { list-style: none; padding: 0; margin: 0; }
+.co-toc-list li { margin-bottom: .25rem; }
+.co-toc-list a { display: block; font-size: .75rem; line-height: 1.5; color: #868a97; text-decoration: none; transition: color .2s; border-left: 2px solid transparent; padding: .25rem 0 .25rem .75rem; }
+.co-toc-list a:hover { color: #0d162f; }
+.co-toc-list a.active { color: #6056ff; border-left-color: #6056ff; font-weight: 500; }
+.co-toc-list .toc-h3 { padding-left: 1.5rem; }
+
+.co-prose { color: #0d162f; }
+.co-prose h1 { font-family: Sora, system-ui, sans-serif; font-weight: 600; font-size: 1.75rem; margin: 2.5rem 0 1rem; }
+.co-prose h2 { font-family: Sora, system-ui, sans-serif; font-weight: 600; font-size: 1.375rem; margin: 2rem 0 .75rem; scroll-margin-top: 6rem; }
+.co-prose h3 { font-family: Sora, system-ui, sans-serif; font-weight: 600; font-size: 1.125rem; margin: 1.5rem 0 .5rem; }
+.co-prose h4, .co-prose h5 { font-weight: 600; font-size: 1rem; margin: 1.25rem 0 .5rem; }
+.co-prose p { font-size: 1rem; line-height: 1.75; margin-bottom: 1.25rem; }
+.co-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.co-prose ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.co-prose li { font-size: 1rem; line-height: 1.75; margin-bottom: .375rem; }
+.co-prose li > ul, .co-prose li > ol { margin-top: .375rem; margin-bottom: 0; }
+.co-prose a { color: #6056ff; text-decoration: underline; text-underline-offset: 2px; }
+.co-prose a:hover { color: #3b32f9; }
+.co-prose strong { font-weight: 600; }
+.co-prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 15px; }
+.co-prose th { background: #f4f4f5; font-weight: 600; text-align: left; padding: .75rem 1rem; border-bottom: 2px solid #e6e7ea; }
+.co-prose td { padding: .75rem 1rem; border-bottom: 1px solid #e6e7ea; vertical-align: top; }
+.co-prose blockquote { border-left: 4px solid #6056ff; padding-left: 1.25rem; font-style: italic; }
+.co-prose blockquote p { color: #868a97; }
+.co-prose hr { border: 0; border-top: 1px solid #e6e7ea; margin: 2rem 0; }
+.co-prose img { border-radius: .75rem; }
+.co-prose code { background: #f4f4f5; }
+.co-prose pre { background: #0d162f; }
+@media (min-width: 768px) {
+  .co-prose h1 { font-size: 2rem; }
+  .co-prose h2 { font-size: 1.5rem; }
+  .co-prose h3 { font-size: 1.25rem; }
+}
+
+/* ---------- Customers story grid (§4.3) ---------- */
+.stories-grid { border-top: 1px solid #e6e7ea; }
+.stories-grid > a { border-bottom: 1px solid #e6e7ea; border-right: 1px solid #e6e7ea; }
+@media (max-width: 767px) { .stories-grid > a { border-right: none; } }
+@media (min-width: 768px) and (max-width: 1023px) { .stories-grid > a:nth-child(2n) { border-right: none; } }
+@media (min-width: 1024px) { .stories-grid > a:nth-child(3n) { border-right: none; } }
+
+/* ---------- Enterprise StackCollapse marquee (§2.6) ---------- */
+@keyframes stackPairMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.stack-marquee { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 64px, #000 calc(100% - 64px), transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 64px, #000 calc(100% - 64px), transparent 100%); }
+.stack-marquee-track { animation: stackPairMarquee 80s linear infinite; animation-play-state: paused; }
+.stack-marquee[data-on='true'] .stack-marquee-track { animation-play-state: running; }
+.stack-marquee[data-on='true']:hover .stack-marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .stack-marquee-track { animation: none; } }

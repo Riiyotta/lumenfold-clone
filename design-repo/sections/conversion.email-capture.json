@@ -1,0 +1,98 @@
+{
+  "id": "conversion.email-capture",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "Email capture CTA: h3 with an inline email input and arrow submit, with success and error states.",
+  "archetype": "form",
+  "contentRef": "#/definitions/content_form",
+  "requiredContent": [
+    "title",
+    "fields",
+    "submitLabel",
+    "successMessage"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 58,
+    "fields[].label": 5,
+    "fields[].options[]": 3,
+    "submitLabel": 3,
+    "successMessage": 11,
+    "consent": 30
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > EmailCta",
+      "usedBy": [
+        "catalog"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.workflow-detail"
+    ],
+    "routeCount": 12
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > EmailCta",
+    "iaScope": "Workflow detail pages only.",
+    "citations": [
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample form",
+    "fields": [
+      {
+        "label": "Work email",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "submitLabel": "Send",
+    "successMessage": "Thanks, we will be in touch."
+  },
+  "formPolicy": {
+    "visualOnly": true,
+    "note": "No submission endpoint exists anywhere in the clone; the schema has no action/endpoint field.",
+    "citations": [
+      "cite.form-visual",
+      "cite.form-prevent"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "content.prose-body",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Plain prose column with no aside, contents or share controls.",
+  "archetype": "article",
+  "contentRef": "#/definitions/content_article",
+  "requiredContent": [
+    "blocks"
+  ],
+  "maxWords": {
+    "title": 14,
+    "dek": 34,
+    "blocks[].text": 75
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/content/Prose.jsx",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "none"
+    ],
+    "reducedMotionFallback": {
+      "none": "not-applicable"
+    },
+    "trigger": {
+      "none": "none"
+    },
+    "citations": [
+      "cite.css-reduced-motion"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.topic-article",
+      "template.note-article"
+    ],
+    "routeCount": 5
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/content/Prose.jsx",
+    "iaScope": "Topic explainers and changelog note posts.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "blocks": [
+      {
+        "kind": "h2",
+        "text": "Sample heading"
+      },
+      {
+        "kind": "p",
+        "text": "A sample paragraph of article copy."
+      }
+    ]
+  }
+}

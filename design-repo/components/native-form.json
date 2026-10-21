@@ -1,0 +1,14 @@
+{
+  "id": "component.native-form",
+  "kind": "component",
+  "description": "Visual-only form: client validation then inline success panel; no endpoint.",
+  "implementedBy": "src/components/company/shared.jsx > NativeForm",
+  "composes": [
+    "primitive.input",
+    "primitive.button"
+  ],
+  "citations": [
+    "cite.form-visual",
+    "cite.form-prevent"
+  ]
+}

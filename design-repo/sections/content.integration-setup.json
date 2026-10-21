@@ -1,0 +1,87 @@
+{
+  "id": "content.integration-setup",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Integration setup steps: heading and numbered setup rows with a CTA.",
+  "archetype": "steps",
+  "contentRef": "#/definitions/content_steps",
+  "requiredContent": [
+    "title",
+    "steps"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "steps[].title": 14,
+    "steps[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/catalog/IntegrationDetail.jsx (#setup)",
+      "usedBy": [
+        "catalog"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.integration-detail"
+    ],
+    "routeCount": 120
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/IntegrationDetail.jsx (#setup)",
+    "iaScope": "Every integration detail page.",
+    "citations": [
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample steps",
+    "steps": [
+      {
+        "title": "Connect",
+        "body": "First step copy."
+      },
+      {
+        "title": "Test",
+        "body": "Second step copy."
+      }
+    ]
+  }
+}

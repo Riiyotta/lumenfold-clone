@@ -1,0 +1,81 @@
+{
+  "id": "conversion.blog-footer-cta",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "Blog footer CTA: centred h2, body and two buttons at the end of a post.",
+  "archetype": "cta",
+  "contentRef": "#/definitions/content_cta",
+  "requiredContent": [
+    "title",
+    "primaryCta"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 14,
+    "titleAccent": 4,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "notes[]": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/content/Article.jsx > BlogArticle (.blog-footer-cta)",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.blog-article"
+    ],
+    "routeCount": 12
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/content/Article.jsx > BlogArticle (.blog-footer-cta)",
+    "iaScope": "Blog posts only.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample closing call to action",
+    "body": "One short sentence of supporting copy.",
+    "primaryCta": "Start building free"
+  }
+}

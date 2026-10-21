@@ -1,0 +1,85 @@
+{
+  "id": "content.academy-lesson-body",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Dark academy lesson body: sticky lesson sidebar, 16:9 video, dark rich text, prev/next row and a lessons list.",
+  "archetype": "article",
+  "contentRef": "#/definitions/content_article",
+  "requiredContent": [
+    "blocks"
+  ],
+  "maxWords": {
+    "title": 14,
+    "dek": 34,
+    "blocks[].text": 75
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/academy/lesson.jsx",
+      "usedBy": [
+        "academy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "none"
+    ],
+    "reducedMotionFallback": {
+      "none": "not-applicable"
+    },
+    "trigger": {
+      "none": "none"
+    },
+    "citations": [
+      "cite.css-reduced-motion"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "video.poster"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.academy-lesson"
+    ],
+    "routeCount": 8
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/academy/lesson.jsx",
+    "iaScope": "Academy lesson pages.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "blocks": [
+      {
+        "kind": "h2",
+        "text": "Sample heading"
+      },
+      {
+        "kind": "p",
+        "text": "A sample paragraph of article copy."
+      }
+    ]
+  }
+}

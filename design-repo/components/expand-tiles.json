@@ -1,0 +1,14 @@
+{
+  "id": "component.expand-tiles",
+  "kind": "component",
+  "description": "Row of tiles; active flex-grow 2.4 vs 1 over 650ms out-quint (lg+).",
+  "implementedBy": "src/components/Tiles.jsx; src/components/catalog/sections.jsx > ExpandTiles; src/components/product/workforce.jsx > ExpandTiles",
+  "composes": [
+    "component.grain-panel",
+    "primitive.glass-pill"
+  ],
+  "citations": [
+    "cite.cs-tiles",
+    "cite.css-tiles"
+  ]
+}

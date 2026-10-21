@@ -1,0 +1,174 @@
+{
+  "typography": {
+    "fontFamily": {
+      "sans": {
+        "$value": "Inter, system-ui, sans-serif",
+        "$type": "fontFamily",
+        "citation": "cite.tw-fonts"
+      },
+      "display": {
+        "$value": "Sora, system-ui, sans-serif",
+        "$type": "fontFamily",
+        "citation": "cite.tw-fonts"
+      },
+      "mono": {
+        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+        "$type": "fontFamily",
+        "citation": "cite.cs-fonts"
+      }
+    },
+    "fontSize": {
+      "display-48": {
+        "$value": {
+          "size": "48px",
+          "lineHeight": "52.8px",
+          "tracking": "-0.15rem"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type",
+        "$description": "H1 hero, Sora 400."
+      },
+      "display-48-loose": {
+        "$value": {
+          "size": "48px",
+          "lineHeight": "57.6px",
+          "tracking": "-2.4px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type",
+        "$description": "CostHero H2."
+      },
+      "heading-36": {
+        "$value": {
+          "size": "36px",
+          "lineHeight": "48.6px",
+          "tracking": "-0.025em"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type",
+        "$description": "Section H2 md+."
+      },
+      "heading-30": {
+        "$value": {
+          "size": "30px",
+          "lineHeight": "40.5px",
+          "tracking": "-0.025em"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type",
+        "$description": "Section H2 mobile."
+      },
+      "subtitle-24": {
+        "$value": {
+          "size": "24px",
+          "lineHeight": "32.4px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "quote-24": {
+        "$value": {
+          "size": "24px",
+          "lineHeight": "39px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "title-20": {
+        "$value": {
+          "size": "20px",
+          "lineHeight": "28px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "lead-18": {
+        "$value": {
+          "size": "18px",
+          "lineHeight": "27.9px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "body-16": {
+        "$value": {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "menu-15": {
+        "$value": {
+          "size": "15px",
+          "lineHeight": "22.5px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "ui-14": {
+        "$value": {
+          "size": "14px",
+          "lineHeight": "20px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "chip-12-5": {
+        "$value": {
+          "size": "12.5px",
+          "lineHeight": "18.75px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "link-12": {
+        "$value": {
+          "size": "12px",
+          "lineHeight": "16px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "kpi-label-11-5": {
+        "$value": {
+          "size": "11.5px",
+          "lineHeight": "17.25px",
+          "tracking": "0.23px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      },
+      "tiny-10": {
+        "$value": {
+          "size": "10px",
+          "lineHeight": "15px"
+        },
+        "$type": "typography",
+        "citation": "cite.cs-type"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "$value": 400,
+        "$type": "fontWeight",
+        "citation": "cite.cs-type"
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "fontWeight",
+        "citation": "cite.cs-type"
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "fontWeight",
+        "citation": "cite.cs-type"
+      },
+      "bold": {
+        "$value": 700,
+        "$type": "fontWeight",
+        "citation": "cite.cs-fonts"
+      }
+    }
+  }
+}

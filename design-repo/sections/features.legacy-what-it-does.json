@@ -1,0 +1,92 @@
+{
+  "id": "features.legacy-what-it-does",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "What-it-does block: heading and body beside four benefit cards.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/AgentLanding.jsx > WhatItDoes",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-agent-landing"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/AgentLanding.jsx > WhatItDoes",
+    "iaScope": "Legacy agent landings only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

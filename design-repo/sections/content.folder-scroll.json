@@ -1,0 +1,91 @@
+{
+  "id": "content.folder-scroll",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Folder scroll: stacked dark \"folder\" sections with edge-shadow tabs carrying a teaser, video blocks, an input demo, a testimonial and a logo marquee.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/AgentDrop.jsx > Folder sections + marquee",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "sticky-stack",
+      "marquee"
+    ],
+    "reducedMotionFallback": {
+      "sticky-stack": "static-stacked-list",
+      "marquee": "static-first-frame"
+    },
+    "trigger": {
+      "sticky-stack": "scroll",
+      "marquee": "continuous"
+    },
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "video.poster",
+    "proof.customer-wordmark",
+    "photo.product-scene"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.agent-drop"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/AgentDrop.jsx > Folder sections + marquee",
+    "iaScope": "The Agent Drop microsite only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

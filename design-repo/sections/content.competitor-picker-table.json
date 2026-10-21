@@ -1,0 +1,90 @@
+{
+  "id": "content.competitor-picker-table",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Competitor picker table: comparison table whose competitor column is chosen from a popover picker.",
+  "archetype": "table",
+  "contentRef": "#/definitions/content_table",
+  "requiredContent": [
+    "title",
+    "columns",
+    "rows"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "columns[]": 5,
+    "rows[].label": 7,
+    "rows[].cells[]": 7
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/catalog/agents.jsx > CompetitorTable",
+      "usedBy": [
+        "catalog"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.agents-landing"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/catalog/agents.jsx > CompetitorTable",
+    "iaScope": "The agents landing only.",
+    "citations": [
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample comparison",
+    "columns": [
+      "Capability",
+      "Lumenfold"
+    ],
+    "rows": [
+      {
+        "label": "Audit log",
+        "cells": [
+          "Included"
+        ]
+      }
+    ]
+  }
+}

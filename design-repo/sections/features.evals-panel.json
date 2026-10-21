@@ -1,0 +1,98 @@
+{
+  "id": "features.evals-panel",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Evals panel (EvalsFloor): grain-framed evaluation card listing test rows with path-drawn scores against thresholds.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "catalog-panel": {
+      "description": "Grain-framed eval card.",
+      "implementedBy": "src/components/catalog/sections.jsx > EvalsPanel",
+      "usedBy": [
+        "catalog"
+      ],
+      "citation": "cite.spec-catalog"
+    },
+    "invent-floor": {
+      "description": "EvalsFloor variant on /invent.",
+      "implementedBy": "src/components/product/invent.jsx > EvalsFloor",
+      "usedBy": [
+        "product"
+      ],
+      "citation": "cite.spec-product"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "sequential-highlight"
+    ],
+    "reducedMotionFallback": {
+      "sequential-highlight": "show-final-state"
+    },
+    "trigger": {
+      "sequential-highlight": "in-view"
+    },
+    "citations": [
+      "cite.autonomy-io"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.invent"
+    ],
+    "routeCount": 58
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/catalog/sections.jsx > EvalsPanel (parallel copy: src/components/product/invent.jsx > EvalsFloor)",
+    "iaScope": "Every use-case detail page, the agents landing and the invent landing.",
+    "citations": [
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

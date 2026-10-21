@@ -1,0 +1,101 @@
+{
+  "id": "proof.featured-in",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Press and awards strip (FeaturedIn): laurel-framed award marks and press logos.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Featured.jsx",
+      "usedBy": [
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "hover-only"
+    ],
+    "reducedMotionFallback": {
+      "hover-only": "instant-state-change"
+    },
+    "trigger": {
+      "hover-only": "interaction"
+    },
+    "citations": [
+      "cite.cs-hovers"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "proof.press-mark"
+  ],
+  "responsive": {
+    "md": "press 4 columns",
+    "base": "press 2x2 (121px cells)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.slack"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Featured.jsx",
+    "iaScope": "Homepage and the Slack landing.",
+    "citations": [
+      "cite.cs-featured",
+      "cite.cs-method",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 444,
+      "1280": 424,
+      "768": 444,
+      "375": 706
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

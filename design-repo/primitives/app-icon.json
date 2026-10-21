@@ -1,0 +1,12 @@
+{
+  "id": "primitive.app-icon",
+  "kind": "primitive",
+  "description": "Generated app glyph from a seed (assetRole catalog.app-icon).",
+  "implementedBy": "src/components/ui.jsx > AppIcon",
+  "props": {
+    "seed": "integer"
+  },
+  "citations": [
+    "cite.ui-appicon"
+  ]
+}

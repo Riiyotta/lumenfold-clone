@@ -1,0 +1,84 @@
+{
+  "id": "content.legal-doc",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Legal document: title, a sticky contents sidebar with IntersectionObserver scrollspy, and a prose body of paragraphs, lists and tables; no motion.",
+  "archetype": "article",
+  "contentRef": "#/definitions/content_article",
+  "requiredContent": [
+    "blocks"
+  ],
+  "maxWords": {
+    "title": 14,
+    "dek": 34,
+    "blocks[].text": 75
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/company/Legal.jsx",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "none"
+    ],
+    "reducedMotionFallback": {
+      "none": "not-applicable"
+    },
+    "trigger": {
+      "none": "none"
+    },
+    "citations": [
+      "cite.css-reduced-motion"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured",
+    "notes": "Recon states no motion on legal pages."
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legal"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/company/Legal.jsx",
+    "iaScope": "The three legal pages (privacy, terms, data security).",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "blocks": [
+      {
+        "kind": "h2",
+        "text": "Sample heading"
+      },
+      {
+        "kind": "p",
+        "text": "A sample paragraph of article copy."
+      }
+    ]
+  }
+}

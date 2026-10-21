@@ -1,0 +1,781 @@
+{
+  "version": "1.0.0",
+  "note": "Citation ledger. Each source is \"<path relative to the project root>:<start>[-<end>]\" and its quote must appear inside that range. verify_all.py re-checks every entry when the sibling project tree exists and downgrades to warnings when design-repo/ ships alone.",
+  "citations": {
+    "cite.tw-screens": {
+      "source": "tailwind.config.js:5",
+      "quote": "screens: { sm: '640px'",
+      "note": "Breakpoints incl. header 1100 and desktop 1440."
+    },
+    "cite.tw-colors": {
+      "source": "tailwind.config.js:8-22",
+      "quote": "'surface-light': '#ffffff'",
+      "note": "Brand colour tokens as implemented."
+    },
+    "cite.tw-fonts": {
+      "source": "tailwind.config.js:24-25",
+      "quote": "sans: ['Inter'",
+      "note": "Inter body, Sora display."
+    },
+    "cite.tw-radius": {
+      "source": "tailwind.config.js:27",
+      "quote": "borderRadius: { button: '0.3rem' }",
+      "note": "Button radius 4.8px."
+    },
+    "cite.tw-shadows": {
+      "source": "tailwind.config.js:29-38",
+      "quote": "button: '0 .1rem .4rem rgba(59,50,249,.25)'",
+      "note": "Shadow tokens."
+    },
+    "cite.tw-blur": {
+      "source": "tailwind.config.js:39",
+      "quote": "backdropBlur: { glass: '8px'",
+      "note": "Glass blur 8/10px."
+    },
+    "cite.tw-maxw": {
+      "source": "tailwind.config.js:40",
+      "quote": "maxWidth: { content: '1300px' }",
+      "note": "Centre column max width."
+    },
+    "cite.tw-ease": {
+      "source": "tailwind.config.js:41",
+      "quote": "'out-quint': 'cubic-bezier(0.23, 1, 0.32, 1)'",
+      "note": "Signature ease."
+    },
+    "cite.css-btn-var": {
+      "source": "src/index.css:2",
+      "quote": "@property --btn-c",
+      "note": "Animatable inner gradient stop for the primary button."
+    },
+    "cite.css-reduced-motion": {
+      "source": "src/index.css:12",
+      "quote": "@media (prefers-reduced-motion: reduce)",
+      "note": "Only global reduced-motion rule: smooth scroll off."
+    },
+    "cite.css-btn": {
+      "source": "src/index.css:16-20",
+      "quote": ".btn { @apply inline-flex",
+      "note": "Button base, primary (300ms --btn-c tween), hover, secondary."
+    },
+    "cite.css-glass": {
+      "source": "src/index.css:21-22",
+      "quote": ".glass-pill {",
+      "note": "Glass pill and glass tag."
+    },
+    "cite.css-grain": {
+      "source": "src/index.css:26-29",
+      "quote": ".grain-violet {",
+      "note": "Grain violet/pink/blue gradients and noise overlay."
+    },
+    "cite.css-running-row": {
+      "source": "src/index.css:31",
+      "quote": ".running-row {",
+      "note": "CostHero running-row highlight."
+    },
+    "cite.css-spinner": {
+      "source": "src/index.css:33-34",
+      "quote": "@keyframes spin360",
+      "note": "Spinner keyframes."
+    },
+    "cite.css-tiles": {
+      "source": "src/index.css:36-43",
+      "quote": "/* Expanding tiles: inactive state only applies on lg+ */",
+      "note": "Expanding-tile inactive state only at lg+."
+    },
+    "cite.ui-ease": {
+      "source": "src/components/ui.jsx:4",
+      "quote": "export const EASE = { duration: 0.5",
+      "note": "EASE preset 0.5s out-quint."
+    },
+    "cite.ui-row": {
+      "source": "src/components/ui.jsx:7-15",
+      "quote": "export function Row(",
+      "note": "Gutter-rail Row: rails at >=1440 (224/290 min), max-w-content centre."
+    },
+    "cite.ui-reveal": {
+      "source": "src/components/ui.jsx:17-24",
+      "quote": "export function Reveal(",
+      "note": "Reveal: opacity 0,y16 -> 1,0 whileInView once amount .4."
+    },
+    "cite.ui-section-heading": {
+      "source": "src/components/ui.jsx:26-33",
+      "quote": "export function SectionHeading(",
+      "note": "SectionHeading h2 30/40.5 -> 36/48.6."
+    },
+    "cite.ui-grain": {
+      "source": "src/components/ui.jsx:35-42",
+      "quote": "export function Grain(",
+      "note": "Grain panel + noise."
+    },
+    "cite.ui-pilltabs": {
+      "source": "src/components/ui.jsx:44-60",
+      "quote": "export function PillTabs(",
+      "note": "Segmented PillTabs."
+    },
+    "cite.ui-icons": {
+      "source": "src/components/ui.jsx:63-92",
+      "quote": "export const Chevron",
+      "note": "Line icon set (Chevron, Arrow, Check, Plus, Play, Menu, Close, Laurel)."
+    },
+    "cite.ui-logomark": {
+      "source": "src/components/ui.jsx:95-111",
+      "quote": "export function LogoMark(",
+      "note": "Original Lumenfold mark + wordmark."
+    },
+    "cite.ui-wordmark": {
+      "source": "src/components/ui.jsx:115-132",
+      "quote": "export function Wordmark(",
+      "note": "Generated fictional wordmarks (glyph + invented name)."
+    },
+    "cite.ui-avatar": {
+      "source": "src/components/ui.jsx:138-154",
+      "quote": "export function Avatar(",
+      "note": "Illustrated SVG avatars (no photos of people)."
+    },
+    "cite.ui-appicon": {
+      "source": "src/components/ui.jsx:158-171",
+      "quote": "export function AppIcon(",
+      "note": "Generic app-icon glyphs (not real brands)."
+    },
+    "cite.hero-mascot": {
+      "source": "src/components/Hero.jsx:7-11",
+      "quote": "// Original mascot: a folded paper lantern with two eyes.",
+      "note": "Original lantern mascot."
+    },
+    "cite.hero-mount": {
+      "source": "src/components/Hero.jsx:148",
+      "quote": "initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={EASE}>",
+      "note": "Hero text column animates on mount."
+    },
+    "cite.hero-video-placeholder": {
+      "source": "src/components/Hero.jsx:168",
+      "quote": "Product tour video placeholder",
+      "note": "Hero video is a placeholder modal."
+    },
+    "cite.hero-reduced": {
+      "source": "src/components/Hero.jsx:96",
+      "quote": "const reduce = useReducedMotion()",
+      "note": "Hero honours prefers-reduced-motion."
+    },
+    "cite.nav-delays": {
+      "source": "src/components/Navbar.jsx:22-30",
+      "quote": "// Radix NavigationMenu defaults measured on the original",
+      "note": "Mega-menu opens after 200ms hover, closes after 150ms, no fade."
+    },
+    "cite.nav-bar": {
+      "source": "src/components/Navbar.jsx:35",
+      "quote": "className=\"relative bg-white/80 backdrop-blur-md border-b border-line\">",
+      "note": "Nav bar white/80 + backdrop blur."
+    },
+    "cite.nav-ctas": {
+      "source": "src/components/Navbar.jsx:79-80",
+      "quote": "<a href=\"#\" className=\"btn-secondary font-sans\">Sign in</a>",
+      "note": "Nav CTA labels."
+    },
+    "cite.costhero-mount": {
+      "source": "src/components/CostHero.jsx:51-52",
+      "quote": "Original: this island animates on mount (animate, not whileInView)",
+      "note": "CostHero entrance runs on mount (animate, not whileInView)."
+    },
+    "cite.costhero-feed": {
+      "source": "src/components/CostHero.jsx:31-44",
+      "quote": "const inView = useInView(card, { amount: 0.2 })",
+      "note": "Live feed: new row every 3400ms while >=20% in view, running 1600ms."
+    },
+    "cite.autonomy-io": {
+      "source": "src/components/Autonomy.jsx:39-40",
+      "quote": "// Original: one IntersectionObserver on the whole section",
+      "note": "Levels activate i*400ms; tabs never change level state."
+    },
+    "cite.autonomy-destination": {
+      "source": "src/components/Autonomy.jsx:69",
+      "quote": "const destination = i >= 2",
+      "note": "Purple marks L3/L4 (destination group)."
+    },
+    "cite.usecases-popover": {
+      "source": "src/components/UseCases.jsx:136-139",
+      "quote": "// floating-ui useHover on the original: delay { open: 450, close: 0 }",
+      "note": "Hover popover after 450ms on fine pointers."
+    },
+    "cite.usecases-stagger": {
+      "source": "src/components/UseCases.jsx:147",
+      "quote": "transition={{ ...EASE, delay: (i % 4) * 0.06 }}",
+      "note": "Card reveal 0.5s EASE, (i%4)*0.06s stagger."
+    },
+    "cite.usecases-io": {
+      "source": "src/components/UseCases.jsx:183",
+      "quote": "// Original: one IntersectionObserver on the grid wrapper (threshold 0.15)",
+      "note": "One IO at 0.15 reveals every card."
+    },
+    "cite.app-nofooter": {
+      "source": "src/App.jsx:19",
+      "quote": "const NO_FOOTER = new Set(['/specialist-agents'])",
+      "note": "/specialist-agents renders without the footer."
+    },
+    "cite.app-shell": {
+      "source": "src/App.jsx:42-51",
+      "quote": "<Navbar />",
+      "note": "Navbar mounted once, main pt-16, routes, catch-all NotFound, footer."
+    },
+    "cite.app-notfound": {
+      "source": "src/App.jsx:26-36",
+      "quote": "function NotFound()",
+      "note": "Not-found template."
+    },
+    "cite.app-glob": {
+      "source": "src/App.jsx:9-10",
+      "quote": "const groups = import.meta.glob('./pages/*/routes.jsx', { eager: true })",
+      "note": "Every group routes.jsx is auto-registered."
+    },
+    "cite.routes-company": {
+      "source": "src/pages/company/routes.jsx:13-26",
+      "quote": "export const companyRoutes = [",
+      "note": "Company routes."
+    },
+    "cite.routes-content": {
+      "source": "src/pages/content/routes.jsx:11-29",
+      "quote": "export const contentRoutes = [",
+      "note": "Content routes incl. /prompt-engineering and /changelog/:entry redirects."
+    },
+    "cite.routes-catalog": {
+      "source": "src/pages/catalog/routes.jsx:11-22",
+      "quote": "export const catalogRoutes = [",
+      "note": "Catalog routes incl. /app-tools/:slug redirect."
+    },
+    "cite.routes-product": {
+      "source": "src/pages/product/routes.jsx:12-25",
+      "quote": "export const productRoutes = [",
+      "note": "Product routes."
+    },
+    "cite.routes-legacy": {
+      "source": "src/pages/product-legacy/routes.jsx:15-31",
+      "quote": "export const productLegacyRoutes = [",
+      "note": "Product-legacy routes."
+    },
+    "cite.routes-academy": {
+      "source": "src/pages/academy/routes.jsx:6-9",
+      "quote": "export const academyRoutes = [",
+      "note": "/relevance-academy redirects to the first lesson."
+    },
+    "cite.redirect-app-tools": {
+      "source": "src/pages/catalog/routes.jsx:21",
+      "quote": "{ path: '/app-tools/:slug', element: <Navigate to=\"/integrations\" replace /> },",
+      "note": "Redirect only."
+    },
+    "cite.redirect-prompt": {
+      "source": "src/pages/content/routes.jsx:16",
+      "quote": "{ path: '/prompt-engineering', element: <Navigate to=\"/learn\" replace /> },",
+      "note": "Redirect only."
+    },
+    "cite.redirect-changelog": {
+      "source": "src/pages/content/routes.jsx:27",
+      "quote": "{ path: '/changelog/:entry', element: <ChangelogEntryRedirect /> },",
+      "note": "Redirect only."
+    },
+    "cite.redirect-academy": {
+      "source": "src/pages/academy/routes.jsx:7",
+      "quote": "{ path: '/relevance-academy', element: <Navigate to={lessonPath(lessons[0])} replace /> },",
+      "note": "Redirect only."
+    },
+    "cite.form-visual": {
+      "source": "src/components/company/shared.jsx:143",
+      "quote": "/* ---------- Native form (§6 field styles). Visual only: validates, then swaps to an inline success panel. ---------- */",
+      "note": "Forms are visual-only."
+    },
+    "cite.form-prevent": {
+      "source": "src/components/company/shared.jsx:129",
+      "quote": "e.preventDefault()",
+      "note": "Submit handler prevents navigation; no endpoint."
+    },
+    "cite.video-placeholder": {
+      "source": "src/components/product/lib.jsx:146",
+      "quote": "/* ---------- Video poster + modal placeholder (no real video ships with the clone) ---------- */",
+      "note": "Videos are poster + placeholder modal."
+    },
+    "cite.faq-content": {
+      "source": "src/components/content/FAQSection.jsx:18",
+      "quote": "// 1.5 FAQSection. Default is single-open with a .2s height; the FAQ page passes multi + .3s.",
+      "note": "FAQ single-open default; multi-open .3s on the FAQ page."
+    },
+    "cite.faq-page-multi": {
+      "source": "src/pages/content/FAQPage.jsx:17",
+      "quote": "<FAQSection title={faqPage.sectionTitle} items={faqs} multi duration={0.3}",
+      "note": "FAQ page uses multi-open."
+    },
+    "cite.faq-company": {
+      "source": "src/components/company/shared.jsx:35-38",
+      "quote": "export function FAQ({ items }) {",
+      "note": "Company FAQ copy: centred max-w-3xl."
+    },
+    "cite.faq-product": {
+      "source": "src/components/product/lib.jsx:265-268",
+      "quote": "export function FAQSection({ title, intro, link, items }) {",
+      "note": "Product FAQ copy."
+    },
+    "cite.faq-catalog": {
+      "source": "src/components/catalog/sections.jsx:53-56",
+      "quote": "export function Faq({ title, lead, link, items }) {",
+      "note": "Catalog FAQ copy."
+    },
+    "cite.cta-content": {
+      "source": "src/components/content/ClosingCTA.jsx:16-20",
+      "quote": "export default function ClosingCTA({ title, body, primary, primaryTo = '#', secondary, secondaryTo = '#' }) {",
+      "note": "Content grain CTA copy (violet)."
+    },
+    "cite.cta-company": {
+      "source": "src/components/company/shared.jsx:212-214",
+      "quote": "export function GrainCTA({",
+      "note": "Company GrainCTA copy (violet, optional highlight)."
+    },
+    "cite.cta-product": {
+      "source": "src/components/product/lib.jsx:335-340",
+      "quote": "export function ClosingCTA({ copy, palette = 'sales', coins = defaultCoins, primaryOnly = false }) {",
+      "note": "Product ClosingCTA copy (function palette, icon/avatar coins)."
+    },
+    "cite.cta-catalog": {
+      "source": "src/components/catalog/sections.jsx:16-19",
+      "quote": "export function CtaTile({",
+      "note": "Catalog CtaTile/ClosingCTA copy (function palette)."
+    },
+    "cite.palettes": {
+      "source": "src/content/catalog.js:7-15",
+      "quote": "export const palettes = {",
+      "note": "Seven function palettes."
+    },
+    "cite.logowall-company": {
+      "source": "src/components/company/shared.jsx:241",
+      "quote": "/* ---------- LogoGridSection (CLONE_SPEC §3.2) with links into customer stories ---------- */",
+      "note": "Company logo-wall copy links to stories."
+    },
+    "cite.seal-footer": {
+      "source": "src/components/Footer.jsx:13",
+      "quote": "const Seal = ({ t }) => (",
+      "note": "Generic text seals in the footer."
+    },
+    "cite.seal-enterprise": {
+      "source": "src/components/Enterprise.jsx:5-6",
+      "quote": "// Original certification-style seal.",
+      "note": "Generic certification seal SVG."
+    },
+    "cite.mascot-product": {
+      "source": "src/components/product/lib.jsx:191",
+      "quote": "export function Mascot({ size = 128, className = '' }) {",
+      "note": "Product-page mascot."
+    },
+    "cite.mascot-prism": {
+      "source": "src/components/product-legacy/shared.jsx:290",
+      "quote": "export function PrismMascot({ className = '' }) {",
+      "note": "Legacy-page mascot."
+    },
+    "cite.content-fictional": {
+      "source": "src/content/catalog.js:2",
+      "quote": "// Every app, agent, workflow and article here is invented placeholder content.",
+      "note": "All catalog copy is invented."
+    },
+    "cite.content-home-fictional": {
+      "source": "src/content.js:1",
+      "quote": "// All copy is original placeholder content for the fictional brand \"Lumenfold\".",
+      "note": "Homepage copy is original."
+    },
+    "cite.legal-fictional": {
+      "source": "src/content.js:167",
+      "quote": "legal: '© 2026 Lumenfold Labs. A fictional company built for demo use.',",
+      "note": "Footer legal line declares the fictional brand."
+    },
+    "cite.int-detail-cap": {
+      "source": "src/pages/catalog/IntegrationDetail.jsx:9",
+      "quote": "const MAX = 12",
+      "note": "Integration actions capped at 12 rows + \"and N more\"."
+    },
+    "cite.int-detail-cta": {
+      "source": "src/pages/catalog/IntegrationDetail.jsx:89",
+      "quote": "<ClosingCTA palette=\"sales\" coins={coins} {...c.cta} />",
+      "note": "Integration detail closes with the sales-palette CTA."
+    },
+    "cite.home-order": {
+      "source": "src/pages/Home.jsx:17-28",
+      "quote": "<Hero />",
+      "note": "Homepage section order."
+    },
+    "cite.pkg": {
+      "source": "package.json:13-14",
+      "quote": "\"react\": \"^18.3.1\"",
+      "note": "React 18.3 / react-dom."
+    },
+    "cite.pkg-dev": {
+      "source": "package.json:21-22",
+      "quote": "\"tailwindcss\": \"^3.4.14\"",
+      "note": "Tailwind v3 + Vite 5."
+    },
+    "cite.pkg-motion": {
+      "source": "package.json:12",
+      "quote": "\"framer-motion\": \"^11.11.17\"",
+      "note": "framer-motion 11."
+    },
+    "cite.cs-scope": {
+      "source": "CLONE_SPEC.md:5",
+      "quote": "Scope: this is a **design-system clone**.",
+      "note": "Do not copy their copy, logos, photos, illustrations or press logos."
+    },
+    "cite.cs-method": {
+      "source": "CLONE_SPEC.md:7",
+      "quote": "How this was measured: live Playwright session on 2026-10-21",
+      "note": "CLONE_SPEC is Playwright-measured."
+    },
+    "cite.cs-colours": {
+      "source": "CLONE_SPEC.md:84-101",
+      "quote": "### 1.1 Colours in use (computed)",
+      "note": "Computed colours in use."
+    },
+    "cite.cs-gradients": {
+      "source": "CLONE_SPEC.md:102-105",
+      "quote": "### 1.2 Gradients (exact)",
+      "note": "Primary button gradient + hover."
+    },
+    "cite.cs-radii": {
+      "source": "CLONE_SPEC.md:115-116",
+      "quote": "### 1.3 Radii",
+      "note": "Radius scale."
+    },
+    "cite.cs-blur": {
+      "source": "CLONE_SPEC.md:118-119",
+      "quote": "### 1.4 Shadows / blur",
+      "note": "Blur nav 12 / glass 8 / tag 10."
+    },
+    "cite.cs-gutter": {
+      "source": "CLONE_SPEC.md:121-139",
+      "quote": "### 1.5 Layout system: \"gutter rails\" (the defining structure)",
+      "note": "Gutter rails, content padding, vertical rhythm, spacing scale."
+    },
+    "cite.cs-fonts": {
+      "source": "CLONE_SPEC.md:140-153",
+      "quote": "## 2. Fonts",
+      "note": "Inter + Sora from Google Fonts."
+    },
+    "cite.cs-type": {
+      "source": "CLONE_SPEC.md:154-188",
+      "quote": "### 2.1 Type scale (computed)",
+      "note": "Computed type scale."
+    },
+    "cite.cs-heights": {
+      "source": "CLONE_SPEC.md:193-208",
+      "quote": "| # | Section (component) | 1440 | 1280 | 768 | 375 |",
+      "note": "Measured homepage section heights."
+    },
+    "cite.cs-header": {
+      "source": "CLONE_SPEC.md:212-238",
+      "quote": "### 3.0 Header / nav",
+      "note": "Header / nav / mega-menu / drawer."
+    },
+    "cite.cs-megamenu-fade": {
+      "source": "CLONE_SPEC.md:220",
+      "quote": "fade-in/fade-out via tailwindcss-animate, default 150ms",
+      "note": "SUPERSEDED: mega-menu fade (audit found no fade; 200ms open / 150ms close delay)."
+    },
+    "cite.cs-hero": {
+      "source": "CLONE_SPEC.md:234-252",
+      "quote": "### 3.1 Hero",
+      "note": "Hero slots and mascot placeholder guidance."
+    },
+    "cite.cs-buttons": {
+      "source": "CLONE_SPEC.md:254-265",
+      "quote": "#### Buttons (global component)",
+      "note": "Button component spec."
+    },
+    "cite.cs-logowall": {
+      "source": "CLONE_SPEC.md:267-273",
+      "quote": "### 3.2 Logo wall",
+      "note": "Logo wall."
+    },
+    "cite.cs-tiles": {
+      "source": "CLONE_SPEC.md:275-295",
+      "quote": "### 3.3 Expanding tiles (`HowWeWork`)",
+      "note": "Expanding tiles."
+    },
+    "cite.cs-cases": {
+      "source": "CLONE_SPEC.md:296-313",
+      "quote": "### 3.4 Case-study accordion (`CaseStudies`)",
+      "note": "Case-study accordion."
+    },
+    "cite.cs-usecases": {
+      "source": "CLONE_SPEC.md:314-344",
+      "quote": "### 3.5 Use-case card grid (`UseCases`)",
+      "note": "Use-case grid."
+    },
+    "cite.cs-costhero": {
+      "source": "CLONE_SPEC.md:345-369",
+      "quote": "### 3.6 Product mock hero (`CostHero`)",
+      "note": "CostHero."
+    },
+    "cite.cs-autonomy": {
+      "source": "CLONE_SPEC.md:371-381",
+      "quote": "### 3.7 Four-level framework (`AutonomyAndProduct`)",
+      "note": "Autonomy framework."
+    },
+    "cite.cs-enterprise": {
+      "source": "CLONE_SPEC.md:383-394",
+      "quote": "### 3.8 Enterprise / security (`EnterpriseSecurity`)",
+      "note": "Enterprise security."
+    },
+    "cite.cs-integrations": {
+      "source": "CLONE_SPEC.md:396-403",
+      "quote": "### 3.9 Integrations grid (`IntegrationsShowcase`)",
+      "note": "Integrations grid."
+    },
+    "cite.cs-testimonials": {
+      "source": "CLONE_SPEC.md:405-425",
+      "quote": "### 3.10 Testimonial tabs (`Testimonials`)",
+      "note": "Testimonials."
+    },
+    "cite.cs-featured": {
+      "source": "CLONE_SPEC.md:427-434",
+      "quote": "### 3.11 Press & awards (`FeaturedIn`)",
+      "note": "Featured in."
+    },
+    "cite.cs-learnmore": {
+      "source": "CLONE_SPEC.md:436-449",
+      "quote": "### 3.12 Resource cards (`LearnMore`)",
+      "note": "LearnMore."
+    },
+    "cite.cs-footer": {
+      "source": "CLONE_SPEC.md:451-462",
+      "quote": "### 3.13 Footer",
+      "note": "Footer."
+    },
+    "cite.cs-motion": {
+      "source": "CLONE_SPEC.md:466-474",
+      "quote": "## 4. Motion",
+      "note": "Motion library + shared presets."
+    },
+    "cite.cs-reveals": {
+      "source": "CLONE_SPEC.md:475-488",
+      "quote": "### 4.2 Entrance / scroll reveals (all `once: true`)",
+      "note": "Entrance reveals (UseCases row superseded by src)."
+    },
+    "cite.cs-usecases-old": {
+      "source": "CLONE_SPEC.md:483",
+      "quote": "| UseCases cards | in view of grid |",
+      "note": "SUPERSEDED: .3s UseCases reveal; audit/src use 0.5s EASE."
+    },
+    "cite.cs-continuous": {
+      "source": "CLONE_SPEC.md:490-511",
+      "quote": "### 4.3 Continuous / timed animations",
+      "note": "Continuous/timed animations."
+    },
+    "cite.cs-autonomy-old": {
+      "source": "CLONE_SPEC.md:510",
+      "quote": "- **Autonomy levels:** an IntersectionObserver (threshold 0.1) fires once.",
+      "note": "PARTLY SUPERSEDED: purple marks L3/L4, tabs do not change levels."
+    },
+    "cite.cs-hovers": {
+      "source": "CLONE_SPEC.md:514-534",
+      "quote": "### 4.4 Hover / interaction transitions (summary)",
+      "note": "Hover transitions."
+    },
+    "cite.cs-responsive": {
+      "source": "CLONE_SPEC.md:543-554",
+      "quote": "## 5. Responsive summary",
+      "note": "Responsive summary."
+    },
+    "cite.cs-media": {
+      "source": "CLONE_SPEC.md:557-578",
+      "quote": "## 6. Media placeholder manifest (no original assets)",
+      "note": "Media placeholder manifest."
+    },
+    "cite.spec-company": {
+      "source": "specs/PAGES_COMPANY.md:3",
+      "quote": "# PAGES_COMPANY",
+      "note": "Company template recon."
+    },
+    "cite.spec-company-legacy": {
+      "source": "specs/PAGES_COMPANY.md:461",
+      "quote": "## 8. `/about-us` (legacy Webflow → rebuild on the new shell)",
+      "note": "About-us legacy Webflow -> rebuilt."
+    },
+    "cite.spec-company-contact": {
+      "source": "specs/PAGES_COMPANY.md:493",
+      "quote": "## 9. `/contact-support` (legacy Webflow → rebuild)",
+      "note": "Contact legacy Webflow -> rebuilt."
+    },
+    "cite.spec-company-partners": {
+      "source": "specs/PAGES_COMPANY.md:530",
+      "quote": "## 10. `/partners` (legacy Webflow → rebuild)",
+      "note": "Partners legacy Webflow -> rebuilt."
+    },
+    "cite.spec-content": {
+      "source": "specs/PAGES_CONTENT.md:3",
+      "quote": "# PAGES_CONTENT",
+      "note": "Content template recon."
+    },
+    "cite.spec-content-method": {
+      "source": "specs/PAGES_CONTENT.md:9",
+      "quote": "I did not open a browser.",
+      "note": "Content recon is curl/CSS-derived, not rendered."
+    },
+    "cite.spec-content-legacy-chrome": {
+      "source": "specs/PAGES_CONTENT.md:36",
+      "quote": "The legacy Webflow chrome (rounded floating navbar, old footer, announcement bar) should not be cloned",
+      "note": "Legacy chrome not cloned."
+    },
+    "cite.spec-content-topics-bare": {
+      "source": "specs/PAGES_CONTENT.md:30",
+      "quote": "Legacy Webflow, **no nav and no footer**",
+      "note": "Original /topics/<x> had no nav/footer; clone mounts both."
+    },
+    "cite.spec-content-faq-legacy": {
+      "source": "specs/PAGES_CONTENT.md:31",
+      "quote": "| `/frequently-asked-questions` | Legacy Webflow | **T10 FAQ Page** |",
+      "note": "FAQ page legacy Webflow -> rebuilt."
+    },
+    "cite.spec-content-academy-ext": {
+      "source": "specs/PAGES_CONTENT.md:656",
+      "quote": "## T12. Academy Catalog",
+      "note": "/academy is an external domain (excluded)."
+    },
+    "cite.spec-catalog": {
+      "source": "specs/PAGES_CATALOG.md:3",
+      "quote": "# PAGES_CATALOG",
+      "note": "Catalog template recon."
+    },
+    "cite.spec-catalog-method": {
+      "source": "specs/PAGES_CATALOG.md:10",
+      "quote": "- Rendered heights and line counts were not measured.",
+      "note": "Catalog recon heights derived, not measured."
+    },
+    "cite.spec-catalog-marketplace": {
+      "source": "specs/PAGES_CATALOG.md:427",
+      "quote": "## Part B: Marketplace",
+      "note": "Marketplace (/templates, /agent-templates-*) external; excluded."
+    },
+    "cite.spec-catalog-legacy": {
+      "source": "specs/PAGES_CATALOG.md:665",
+      "quote": "## Part C: Legacy Webflow pages (old design language)",
+      "note": "Workflows / llm-models / industry legacy Webflow -> rebuilt."
+    },
+    "cite.spec-product": {
+      "source": "specs/PAGES_PRODUCT.md:3",
+      "quote": "# PAGES_PRODUCT",
+      "note": "Product template recon."
+    },
+    "cite.spec-product-legacy": {
+      "source": "specs/PAGES_PRODUCT.md:378",
+      "quote": "## B. Legacy Webflow section library",
+      "note": "Product \"B\" pages legacy Webflow -> rebuilt."
+    },
+    "cite.ia-exclusions": {
+      "source": "ia.json:2",
+      "quote": "Out of scope, not templates:",
+      "note": "IA scope exclusions and redirects."
+    },
+    "cite.ia-meta": {
+      "source": "ia.json:8-9",
+      "quote": "\"totalRoutes\": 296,",
+      "note": "IA totals."
+    },
+    "cite.ia-specialist-stale": {
+      "source": "ia.json:1908",
+      "quote": "\"note\": \"The original has no footer; the clone shell mounts one on every route.\"",
+      "note": "STALE in ia.json: App.jsx NO_FOOTER omits the footer on /specialist-agents."
+    }
+  },
+  "wordBudgets": {
+    "method": "Maximum observed word count per content key across every string export of src/content.js and src/content/*.js (node import, whitespace tokenised). Article paragraphs split on newlines.",
+    "observedMax": {
+      "title": 14,
+      "h1": 10,
+      "heading": 21,
+      "body (non-article)": 58,
+      "lead": 34,
+      "subtitle": 5,
+      "eyebrow": 7,
+      "q": 12,
+      "a": 44,
+      "quote": 31,
+      "name": 5,
+      "role": 5,
+      "primary/secondary cta": 4,
+      "value": 2,
+      "note": 10,
+      "legal": 11,
+      "tagline": 5,
+      "submit": 3,
+      "success": 11,
+      "article paragraph": 75
+    },
+    "appliedBudgets": {
+      "title": 14,
+      "heading": 21,
+      "body": 58,
+      "lead": 34,
+      "eyebrow": 7,
+      "accent": 4,
+      "subtitle": 7,
+      "cta": 4,
+      "note": 10,
+      "label": 7,
+      "q": 12,
+      "a": 44,
+      "quote": 31,
+      "name": 5,
+      "role": 5,
+      "value": 2,
+      "para": 75,
+      "crumb": 5,
+      "link": 4,
+      "legal": 11,
+      "tagline": 5,
+      "submit": 3,
+      "success": 11,
+      "consent": 30,
+      "option": 3,
+      "cell": 7
+    }
+  },
+  "measuredCorrections": [
+    {
+      "topic": "mega-menu",
+      "supersedes": "cite.cs-megamenu-fade",
+      "value": "No fade; opens after 200ms hover delay, closes after 150ms.",
+      "implementedIn": "cite.nav-delays"
+    },
+    {
+      "topic": "CostHero entrance",
+      "supersedes": "cite.cs-reveals",
+      "value": "Entrance (heading grid, tabs .1s, card .15s) runs on mount, not on scroll.",
+      "implementedIn": "cite.costhero-mount"
+    },
+    {
+      "topic": "Autonomy tabs/levels",
+      "supersedes": "cite.cs-autonomy-old",
+      "value": "Tabs never change level state (they re-fade diagrams); purple marks L3/L4.",
+      "implementedIn": "cite.autonomy-io"
+    },
+    {
+      "topic": "UseCases reveal",
+      "supersedes": "cite.cs-usecases-old",
+      "value": "One IntersectionObserver at 0.15; 0.5s EASE; (i%4)*0.06s stagger.",
+      "implementedIn": "cite.usecases-stagger"
+    },
+    {
+      "topic": "Primary button hover",
+      "supersedes": null,
+      "value": "Inner gradient stop tweens ~300ms via @property --btn-c.",
+      "implementedIn": "cite.css-btn"
+    }
+  ],
+  "iaCorrections": [
+    {
+      "topic": "/specialist-agents footer",
+      "iaClaim": "cite.ia-specialist-stale",
+      "source": "cite.app-nofooter",
+      "resolution": "template.specialist-agents has no shell.footer node; validator enforces FOOTER_ABSENT_NO_FOOTER_TEMPLATES."
+    }
+  ],
+  "evidenceGaps": [
+    "Only the homepage was rendered and measured (CLONE_SPEC). Every other template comes from curl/CSS/JS recon (specs/PAGES_*.md); heights there are derived, not measured.",
+    "Legacy-Webflow originals were rebuilt on current Lumenfold tokens; their legacy values are layout evidence only.",
+    "Per-section responsive behaviour is structured only for the 14 homepage sections plus grain-cta and faq-accordion; the rest inherit component.row padding/rails and are marked not-measured-per-section.",
+    "Motion patterns outside the homepage are classified from the implementing component and recon spec; their timings were not re-measured.",
+    "The original /topics/<x> had no nav/footer; the clone renders both (kept as built)."
+  ]
+}

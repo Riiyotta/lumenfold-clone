@@ -1,0 +1,23 @@
+{
+  "id": "primitive.mascot",
+  "kind": "primitive",
+  "description": "Original lantern mascot (assetRole brand.mascot).",
+  "implementedBy": "src/components/Hero.jsx > Mascot; src/components/product/lib.jsx > Mascot; src/components/product-legacy/shared.jsx > PrismMascot",
+  "props": {
+    "size": [
+      140,
+      172,
+      128,
+      72,
+      40,
+      26,
+      22,
+      20
+    ]
+  },
+  "citations": [
+    "cite.hero-mascot",
+    "cite.mascot-product",
+    "cite.mascot-prism"
+  ]
+}

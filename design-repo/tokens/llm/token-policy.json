@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "resolutionOrder": [
+    "00-foundation",
+    "themes/light",
+    "10-semantic",
+    "20-component",
+    "30-layout"
+  ],
+  "rawValueRestrictions": {
+    "color": "Reference a token; no raw value in generated output.",
+    "typography": "Reference a token; no raw value in generated output.",
+    "radius": "Reference a token; no raw value in generated output.",
+    "spacing": "Reference a token; no raw value in generated output.",
+    "breakpoint": "Reference a token; no raw value in generated output.",
+    "elevation": "Reference a token; no raw value in generated output.",
+    "blur": "Reference a token; no raw value in generated output.",
+    "motion": "Reference a token; no raw value in generated output."
+  },
+  "overrides": {
+    "pageSpecTokenOverrides": false,
+    "note": "The PageSpec schema has no style/token field, so there is nothing per-instance to validate; token compliance is enforced at the contract layer (verify_all checks theme resolution and policy categories against real foundation files)."
+  }
+}

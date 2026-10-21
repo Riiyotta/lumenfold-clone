@@ -1,0 +1,92 @@
+{
+  "id": "proof.press-marquee",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Press marquee: a looping row of white press cards, each an image and a button.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/AiOps.jsx > PressMarquee",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "marquee"
+    ],
+    "reducedMotionFallback": {
+      "marquee": "static-first-frame"
+    },
+    "trigger": {
+      "marquee": "continuous"
+    },
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.press-mark",
+    "photo.editorial-cover"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-home-clone"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/AiOps.jsx > PressMarquee",
+    "iaScope": "The AI-ops home clone only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

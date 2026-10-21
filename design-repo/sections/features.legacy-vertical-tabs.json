@@ -1,0 +1,93 @@
+{
+  "id": "features.legacy-vertical-tabs",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Legacy vertical tabs: h2, then an image pane beside a menu of accordion tab cards that switch the image.",
+  "archetype": "tabs",
+  "contentRef": "#/definitions/content_tabs",
+  "requiredContent": [
+    "title",
+    "tabs"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[].label": 4,
+    "tabs[].title": 14,
+    "tabs[].body": 58,
+    "tabs[].items[]": 14
+  },
+  "variants": {
+    "default": {
+      "description": "Parallel copies are structurally identical; modelled as one variant.",
+      "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > VerticalTabs; src/pages/product-legacy/UseCaseLegacy.jsx > VTabs",
+      "usedBy": [
+        "catalog",
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "photo.product-scene"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.workflow-detail",
+      "template.legacy-use-case"
+    ],
+    "routeCount": 14
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > VerticalTabs (parallel copy: src/pages/product-legacy/UseCaseLegacy.jsx > VTabs)",
+    "iaScope": "Workflow details and the legacy use-case pages.",
+    "citations": [
+      "cite.spec-catalog",
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample tabbed section",
+    "tabs": [
+      {
+        "label": "First",
+        "body": "First tab copy."
+      },
+      {
+        "label": "Second",
+        "body": "Second tab copy."
+      }
+    ]
+  }
+}

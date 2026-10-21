@@ -1,0 +1,89 @@
+{
+  "id": "conversion.sdr-timeline-cta",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "SDR timeline CTA: four-row timeline inside the CTA wrapper, followed by the footer-CTA mascots.",
+  "archetype": "steps",
+  "contentRef": "#/definitions/content_steps",
+  "requiredContent": [
+    "title",
+    "steps"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "steps[].title": 14,
+    "steps[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SDRLanding.jsx > Timeline inside src/components/product-legacy/shared.jsx > FooterCTA",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "brand.mascot"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-sdr-landing"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SDRLanding.jsx > Timeline inside src/components/product-legacy/shared.jsx > FooterCTA",
+    "iaScope": "SDR landings only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample steps",
+    "steps": [
+      {
+        "title": "Connect",
+        "body": "First step copy."
+      },
+      {
+        "title": "Test",
+        "body": "Second step copy."
+      }
+    ]
+  }
+}

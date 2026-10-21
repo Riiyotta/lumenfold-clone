@@ -1,0 +1,112 @@
+{
+  "id": "proof.case-studies",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Case-study accordion: expanding rows of customer outcomes with metric, quote and photo.",
+  "archetype": "quotes",
+  "contentRef": "#/definitions/content_quotes",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "items[].company": 3,
+    "items[].title": 14,
+    "items[].quote": 31,
+    "items[].person": 5,
+    "items[].role": 6,
+    "items[].stats[].value": 2,
+    "items[].stats[].label": 7,
+    "items[].linkLabel": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/CaseStudies.jsx",
+      "usedBy": [
+        "catalog",
+        "company",
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "accordion",
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "accordion": "instant-state-change",
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "accordion": "interaction",
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.faq-content",
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark",
+    "photo.customer-story",
+    "video.poster"
+  ],
+  "responsive": {
+    "lg": "accordion, one open",
+    "md": "every item expanded, stats 3 cols",
+    "base": "header and stats stack"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.enterprise",
+      "template.agents-landing",
+      "template.gtm"
+    ],
+    "routeCount": 4
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/CaseStudies.jsx",
+    "iaScope": "Homepage, enterprise, the agents landing and the GTM landing.",
+    "citations": [
+      "cite.cs-cases",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 849,
+      "1280": 803,
+      "768": 1888,
+      "375": 2052
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "company": "Quillstone",
+        "quote": "A short sample quote about the product.",
+        "person": "Dana Whitlock",
+        "role": "Head of Operations"
+      }
+    ]
+  }
+}

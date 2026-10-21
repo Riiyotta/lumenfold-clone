@@ -1,0 +1,105 @@
+{
+  "id": "features.cost-hero",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "CostHero product mock: a large app-window card showing an agent run, task list and cost readout on grain.",
+  "archetype": "demo",
+  "contentRef": "#/definitions/content_demo",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[]": 4,
+    "items[].title": 14,
+    "items[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/CostHero.jsx",
+      "usedBy": [
+        "catalog",
+        "home"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up",
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state",
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "mount-fade-up": "mount",
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed",
+      "cite.costhero-mount",
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "measured",
+    "notes": "Entrance runs on mount (animate), not on scroll; live feed adds a row every 3400ms while >=20% in view."
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "catalog.app-icon",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "7/5 header grid",
+    "md": "tabs shown",
+    "base": "KPI 2x2, table 2 columns, tabs hidden"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.agents-landing"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/CostHero.jsx",
+    "iaScope": "Homepage and the agents landing (as its agent-activity block).",
+    "citations": [
+      "cite.cs-costhero",
+      "cite.cs-method",
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 958,
+      "1280": 932,
+      "768": 1047,
+      "375": 1013
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample demo",
+    "items": [
+      {
+        "title": "First step",
+        "body": "Sample step."
+      }
+    ]
+  }
+}

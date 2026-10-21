@@ -1,0 +1,89 @@
+{
+  "id": "catalog.story-grid",
+  "kind": "section",
+  "category": "CATALOG",
+  "purpose": "Let the visitor browse and pick from a collection.",
+  "description": "Customer story card grid: photo, logo, title and pill tags per story.",
+  "archetype": "catalog",
+  "contentRef": "#/definitions/content_catalog",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "filters[]": 4,
+    "items[].tag": 5,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "footnote": 12,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/company/customers.jsx > StoryGrid",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "photo.customer-story",
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.customers-index"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/company/customers.jsx > StoryGrid",
+    "iaScope": "The customers index only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "title": "Sample item",
+        "body": "Sample description."
+      }
+    ]
+  }
+}

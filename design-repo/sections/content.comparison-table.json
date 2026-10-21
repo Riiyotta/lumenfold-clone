@@ -1,0 +1,90 @@
+{
+  "id": "content.comparison-table",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Comparison table: dashed-rule capability table, Lumenfold vs one competitor.",
+  "archetype": "table",
+  "contentRef": "#/definitions/content_table",
+  "requiredContent": [
+    "title",
+    "columns",
+    "rows"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "columns[]": 5,
+    "rows[].label": 7,
+    "rows[].cells[]": 7
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/content/comparison.jsx > CompareTable",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.comparison-page"
+    ],
+    "routeCount": 4
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/content/comparison.jsx > CompareTable",
+    "iaScope": "Every comparison page.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample comparison",
+    "columns": [
+      "Capability",
+      "Lumenfold"
+    ],
+    "rows": [
+      {
+        "label": "Audit log",
+        "cells": [
+          "Included"
+        ]
+      }
+    ]
+  }
+}

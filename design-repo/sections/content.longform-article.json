@@ -1,0 +1,85 @@
+{
+  "id": "content.longform-article",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Long-form manifesto article: hero-mark SVG, h1 and lede, then ten sections with quote cards, stat rows and diagram figures.",
+  "archetype": "article",
+  "contentRef": "#/definitions/content_article",
+  "requiredContent": [
+    "blocks"
+  ],
+  "maxWords": {
+    "title": 14,
+    "dek": 34,
+    "blocks[].text": 75
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SpecialistAgents.jsx",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.specialist-agents"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SpecialistAgents.jsx",
+    "iaScope": "The specialist-agents article only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "blocks": [
+      {
+        "kind": "h2",
+        "text": "Sample heading"
+      },
+      {
+        "kind": "p",
+        "text": "A sample paragraph of article copy."
+      }
+    ]
+  }
+}

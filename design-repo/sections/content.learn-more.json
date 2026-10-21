@@ -1,0 +1,104 @@
+{
+  "id": "content.learn-more",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "LearnMore resource cards: three to four linked cards to guides, blog and academy content.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/LearnMore.jsx",
+      "usedBy": [
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "photo.editorial-cover",
+    "people.illustrated-avatar",
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "md": "2 columns",
+    "base": "1 column"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.invent"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/LearnMore.jsx",
+    "iaScope": "Homepage and the invent landing.",
+    "citations": [
+      "cite.cs-learnmore",
+      "cite.cs-method",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 842,
+      "1280": 795,
+      "768": 865,
+      "375": 1255
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

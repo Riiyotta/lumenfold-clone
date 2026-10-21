@@ -1,0 +1,467 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "template": "template.integration-detail",
+  "route": "/integrations/pipewise",
+  "theme": "light",
+  "meta": {
+    "title": "Pipewise integration | Lumenfold",
+    "description": "Track every deal stage and let agents nudge stalled opportunities forward."
+  },
+  "nodes": [
+    {
+      "section": "shell.navbar",
+      "variant": "default",
+      "motion": {
+        "pattern": "hover-only",
+        "trigger": "interaction",
+        "reducedMotionFallback": "instant-state-change"
+      },
+      "content": {
+        "menus": [
+          {
+            "label": "Platform",
+            "columns": [
+              {
+                "heading": "Build",
+                "items": [
+                  "Agent studio",
+                  "Workflow canvas",
+                  "Knowledge base",
+                  "Tool library"
+                ]
+              },
+              {
+                "heading": "Run",
+                "items": [
+                  "Scheduler",
+                  "Live monitor",
+                  "Human review",
+                  "Usage controls"
+                ]
+              },
+              {
+                "heading": "Measure",
+                "items": [
+                  "Evaluations",
+                  "Cost explorer",
+                  "Run history",
+                  "Audit trail"
+                ]
+              },
+              {
+                "heading": "Connect",
+                "items": [
+                  "Integrations",
+                  "API access",
+                  "Webhooks",
+                  "Data sync"
+                ]
+              },
+              {
+                "heading": "Teams",
+                "items": [
+                  "Revenue",
+                  "Support",
+                  "Operations",
+                  "Finance"
+                ]
+              },
+              {
+                "heading": "Industries",
+                "items": [
+                  "Software",
+                  "Logistics",
+                  "Healthcare",
+                  "Retail"
+                ]
+              },
+              {
+                "heading": "Templates",
+                "items": [
+                  "Lead triage",
+                  "Ticket routing",
+                  "Invoice checks",
+                  "Weekly digest"
+                ]
+              },
+              {
+                "heading": "Security",
+                "items": [
+                  "Access roles",
+                  "Data residency",
+                  "Private models",
+                  "Compliance"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Solutions",
+            "columns": [
+              {
+                "heading": "By team",
+                "items": [
+                  "Sales",
+                  "Marketing",
+                  "Support",
+                  "People ops"
+                ]
+              },
+              {
+                "heading": "By size",
+                "items": [
+                  "Startups",
+                  "Mid-market",
+                  "Enterprise",
+                  "Agencies"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Resources",
+            "columns": [
+              {
+                "heading": "Learn",
+                "items": [
+                  "Field guide",
+                  "Webinars",
+                  "Changelog",
+                  "Docs"
+                ]
+              },
+              {
+                "heading": "Community",
+                "items": [
+                  "Forum",
+                  "Events",
+                  "Partners",
+                  "Showcase"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Company",
+            "columns": [
+              {
+                "heading": "About",
+                "items": [
+                  "Our story",
+                  "Careers",
+                  "Newsroom",
+                  "Contact"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Pricing"
+          }
+        ],
+        "signIn": "Sign in",
+        "primaryCta": "Start for free"
+      },
+      "assets": [
+        {
+          "assetRole": "brand.logo",
+          "generationPolicy": "reuse-exact",
+          "ref": "primitive.logo",
+          "alt": "Lumenfold home"
+        }
+      ]
+    },
+    {
+      "section": "hero.integration-detail",
+      "variant": "default",
+      "motion": {
+        "pattern": "mount-fade-up",
+        "trigger": "mount",
+        "reducedMotionFallback": "show-final-state"
+      },
+      "content": {
+        "breadcrumb": [
+          "Home",
+          "Integrations",
+          "Pipewise"
+        ],
+        "title": "Pipewise integration",
+        "body": "Give Lumenfold agents direct access to Pipewise so they can read, update and act on your pipeline without any copy and paste.",
+        "primaryCta": "Connect Pipewise now",
+        "secondaryCta": "View setup guide",
+        "note": "More CRM & Pipeline integrations"
+      },
+      "assets": [
+        {
+          "assetRole": "catalog.app-icon",
+          "generationPolicy": "generate-fictional-mark",
+          "ref": "primitive.app-icon",
+          "name": "Pipewise",
+          "alt": "Pipewise app glyph"
+        }
+      ]
+    },
+    {
+      "section": "catalog.integration-actions",
+      "variant": "default",
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "not-applicable"
+      },
+      "content": {
+        "title": "What your agents can do with Pipewise",
+        "body": "Every action and trigger below can be handed to an agent as a tool. Combine them freely, set approval rules, and review each call in the run history.",
+        "items": [
+          {
+            "tag": "Actions",
+            "title": "Create contact",
+            "body": "Adds a new contact with mapped fields."
+          },
+          {
+            "tag": "Actions",
+            "title": "Update contact",
+            "body": "Changes fields on an existing contact."
+          },
+          {
+            "tag": "Actions",
+            "title": "Find contact",
+            "body": "Looks up a contact by any field you choose."
+          },
+          {
+            "tag": "Actions",
+            "title": "List contacts",
+            "body": "Returns recent contacts with optional filters."
+          },
+          {
+            "tag": "Actions",
+            "title": "Tag contact",
+            "body": "Applies or clears labels on a contact."
+          },
+          {
+            "tag": "Actions",
+            "title": "Summarize contact",
+            "body": "Writes a short, readable digest of a contact."
+          },
+          {
+            "tag": "Actions",
+            "title": "Archive contact",
+            "body": "Moves a contact out of view after a check."
+          },
+          {
+            "tag": "Actions",
+            "title": "Create deal",
+            "body": "Adds a new deal with mapped fields."
+          },
+          {
+            "tag": "Actions",
+            "title": "Update deal",
+            "body": "Changes fields on an existing deal."
+          },
+          {
+            "tag": "Actions",
+            "title": "Find deal",
+            "body": "Looks up a deal by any field you choose."
+          },
+          {
+            "tag": "Actions",
+            "title": "List deals",
+            "body": "Returns recent deals with optional filters."
+          },
+          {
+            "tag": "Triggers",
+            "title": "New contact",
+            "body": "Fires whenever a contact is created."
+          },
+          {
+            "tag": "Triggers",
+            "title": "Contact updated",
+            "body": "Fires when a tracked contact field changes."
+          },
+          {
+            "tag": "Triggers",
+            "title": "Contact removed",
+            "body": "Fires right after a contact is deleted."
+          },
+          {
+            "tag": "Triggers",
+            "title": "Contact matched",
+            "body": "Fires when a contact meets your filter rule."
+          },
+          {
+            "tag": "Triggers",
+            "title": "New deal",
+            "body": "Fires whenever a deal is created."
+          },
+          {
+            "tag": "Triggers",
+            "title": "Deal updated",
+            "body": "Fires when a tracked deal field changes."
+          },
+          {
+            "tag": "Triggers",
+            "title": "Deal removed",
+            "body": "Fires right after a deal is deleted."
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.integration-setup",
+      "variant": "default",
+      "motion": {
+        "pattern": "reveal-fade-up",
+        "trigger": "in-view",
+        "reducedMotionFallback": "show-final-state"
+      },
+      "content": {
+        "title": "Set up Pipewise in three steps",
+        "body": "Most teams connect, test and hand the app to an agent in under ten minutes.",
+        "steps": [
+          {
+            "title": "Sign in and approve access",
+            "body": "Choose Pipewise from the library, sign in with an admin account and confirm the scopes your agents will be allowed to use."
+          },
+          {
+            "title": "Pick the tools to share",
+            "body": "Select which actions and triggers each agent may call. Leave anything sensitive switched off, or require a human approval before it runs."
+          },
+          {
+            "title": "Run a test task",
+            "body": "Ask an agent to complete one small job, review every step in the timeline, then turn the connection on for your whole team."
+          }
+        ],
+        "cta": "Start building"
+      }
+    },
+    {
+      "section": "conversion.grain-cta",
+      "variant": "function-palette",
+      "motion": {
+        "pattern": "reveal-fade-up",
+        "trigger": "in-view",
+        "reducedMotionFallback": "show-final-state"
+      },
+      "content": {
+        "title": "Put Pipewise to work with an agent",
+        "body": "Connect Pipewise once and every Lumenfold agent you build can use it safely, with a clear record of each step it takes.",
+        "primaryCta": "Start building free",
+        "secondaryCta": "Book a demo",
+        "palette": "sales"
+      },
+      "assets": [
+        {
+          "assetRole": "people.illustrated-avatar",
+          "generationPolicy": "generate-illustrated-person",
+          "ref": "primitive.avatar",
+          "alt": "",
+          "decorative": true
+        }
+      ]
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "motion": {
+        "pattern": "hover-only",
+        "trigger": "interaction",
+        "reducedMotionFallback": "instant-state-change"
+      },
+      "content": {
+        "tagline": "AI agents for every team",
+        "legal": "© 2026 Lumenfold Labs. A fictional company built for demo use.",
+        "groups": [
+          {
+            "heading": "Use Cases",
+            "links": [
+              "Sales",
+              "Customer Success",
+              "Marketing",
+              "Service Support",
+              "Operations",
+              "People and Talent",
+              "Research"
+            ]
+          },
+          {
+            "heading": "Platform",
+            "links": [
+              "Overview",
+              "Agents",
+              "Agent Teams",
+              "Toolkit"
+            ]
+          },
+          {
+            "heading": "Compare",
+            "links": [
+              "Scripts",
+              "In-house agent platforms",
+              "Classic RPA",
+              "Chatbot builders",
+              "Legacy workflow suites",
+              "Macros",
+              "Bots"
+            ]
+          },
+          {
+            "heading": "Support",
+            "links": [
+              "Get in touch",
+              "Documentation",
+              "Changelog",
+              "API and SDK",
+              "Pricing",
+              "Book a call",
+              "Enterprise",
+              "Partners",
+              "Find a partner agency"
+            ]
+          },
+          {
+            "heading": "Learn",
+            "links": [
+              "Lumenfold Community",
+              "Academy",
+              "Customers",
+              "Blog",
+              "Events",
+              "Product briefs and datasheets",
+              "Topics"
+            ]
+          },
+          {
+            "heading": "Company",
+            "links": [
+              "Careers",
+              "Trust Center",
+              "Press enquiries"
+            ]
+          },
+          {
+            "heading": "Legal",
+            "links": [
+              "Privacy policy",
+              "Security policy",
+              "Terms"
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "assetRole": "brand.logo",
+          "generationPolicy": "reuse-exact",
+          "ref": "primitive.logo",
+          "alt": "Lumenfold"
+        },
+        {
+          "assetRole": "badge.certification-seal",
+          "generationPolicy": "generate-fictional-mark",
+          "ref": "primitive.seal",
+          "alt": "Generic SOC seal"
+        }
+      ]
+    }
+  ]
+}

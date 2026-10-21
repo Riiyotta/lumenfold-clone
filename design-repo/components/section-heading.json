@@ -1,0 +1,12 @@
+{
+  "id": "component.section-heading",
+  "kind": "component",
+  "description": "h2 + optional body heading block (max-w-2xl, mb-10/12).",
+  "implementedBy": "src/components/ui.jsx > SectionHeading",
+  "composes": [
+    "component.reveal"
+  ],
+  "citations": [
+    "cite.ui-section-heading"
+  ]
+}

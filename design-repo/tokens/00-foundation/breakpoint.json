@@ -1,0 +1,39 @@
+{
+  "breakpoint": {
+    "sm": {
+      "$value": "640px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "md": {
+      "$value": "768px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "lg": {
+      "$value": "1024px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "header": {
+      "$value": "1100px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "xl": {
+      "$value": "1280px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "desktop": {
+      "$value": "1440px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    },
+    "wide": {
+      "$value": "1800px",
+      "$type": "dimension",
+      "citation": "cite.tw-screens"
+    }
+  }
+}

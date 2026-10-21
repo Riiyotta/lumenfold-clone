@@ -1,0 +1,90 @@
+{
+  "id": "proof.customer-showcase",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Customer showcase: the homepage testimonial-tab layout in its case-study variant, featuring three stories with metrics and story links.",
+  "archetype": "quotes",
+  "contentRef": "#/definitions/content_quotes",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "items[].company": 3,
+    "items[].title": 14,
+    "items[].quote": 31,
+    "items[].person": 5,
+    "items[].role": 6,
+    "items[].stats[].value": 2,
+    "items[].stats[].label": 7,
+    "items[].linkLabel": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/company/customers.jsx > CustomerShowcase",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark",
+    "photo.customer-story"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.customers-index"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/company/customers.jsx > CustomerShowcase",
+    "iaScope": "The customers index only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "company": "Quillstone",
+        "quote": "A short sample quote about the product.",
+        "person": "Dana Whitlock",
+        "role": "Head of Operations"
+      }
+    ]
+  }
+}

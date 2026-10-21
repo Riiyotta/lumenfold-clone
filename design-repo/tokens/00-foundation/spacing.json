@@ -1,0 +1,89 @@
+{
+  "spacing": {
+    "4": {
+      "$value": "4px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "6": {
+      "$value": "6px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "8": {
+      "$value": "8px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "10": {
+      "$value": "10px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "12": {
+      "$value": "12px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "16": {
+      "$value": "16px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "20": {
+      "$value": "20px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "24": {
+      "$value": "24px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "28": {
+      "$value": "28px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "32": {
+      "$value": "32px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "40": {
+      "$value": "40px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "48": {
+      "$value": "48px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "56": {
+      "$value": "56px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "64": {
+      "$value": "64px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "80": {
+      "$value": "80px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "112": {
+      "$value": "112px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    },
+    "128": {
+      "$value": "128px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter"
+    }
+  }
+}

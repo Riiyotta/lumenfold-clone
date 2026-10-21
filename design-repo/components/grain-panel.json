@@ -1,0 +1,12 @@
+{
+  "id": "component.grain-panel",
+  "kind": "component",
+  "description": "Grain gradient (violet/pink/blue or function palette) + noise overlay.",
+  "implementedBy": "src/components/ui.jsx > Grain; src/components/product/lib.jsx > GrainPanel",
+  "composes": [],
+  "citations": [
+    "cite.ui-grain",
+    "cite.css-grain",
+    "cite.palettes"
+  ]
+}

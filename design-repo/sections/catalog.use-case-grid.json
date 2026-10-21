@@ -1,0 +1,112 @@
+{
+  "id": "catalog.use-case-grid",
+  "kind": "section",
+  "category": "CATALOG",
+  "purpose": "Let the visitor browse and pick from a collection.",
+  "description": "UseCases card grid: segmented category tabs over a grid of use-case cards with hover media.",
+  "archetype": "catalog",
+  "contentRef": "#/definitions/content_catalog",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "filters[]": 4,
+    "items[].tag": 5,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "footnote": 12,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/UseCases.jsx",
+      "usedBy": [
+        "catalog",
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "stagger-reveal",
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "stagger-reveal": "show-final-state",
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "stagger-reveal": "in-view",
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals",
+      "cite.cs-usecases-old",
+      "cite.usecases-io",
+      "cite.usecases-popover",
+      "cite.usecases-stagger"
+    ],
+    "evidenceLevel": "measured",
+    "notes": "One IntersectionObserver at 0.15 reveals every card with 0.5s EASE and (i%4)*0.06s stagger; hover popover after 450ms on fine pointers."
+  },
+  "assetRoles": [
+    "catalog.app-icon",
+    "people.illustrated-avatar",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "4 columns",
+    "sm": "2 columns",
+    "base": "1 column, CTA bar stacks, short tab labels"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.agents-landing",
+      "template.invent"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/UseCases.jsx",
+    "iaScope": "Homepage, the agents landing and the invent landing.",
+    "citations": [
+      "cite.cs-usecases",
+      "cite.cs-method",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 1368,
+      "1280": 1326,
+      "768": 2000,
+      "375": 3367
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "title": "Sample item",
+        "body": "Sample description."
+      }
+    ]
+  }
+}

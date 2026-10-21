@@ -1,0 +1,86 @@
+{
+  "id": "catalog.text-card-grid",
+  "kind": "section",
+  "category": "CATALOG",
+  "purpose": "Let the visitor browse and pick from a collection.",
+  "description": "Text-only card grid: title and description cards, two columns (learn) or three (topics).",
+  "archetype": "catalog",
+  "contentRef": "#/definitions/content_catalog",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "filters[]": 4,
+    "items[].tag": 5,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "footnote": 12,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/content/ListingGrid.jsx > TextIndex",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.text-index"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/content/ListingGrid.jsx > TextIndex",
+    "iaScope": "The learn and topics indexes.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "title": "Sample item",
+        "body": "Sample description."
+      }
+    ]
+  }
+}

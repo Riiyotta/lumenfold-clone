@@ -1,0 +1,84 @@
+{
+  "id": "content.careers-about",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Careers about statement: a large paragraph revealed word by word on scroll, with supporting stats.",
+  "archetype": "stats",
+  "contentRef": "#/definitions/content_stats",
+  "requiredContent": [
+    "stats"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "stats[].value": 2,
+    "stats[].label": 7
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/company/careers.jsx > CareersAbout",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "scroll-word-reveal"
+    ],
+    "reducedMotionFallback": {
+      "scroll-word-reveal": "show-final-state"
+    },
+    "trigger": {
+      "scroll-word-reveal": "scroll"
+    },
+    "citations": [
+      "cite.spec-company"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.careers"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/company/careers.jsx > CareersAbout",
+    "iaScope": "The careers page only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "stats": [
+      {
+        "value": "62%",
+        "label": "tickets auto-resolved"
+      },
+      {
+        "value": "4 days",
+        "label": "to clear backlog"
+      }
+    ]
+  }
+}

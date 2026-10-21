@@ -1,0 +1,11 @@
+{
+  "id": "component.reveal",
+  "kind": "component",
+  "description": "Fade-up reveal wrapper (opacity 0,y16 -> 1,0, EASE, once, amount .4).",
+  "implementedBy": "src/components/ui.jsx > Reveal",
+  "composes": [],
+  "citations": [
+    "cite.ui-reveal",
+    "cite.ui-ease"
+  ]
+}

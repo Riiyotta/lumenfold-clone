@@ -1,0 +1,92 @@
+{
+  "id": "content.competitor-comparison",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Enterprise competitor comparison: a static feature-by-vendor table with check/cross cells.",
+  "archetype": "table",
+  "contentRef": "#/definitions/content_table",
+  "requiredContent": [
+    "title",
+    "columns",
+    "rows"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "columns[]": 5,
+    "rows[].label": 7,
+    "rows[].cells[]": 7
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/company/enterprise.jsx > CompetitorComparison",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "brand.logo"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.enterprise"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/company/enterprise.jsx > CompetitorComparison",
+    "iaScope": "The enterprise page only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample comparison",
+    "columns": [
+      "Capability",
+      "Lumenfold"
+    ],
+    "rows": [
+      {
+        "label": "Audit log",
+        "cells": [
+          "Included"
+        ]
+      }
+    ]
+  }
+}

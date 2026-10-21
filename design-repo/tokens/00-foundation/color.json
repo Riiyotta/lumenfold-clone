@@ -1,0 +1,127 @@
+{
+  "color": {
+    "surface": {
+      "light": {
+        "$value": "#ffffff",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      },
+      "secondary-light": {
+        "$value": "#f9f9f9",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      },
+      "dark": {
+        "$value": "#0d162f",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      }
+    },
+    "ink": {
+      "$value": "#0d162f",
+      "$type": "color",
+      "citation": "cite.tw-colors",
+      "$description": "Headings and primary text (rgb 13 22 47)."
+    },
+    "muted": {
+      "$value": "#868a97",
+      "$type": "color",
+      "citation": "cite.tw-colors",
+      "$description": "Body / muted copy."
+    },
+    "tertiary": {
+      "$value": "#707287",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "line": {
+      "$value": "#e6e7ea",
+      "$type": "color",
+      "citation": "cite.tw-colors",
+      "$description": "Every hairline, card border and gutter rail."
+    },
+    "line-dark": {
+      "$value": "#cfd0d5",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "grid-line-dark": {
+      "$value": "#3d4559",
+      "$type": "color",
+      "citation": "cite.spec-content",
+      "$description": "Dark-surface borders (academy lesson)."
+    },
+    "indigo": {
+      "brand": {
+        "$value": "#6056ff",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      },
+      "dark": {
+        "$value": "#3b32f9",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      },
+      "light": {
+        "$value": "#7281ff",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      },
+      "ghost": {
+        "$value": "#eef2ff",
+        "$type": "color",
+        "citation": "cite.tw-colors"
+      }
+    },
+    "tile-base": {
+      "$value": "#f6f5f9",
+      "$type": "color",
+      "citation": "cite.tw-colors",
+      "$description": "Base under grain panels; menu hover."
+    },
+    "status-green": {
+      "$value": "#027a48",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "eval-teal": {
+      "$value": "#0e9384",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "accent-text": {
+      "$value": "#4b40d6",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "chip-muted": {
+      "$value": "#5b6070",
+      "$type": "color",
+      "citation": "cite.tw-colors"
+    },
+    "slate-50": {
+      "$value": "#f8fafc",
+      "$type": "color",
+      "citation": "cite.cs-colours",
+      "$description": "Enterprise badge panel."
+    },
+    "gray-400": {
+      "$value": "#9ca3af",
+      "$type": "color",
+      "citation": "cite.cs-colours",
+      "$description": "Laurel icon, inactive level prefix."
+    },
+    "gray-700": {
+      "$value": "#374151",
+      "$type": "color",
+      "citation": "cite.cs-colours",
+      "$description": "Inactive tab text."
+    },
+    "gray-900": {
+      "$value": "#111827",
+      "$type": "color",
+      "citation": "cite.cs-colours",
+      "$description": "Active tab text."
+    }
+  }
+}

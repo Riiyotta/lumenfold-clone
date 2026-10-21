@@ -1,0 +1,100 @@
+{
+  "id": "content.event-register",
+  "kind": "section",
+  "category": "CONTENT",
+  "purpose": "Deliver substantive reading content.",
+  "description": "Event registration row: sticky left column (eyebrow, accented h1, lead, date bar, registration or recording form) and right column (speaker cards, takeaways list).",
+  "archetype": "form",
+  "contentRef": "#/definitions/content_form",
+  "requiredContent": [
+    "title",
+    "fields",
+    "submitLabel",
+    "successMessage"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 58,
+    "fields[].label": 5,
+    "fields[].options[]": 3,
+    "submitLabel": 3,
+    "successMessage": 11,
+    "consent": 30
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/content/EventDetail.jsx (with src/components/content/EventForm.jsx)",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.event-detail"
+    ],
+    "routeCount": 6
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/content/EventDetail.jsx (with src/components/content/EventForm.jsx)",
+    "iaScope": "Every event detail page.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample form",
+    "fields": [
+      {
+        "label": "Work email",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "submitLabel": "Send",
+    "successMessage": "Thanks, we will be in touch."
+  },
+  "formPolicy": {
+    "visualOnly": true,
+    "note": "No submission endpoint exists anywhere in the clone; the schema has no action/endpoint field.",
+    "citations": [
+      "cite.form-visual",
+      "cite.form-prevent"
+    ]
+  }
+}

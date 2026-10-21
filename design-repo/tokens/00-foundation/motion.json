@@ -1,0 +1,146 @@
+{
+  "motion": {
+    "ease": {
+      "out-quint": {
+        "$value": [
+          0.23,
+          1,
+          0.32,
+          1
+        ],
+        "$type": "cubicBezier",
+        "citation": "cite.tw-ease"
+      },
+      "standard": {
+        "$value": [
+          0.4,
+          0,
+          0.2,
+          1
+        ],
+        "$type": "cubicBezier",
+        "citation": "cite.cs-motion"
+      },
+      "button-gradient": {
+        "$value": [
+          0.25,
+          0.1,
+          0.35,
+          1
+        ],
+        "$type": "cubicBezier",
+        "citation": "cite.css-btn"
+      }
+    },
+    "duration": {
+      "reveal": {
+        "$value": "500ms",
+        "$type": "duration",
+        "citation": "cite.ui-ease",
+        "$description": "EASE preset."
+      },
+      "hover-color": {
+        "$value": "150ms",
+        "$type": "duration",
+        "citation": "cite.cs-hovers"
+      },
+      "button": {
+        "$value": "200ms",
+        "$type": "duration",
+        "citation": "cite.css-btn"
+      },
+      "button-gradient": {
+        "$value": "300ms",
+        "$type": "duration",
+        "citation": "cite.css-btn",
+        "$description": "Primary hover tweens the inner gradient stop."
+      },
+      "logo": {
+        "$value": "300ms",
+        "$type": "duration",
+        "citation": "cite.cs-hovers"
+      },
+      "tiles": {
+        "$value": "650ms",
+        "$type": "duration",
+        "citation": "cite.cs-tiles"
+      },
+      "faq-height": {
+        "$value": "200ms",
+        "$type": "duration",
+        "citation": "cite.faq-content"
+      },
+      "faq-height-multi": {
+        "$value": "300ms",
+        "$type": "duration",
+        "citation": "cite.faq-page-multi"
+      },
+      "case-study-height": {
+        "$value": "350ms",
+        "$type": "duration",
+        "citation": "cite.cs-cases"
+      },
+      "megamenu-open-delay": {
+        "$value": "200ms",
+        "$type": "duration",
+        "citation": "cite.nav-delays",
+        "$description": "No fade; delay only."
+      },
+      "megamenu-close-delay": {
+        "$value": "150ms",
+        "$type": "duration",
+        "citation": "cite.nav-delays"
+      },
+      "usecase-popover-delay": {
+        "$value": "450ms",
+        "$type": "duration",
+        "citation": "cite.usecases-popover"
+      },
+      "costhero-feed-interval": {
+        "$value": "3400ms",
+        "$type": "duration",
+        "citation": "cite.costhero-feed"
+      },
+      "costhero-running": {
+        "$value": "1600ms",
+        "$type": "duration",
+        "citation": "cite.costhero-feed"
+      },
+      "autonomy-step": {
+        "$value": "400ms",
+        "$type": "duration",
+        "citation": "cite.autonomy-io"
+      },
+      "usecase-stagger": {
+        "$value": "60ms",
+        "$type": "duration",
+        "citation": "cite.usecases-stagger",
+        "$description": "Per column, (i%4)."
+      }
+    },
+    "distance": {
+      "reveal-y": {
+        "$value": "16px",
+        "$type": "dimension",
+        "citation": "cite.ui-reveal"
+      }
+    },
+    "viewport": {
+      "reveal-amount": {
+        "$value": 0.4,
+        "$type": "number",
+        "citation": "cite.ui-reveal"
+      },
+      "usecases-threshold": {
+        "$value": 0.15,
+        "$type": "number",
+        "citation": "cite.usecases-io"
+      },
+      "costhero-amount": {
+        "$value": 0.2,
+        "$type": "number",
+        "citation": "cite.costhero-feed"
+      }
+    }
+  }
+}

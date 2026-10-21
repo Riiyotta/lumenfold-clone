@@ -1,0 +1,89 @@
+{
+  "id": "catalog.related-rail",
+  "kind": "section",
+  "category": "CATALOG",
+  "purpose": "Let the visitor browse and pick from a collection.",
+  "description": "Related use-cases rail: the use-case card grid restricted to sibling agents in the same function, in that function palette.",
+  "archetype": "catalog",
+  "contentRef": "#/definitions/content_catalog",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "filters[]": 4,
+    "items[].tag": 5,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "footnote": 12,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/catalog/usecase.jsx > RelatedRail",
+      "usedBy": [
+        "catalog"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "stagger-reveal"
+    ],
+    "reducedMotionFallback": {
+      "stagger-reveal": "show-final-state"
+    },
+    "trigger": {
+      "stagger-reveal": "in-view"
+    },
+    "citations": [
+      "cite.usecases-stagger"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram",
+    "catalog.app-icon"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.use-case-detail"
+    ],
+    "routeCount": 56
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/catalog/usecase.jsx > RelatedRail",
+    "iaScope": "Every use-case detail page.",
+    "citations": [
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "title": "Sample item",
+        "body": "Sample description."
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "proof.legacy-logo-grid",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Legacy awards-container logo grid of thirteen-ish wordmarks under a short label, without story links.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/product-legacy/shared.jsx > LegacyLogoGrid",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-agent-landing",
+      "template.legacy-feature-page"
+    ],
+    "routeCount": 3
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/product-legacy/shared.jsx > LegacyLogoGrid",
+    "iaScope": "Legacy agent landings and the schedule-work page.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

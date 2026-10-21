@@ -1,0 +1,16 @@
+{
+  "id": "primitive.play-disc",
+  "kind": "primitive",
+  "description": "56/64px round play button (border-2 white, bg white/10) over posters.",
+  "implementedBy": "src/components/CaseStudies.jsx; src/components/Testimonials.jsx",
+  "props": {
+    "size": [
+      56,
+      64
+    ]
+  },
+  "citations": [
+    "cite.cs-cases",
+    "cite.cs-testimonials"
+  ]
+}

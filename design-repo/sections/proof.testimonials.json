@@ -1,0 +1,113 @@
+{
+  "id": "proof.testimonials",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Testimonial tabs: company tabs switching a quote, person and video-play media tile.",
+  "archetype": "quotes",
+  "contentRef": "#/definitions/content_quotes",
+  "requiredContent": [
+    "items"
+  ],
+  "maxWords": {
+    "title": 21,
+    "items[].company": 3,
+    "items[].title": 14,
+    "items[].quote": 31,
+    "items[].person": 5,
+    "items[].role": 6,
+    "items[].stats[].value": 2,
+    "items[].stats[].label": 7,
+    "items[].linkLabel": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Testimonials.jsx",
+      "usedBy": [
+        "catalog",
+        "company",
+        "content",
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark",
+    "photo.customer-story",
+    "video.poster"
+  ],
+  "responsive": {
+    "lg": "3/4 split with logo tabs",
+    "base": "stacked list of both testimonials"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.enterprise",
+      "template.comparison-page",
+      "template.integrations-index",
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.workforce",
+      "template.gtm"
+    ],
+    "routeCount": 66
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Testimonials.jsx",
+    "iaScope": "Homepage and many landing/detail pages (see matrix).",
+    "citations": [
+      "cite.cs-testimonials",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 550,
+      "1280": 502,
+      "768": 1164,
+      "375": 1060
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "items": [
+      {
+        "company": "Quillstone",
+        "quote": "A short sample quote about the product.",
+        "person": "Dana Whitlock",
+        "role": "Head of Operations"
+      }
+    ]
+  }
+}

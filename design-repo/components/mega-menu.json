@@ -1,0 +1,13 @@
+{
+  "id": "component.mega-menu",
+  "kind": "component",
+  "description": "Hover mega-menu panel: 200ms open delay, 150ms close delay, no fade.",
+  "implementedBy": "src/components/Navbar.jsx",
+  "composes": [
+    "primitive.link-arrow"
+  ],
+  "citations": [
+    "cite.nav-delays",
+    "cite.cs-header"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "hero.legacy-uc",
+  "kind": "section",
+  "category": "HERO",
+  "purpose": "Open the page with its single promise and primary action.",
+  "description": "Legacy use-case hero rebuilt on Lumenfold tokens: tag line, large h1, body, gradient and outline pill CTAs, with a video poster (or image) media column bleeding right.",
+  "archetype": "hero",
+  "contentRef": "#/definitions/content_hero",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "breadcrumb[]": 5,
+    "title": 14,
+    "titleAccent": 4,
+    "subtitle": 7,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "note": 10,
+    "byline": 10
+  },
+  "variants": {
+    "workflow": {
+      "description": "Video-poster media column.",
+      "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > Hero",
+      "usedBy": [
+        "catalog"
+      ],
+      "citation": "cite.spec-catalog-legacy"
+    },
+    "use-case": {
+      "description": "Video poster or image media column.",
+      "implementedBy": "src/pages/product-legacy/UseCaseLegacy.jsx > Hero",
+      "usedBy": [
+        "product-legacy"
+      ],
+      "citation": "cite.spec-product-legacy"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "mount-fade-up": "mount"
+    },
+    "citations": [
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "video.poster",
+    "photo.product-scene"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.workflow-detail",
+      "template.legacy-use-case"
+    ],
+    "routeCount": 14
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > Hero (parallel copy: src/pages/product-legacy/UseCaseLegacy.jsx > Hero)",
+    "iaScope": "Workflow detail pages and the legacy use-case pages (customer experience, market research).",
+    "citations": [
+      "cite.spec-catalog",
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h1",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample page headline",
+    "body": "One short sentence of supporting copy for the sample page.",
+    "primaryCta": "Start building free"
+  }
+}

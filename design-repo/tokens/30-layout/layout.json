@@ -1,0 +1,87 @@
+{
+  "layout": {
+    "content-max": {
+      "$value": "1300px",
+      "$type": "dimension",
+      "citation": "cite.tw-maxw"
+    },
+    "gutter-left-min": {
+      "$value": "224px",
+      "$type": "dimension",
+      "citation": "cite.ui-row"
+    },
+    "gutter-right-min": {
+      "$value": "290px",
+      "$type": "dimension",
+      "citation": "cite.ui-row"
+    },
+    "rails-from": {
+      "$value": "{breakpoint.desktop}",
+      "$type": "dimension",
+      "citation": "cite.ui-row",
+      "$description": "Rails display at >=1440."
+    },
+    "content-padding": {
+      "base": {
+        "$value": "24px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      },
+      "md": {
+        "$value": "48px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      },
+      "lg": {
+        "$value": "80px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      },
+      "section-default-desktop": {
+        "$value": "56px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      }
+    },
+    "section-py": {
+      "base": {
+        "$value": "48px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      },
+      "md": {
+        "$value": "112px",
+        "$type": "dimension",
+        "citation": "cite.cs-gutter"
+      }
+    },
+    "heading-mb": {
+      "base": {
+        "$value": "40px",
+        "$type": "dimension",
+        "citation": "cite.ui-section-heading"
+      },
+      "md": {
+        "$value": "48px",
+        "$type": "dimension",
+        "citation": "cite.ui-section-heading"
+      }
+    },
+    "header-height": {
+      "$value": "65px",
+      "$type": "dimension",
+      "citation": "cite.cs-header"
+    },
+    "main-offset": {
+      "$value": "64px",
+      "$type": "dimension",
+      "citation": "cite.app-shell"
+    },
+    "hairline": {
+      "$value": "1px",
+      "$type": "dimension",
+      "citation": "cite.cs-gutter",
+      "$description": "Sections stack with -1px margin to form a ruled grid."
+    }
+  }
+}

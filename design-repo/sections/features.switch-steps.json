@@ -1,0 +1,87 @@
+{
+  "id": "features.switch-steps",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "Switching steps: short numbered plan for migrating from the competitor.",
+  "archetype": "steps",
+  "contentRef": "#/definitions/content_steps",
+  "requiredContent": [
+    "title",
+    "steps"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "steps[].title": 14,
+    "steps[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/content/comparison.jsx > SwitchSteps",
+      "usedBy": [
+        "content"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.comparison-page"
+    ],
+    "routeCount": 4
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/content/comparison.jsx > SwitchSteps",
+    "iaScope": "Every comparison page.",
+    "citations": [
+      "cite.spec-content"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample steps",
+    "steps": [
+      {
+        "title": "Connect",
+        "body": "First step copy."
+      },
+      {
+        "title": "Test",
+        "body": "Second step copy."
+      }
+    ]
+  }
+}

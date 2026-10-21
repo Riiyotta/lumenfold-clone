@@ -1,0 +1,85 @@
+{
+  "id": "hero.integration-detail",
+  "kind": "section",
+  "category": "HERO",
+  "purpose": "Open the page with its single promise and primary action.",
+  "description": "Integration detail header: slash breadcrumb, 56px logo tile, h1, body, primary CTA and a \"more in this category\" link.",
+  "archetype": "hero",
+  "contentRef": "#/definitions/content_hero",
+  "requiredContent": [
+    "title"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "breadcrumb[]": 5,
+    "title": 14,
+    "titleAccent": 4,
+    "subtitle": 7,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "note": 10,
+    "byline": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/catalog/IntegrationDetail.jsx",
+      "usedBy": [
+        "catalog"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "mount-fade-up": "mount"
+    },
+    "citations": [
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "catalog.app-icon"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.integration-detail"
+    ],
+    "routeCount": 120
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/IntegrationDetail.jsx",
+    "iaScope": "Every integration detail page.",
+    "citations": [
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h1",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample page headline",
+    "body": "One short sentence of supporting copy for the sample page.",
+    "primaryCta": "Start building free"
+  }
+}

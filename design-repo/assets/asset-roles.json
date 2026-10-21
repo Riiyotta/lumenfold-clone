@@ -1,0 +1,257 @@
+{
+  "version": "1.0.0",
+  "sourceIsRealCompany": true,
+  "complianceStatement": "The original is relevanceai.com, a real company. Never reproduce Relevance AI's (or any real company's) logos, product screenshots, mascot, people's photos or copy. Customer, press, analyst, certification and integration marks must be generated fictional wordmarks/glyphs; photos must be licensed stock without visible brand marks; videos are poster + placeholder only.",
+  "generationPolicies": {
+    "reuse-exact": "Use the repo's own fictional Lumenfold asset unchanged (primitive render). Never redraw, never substitute the original site's mark or mascot.",
+    "generate-fictional-mark": "Procedurally generated glyph plus an invented name (primitive.wordmark / app-icon / seal). Never a real company, product, publication, analyst or certification body name or logo.",
+    "generate-illustrated-person": "Illustrated SVG avatar from primitive.avatar seeds. Never a photograph, never a real or identifiable person, never a real employee or customer of the original site.",
+    "licensed-stock-no-marks": "Licensed stock photo (Unsplash licence via Lorem Picsum, as shipped in public/assets/photos) showing no visible brand mark, logo, UI of a real product, or identifiable real customer/employee. Reuse a shipped file or a newly licensed equivalent; never the original site's photos or screenshots.",
+    "generate-original-illustration": "New SVG/CSS diagram or product mock drawn from tokens. Never a screenshot or trace of the original product UI.",
+    "poster-placeholder-only": "A still poster (a licensed-stock photo) plus the placeholder modal. Never embed, link or transcribe a real video (the original used YouTube embeds)."
+  },
+  "roles": {
+    "brand.logo": {
+      "generationPolicy": "reuse-exact",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.logo"
+      },
+      "usedIn": [
+        "src/components/ui.jsx",
+        "src/components/Navbar.jsx",
+        "src/components/Footer.jsx"
+      ],
+      "description": "Lumenfold hex mark + \"lumenfold\" wordmark.",
+      "citation": "cite.ui-logomark"
+    },
+    "brand.mascot": {
+      "generationPolicy": "reuse-exact",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.mascot"
+      },
+      "usedIn": [
+        "src/components/Hero.jsx",
+        "src/components/product/lib.jsx",
+        "src/components/product-legacy/shared.jsx"
+      ],
+      "description": "Original lantern mascot (and its product/legacy renders). Replaces the original site's scalloped badge mascot, which must never be reproduced.",
+      "citation": "cite.hero-mascot"
+    },
+    "proof.customer-wordmark": {
+      "generationPolicy": "generate-fictional-mark",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.wordmark",
+        "requiresName": true
+      },
+      "usedIn": [
+        "src/components/LogoWall.jsx",
+        "src/components/company/shared.jsx",
+        "src/components/product-legacy/shared.jsx",
+        "src/components/Testimonials.jsx"
+      ],
+      "description": "Customer logo-wall / testimonial / case-study wordmarks.",
+      "citation": "cite.ui-wordmark"
+    },
+    "proof.press-mark": {
+      "generationPolicy": "generate-fictional-mark",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.wordmark",
+        "requiresName": true
+      },
+      "usedIn": [
+        "src/components/Featured.jsx",
+        "src/pages/product-legacy/AiOps.jsx"
+      ],
+      "description": "Press, analyst and award marks.",
+      "citation": "cite.ui-wordmark"
+    },
+    "catalog.app-icon": {
+      "generationPolicy": "generate-fictional-mark",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.app-icon",
+        "requiresName": true
+      },
+      "usedIn": [
+        "src/components/Integrations.jsx",
+        "src/pages/catalog/IntegrationDetail.jsx",
+        "src/components/catalog/primitives.jsx",
+        "src/components/UseCases.jsx"
+      ],
+      "description": "Integration / tool / model glyphs.",
+      "citation": "cite.ui-appicon"
+    },
+    "badge.certification-seal": {
+      "generationPolicy": "generate-fictional-mark",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.seal"
+      },
+      "usedIn": [
+        "src/components/Enterprise.jsx",
+        "src/components/Footer.jsx"
+      ],
+      "description": "Generic text seals (never a real certification body logo).",
+      "citation": "cite.seal-enterprise"
+    },
+    "people.illustrated-avatar": {
+      "generationPolicy": "generate-illustrated-person",
+      "complianceCritical": true,
+      "refRule": {
+        "refConst": "primitive.avatar"
+      },
+      "usedIn": [
+        "src/components/ui.jsx",
+        "src/components/Tiles.jsx",
+        "src/components/content/ClosingCTA.jsx",
+        "src/components/LearnMore.jsx"
+      ],
+      "description": "People, agents and speakers rendered as illustrated avatars.",
+      "citation": "cite.ui-avatar"
+    },
+    "photo.customer-story": {
+      "generationPolicy": "licensed-stock-no-marks",
+      "complianceCritical": true,
+      "refRule": {
+        "refPattern": "^/assets/photos/(case|story|co-story)-[0-9]+\\.webp$"
+      },
+      "usedIn": [
+        "src/components/CaseStudies.jsx",
+        "src/components/Testimonials.jsx",
+        "src/content/company.js"
+      ],
+      "description": "Case-study, testimonial and customer-story photography.",
+      "citation": "cite.cs-media"
+    },
+    "photo.editorial-cover": {
+      "generationPolicy": "licensed-stock-no-marks",
+      "complianceCritical": true,
+      "refRule": {
+        "refPattern": "^/assets/photos/((ed-blog|ed-log)-[0-9]+|report)\\.webp$"
+      },
+      "usedIn": [
+        "src/content/editorial.js",
+        "src/components/LearnMore.jsx"
+      ],
+      "description": "Blog covers, changelog images, report cover.",
+      "citation": "cite.cs-media"
+    },
+    "photo.company-place": {
+      "generationPolicy": "licensed-stock-no-marks",
+      "complianceCritical": true,
+      "refRule": {
+        "refPattern": "^/assets/photos/co-(about-wide|about-square|team-wide|partners-hero|partners-feature|bento-[0-9]+)\\.webp$"
+      },
+      "usedIn": [
+        "src/pages/company/AboutUs.jsx",
+        "src/components/company/careers.jsx",
+        "src/pages/company/Partners.jsx",
+        "src/content/company.js"
+      ],
+      "description": "Office, team and partner photography (no real employees).",
+      "citation": "cite.cs-media"
+    },
+    "photo.product-scene": {
+      "generationPolicy": "licensed-stock-no-marks",
+      "complianceCritical": true,
+      "refRule": {
+        "refPattern": "^/assets/photos/(pl|pr-sq|cat-wf-card|cat-wf-tab)-[0-9]+\\.webp$"
+      },
+      "usedIn": [
+        "src/content/productLegacy.js",
+        "src/content/product.js",
+        "src/pages/catalog/WorkflowDetail.jsx"
+      ],
+      "description": "Generic scene photography in product / legacy cards.",
+      "citation": "cite.cs-media"
+    },
+    "video.poster": {
+      "generationPolicy": "poster-placeholder-only",
+      "complianceCritical": true,
+      "refRule": {
+        "refPattern": "^/assets/photos/(ac-[0-9]+|pr-poster-[a-z]+|cat-wf-poster|story-[0-9]+|case-[0-9]+)\\.webp$"
+      },
+      "usedIn": [
+        "src/content/academy.js",
+        "src/content/product.js",
+        "src/pages/catalog/WorkflowDetail.jsx",
+        "src/components/Hero.jsx",
+        "src/components/product/lib.jsx"
+      ],
+      "description": "Video poster + placeholder modal.",
+      "citation": "cite.video-placeholder"
+    },
+    "illustration.diagram": {
+      "generationPolicy": "generate-original-illustration",
+      "complianceCritical": false,
+      "refRule": {},
+      "usedIn": [
+        "src/components/Autonomy.jsx",
+        "src/components/CostHero.jsx",
+        "src/components/product/mocks.jsx",
+        "src/pages/product-legacy/SpecialistAgents.jsx"
+      ],
+      "description": "Inline SVG/CSS diagrams and product mocks.",
+      "citation": "cite.cs-media"
+    }
+  },
+  "realBrandDenylist": {
+    "note": "Brands observed in the saved original page's asset filenames, plus the source company. Generated mark names must never match; \"Relevance AI\"/\"relevanceai\" may not appear in any PageSpec text. Real third-party product names may appear only as nominative text where the clone itself uses them (e.g. the /slack template) and never as a logo.",
+    "names": [
+      "relevance ai",
+      "relevanceai",
+      "relevance",
+      "autodesk",
+      "aveva",
+      "canva",
+      "capgemini",
+      "confluent",
+      "databricks",
+      "employment hero",
+      "forbes",
+      "freshworks",
+      "freshdesk",
+      "github",
+      "linkedin",
+      "twitter",
+      "qualified",
+      "rakuten",
+      "airtable",
+      "apollo",
+      "builtwith",
+      "cb insights",
+      "everest group",
+      "fortune",
+      "g2",
+      "gong",
+      "google",
+      "gemini",
+      "gmail",
+      "hubspot",
+      "kimi",
+      "lightspeed",
+      "microsoft",
+      "notion",
+      "openai",
+      "salesforce",
+      "salesloft",
+      "sendgrid",
+      "send payments",
+      "slack",
+      "snowflake",
+      "techcrunch",
+      "tech crunch",
+      "the information",
+      "twilio",
+      "webflow",
+      "whatsapp",
+      "youtube",
+      "zembl",
+      "zoom"
+    ]
+  }
+}

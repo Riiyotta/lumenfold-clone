@@ -1,0 +1,12 @@
+{
+  "id": "component.sticky-toc",
+  "kind": "component",
+  "description": "Sticky contents aside with IntersectionObserver scrollspy.",
+  "implementedBy": "src/components/content/ArticleAside.jsx; src/pages/company/Legal.jsx",
+  "composes": [
+    "primitive.link-arrow"
+  ],
+  "citations": [
+    "cite.spec-content"
+  ]
+}

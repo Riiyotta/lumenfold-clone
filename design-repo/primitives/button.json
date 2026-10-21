@@ -1,0 +1,20 @@
+{
+  "id": "primitive.button",
+  "kind": "primitive",
+  "description": "Primary (radial gradient, 300ms inner-stop tween on hover), secondary (hairline, indigo/10 hover) and pill variants; 42px tall.",
+  "implementedBy": "src/index.css (.btn, .btn-primary, .btn-secondary)",
+  "props": {
+    "variant": [
+      "primary",
+      "secondary",
+      "primary-pill",
+      "secondary-pill"
+    ],
+    "label": "string<=4 words"
+  },
+  "citations": [
+    "cite.css-btn",
+    "cite.css-btn-var",
+    "cite.cs-buttons"
+  ]
+}

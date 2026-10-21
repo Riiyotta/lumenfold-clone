@@ -1,0 +1,13 @@
+{
+  "id": "component.row",
+  "kind": "component",
+  "description": "Three-cell gutter-rail row: rails at >=1440 (min 224/290), centre max 1300, -1px stacking for a ruled grid.",
+  "implementedBy": "src/components/ui.jsx > Row",
+  "composes": [
+    "primitive.icon"
+  ],
+  "citations": [
+    "cite.ui-row",
+    "cite.cs-gutter"
+  ]
+}

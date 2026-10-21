@@ -1,0 +1,112 @@
+{
+  "id": "proof.enterprise-security",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "EnterpriseSecurity: compliance badge strip in a slate panel followed by a three-column security check-list.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Enterprise.jsx",
+      "usedBy": [
+        "catalog",
+        "company",
+        "content",
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "stagger-reveal"
+    ],
+    "reducedMotionFallback": {
+      "stagger-reveal": "show-final-state"
+    },
+    "trigger": {
+      "stagger-reveal": "in-view"
+    },
+    "citations": [
+      "cite.usecases-stagger"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "badge.certification-seal"
+  ],
+  "responsive": {
+    "md": "3 feature columns",
+    "base": "stacked columns, lead 16px"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.enterprise",
+      "template.comparison-page",
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.slack"
+    ],
+    "routeCount": 64
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Enterprise.jsx",
+    "iaScope": "Homepage, enterprise, agents landing, use-case details, comparison pages, and the Slack landing.",
+    "citations": [
+      "cite.cs-enterprise",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 984,
+      "1280": 936,
+      "768": 984,
+      "375": 1182
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

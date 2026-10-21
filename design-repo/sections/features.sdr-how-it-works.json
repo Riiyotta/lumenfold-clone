@@ -1,0 +1,89 @@
+{
+  "id": "features.sdr-how-it-works",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "SDR how-it-works: starry background, standard heading and four numbered steps.",
+  "archetype": "steps",
+  "contentRef": "#/definitions/content_steps",
+  "requiredContent": [
+    "title",
+    "steps"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "steps[].title": 14,
+    "steps[].body": 58,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SDRLanding.jsx > Steps",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.legacy-sdr-landing"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SDRLanding.jsx > Steps",
+    "iaScope": "SDR landings only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample steps",
+    "steps": [
+      {
+        "title": "Connect",
+        "body": "First step copy."
+      },
+      {
+        "title": "Test",
+        "body": "Second step copy."
+      }
+    ]
+  }
+}

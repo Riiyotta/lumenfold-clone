@@ -1,0 +1,13 @@
+{
+  "id": "primitive.glass-pill",
+  "kind": "primitive",
+  "description": "Frosted pill: white/70, white/60 border, 8px blur, glass shadow, 12.5px medium text.",
+  "implementedBy": "src/index.css .glass-pill",
+  "props": {
+    "label": "string<=5 words",
+    "icon": "optional"
+  },
+  "citations": [
+    "cite.css-glass"
+  ]
+}

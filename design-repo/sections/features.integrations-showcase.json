@@ -1,0 +1,109 @@
+{
+  "id": "features.integrations-showcase",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "IntegrationsShowcase: heading and CTA beside a wall of app-icon tiles.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Integrations.jsx",
+      "usedBy": [
+        "catalog",
+        "company",
+        "home",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "stagger-reveal"
+    ],
+    "reducedMotionFallback": {
+      "stagger-reveal": "show-final-state"
+    },
+    "trigger": {
+      "stagger-reveal": "in-view"
+    },
+    "citations": [
+      "cite.usecases-stagger"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "catalog.app-icon"
+  ],
+  "responsive": {
+    "md": "10 columns",
+    "sm": "6 columns",
+    "base": "5 columns, 28px icons"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.enterprise",
+      "template.agents-landing",
+      "template.workforce",
+      "template.slack"
+    ],
+    "routeCount": 5
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Integrations.jsx",
+    "iaScope": "Homepage, enterprise, agents landing, workforce, and the Slack landing.",
+    "citations": [
+      "cite.cs-integrations",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 541,
+      "1280": 647,
+      "768": 512,
+      "375": 641
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

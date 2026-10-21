@@ -1,0 +1,32 @@
+{
+  "theme": "light",
+  "resolves": "tokens/10-semantic/semantic.json -> tokens/00-foundation/color.json",
+  "values": {
+    "text.primary": "#0d162f",
+    "text.secondary": "#868a97",
+    "text.tertiary": "#707287",
+    "text.accent": "#6056ff",
+    "text.chip": "#5b6070",
+    "text.chip-accent": "#4b40d6",
+    "text.positive": "#0e9384",
+    "text.tab-active": "#111827",
+    "text.tab-inactive": "#374151",
+    "text.inverse": "#f9f9f9",
+    "text.icon-muted": "#9ca3af",
+    "surface.page": "#ffffff",
+    "surface.alt": "#f9f9f9",
+    "surface.inverse": "#0d162f",
+    "surface.tile": "#f6f5f9",
+    "surface.panel": "#f8fafc",
+    "surface.ghost": "#eef2ff",
+    "border.default": "#e6e7ea",
+    "border.strong": "#cfd0d5",
+    "border.inverse": "#3d4559",
+    "action.primary-from": "#6056ff",
+    "action.primary-to": "#3b32f9",
+    "action.primary-hover-from": "#7281ff",
+    "action.primary-border-top": "#7281ff",
+    "status.online": "#027a48"
+  },
+  "note": "The only theme. Dark surfaces (academy lesson, legacy dark cards) are section-level surface.inverse usage, not a theme mode."
+}

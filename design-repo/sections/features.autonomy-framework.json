@@ -1,0 +1,108 @@
+{
+  "id": "features.autonomy-framework",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "AutonomyAndProduct four-level framework: level cards describing increasing agent autonomy beside a product visual.",
+  "archetype": "tabs",
+  "contentRef": "#/definitions/content_tabs",
+  "requiredContent": [
+    "title",
+    "tabs"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "tabs[].label": 4,
+    "tabs[].title": 14,
+    "tabs[].body": 58,
+    "tabs[].items[]": 14
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Autonomy.jsx",
+      "usedBy": [
+        "content",
+        "home"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "sequential-highlight",
+      "tab-swap"
+    ],
+    "reducedMotionFallback": {
+      "sequential-highlight": "show-final-state",
+      "tab-swap": "instant-state-change"
+    },
+    "trigger": {
+      "sequential-highlight": "in-view",
+      "tab-swap": "interaction"
+    },
+    "citations": [
+      "cite.autonomy-destination",
+      "cite.autonomy-io",
+      "cite.cs-autonomy-old",
+      "cite.cs-reveals"
+    ],
+    "evidenceLevel": "measured",
+    "notes": "One IntersectionObserver fires once; levels 0-3 activate every 400ms. Tabs only re-fade diagrams and never change level state; purple (#6056ff) marks the L3/L4 destination group."
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "4 columns",
+    "sm": "2x2",
+    "base": "1 column, tabs hidden"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.event-detail"
+    ],
+    "routeCount": 7
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Autonomy.jsx",
+    "iaScope": "Homepage and every event detail page.",
+    "citations": [
+      "cite.cs-autonomy",
+      "cite.cs-method",
+      "cite.spec-content"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 849,
+      "1280": 827,
+      "768": 1234,
+      "375": 1949
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample tabbed section",
+    "tabs": [
+      {
+        "label": "First",
+        "body": "First tab copy."
+      },
+      {
+        "label": "Second",
+        "body": "Second tab copy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "conversion.demo-form",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "Book-a-demo split: native form under a two-line h1 on the left, auto-advancing customer video/quote carousel on the right.",
+  "archetype": "form",
+  "contentRef": "#/definitions/content_form",
+  "requiredContent": [
+    "title",
+    "fields",
+    "submitLabel",
+    "successMessage"
+  ],
+  "maxWords": {
+    "title": 14,
+    "body": 58,
+    "fields[].label": 5,
+    "fields[].options[]": 3,
+    "submitLabel": 3,
+    "successMessage": 11,
+    "consent": 30
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/company/BookDemo.jsx > DemoHero",
+      "usedBy": [
+        "company"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "mount-fade-up",
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "mount-fade-up": "show-final-state",
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "mount-fade-up": "mount",
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed",
+      "cite.hero-mount"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark",
+    "video.poster",
+    "photo.customer-story"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.book-a-demo"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/company/BookDemo.jsx > DemoHero",
+    "iaScope": "The book-a-demo page only.",
+    "citations": [
+      "cite.spec-company"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample form",
+    "fields": [
+      {
+        "label": "Work email",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "submitLabel": "Send",
+    "successMessage": "Thanks, we will be in touch."
+  },
+  "formPolicy": {
+    "visualOnly": true,
+    "note": "No submission endpoint exists anywhere in the clone; the schema has no action/endpoint field.",
+    "citations": [
+      "cite.form-visual",
+      "cite.form-prevent"
+    ]
+  }
+}

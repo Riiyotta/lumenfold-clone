@@ -1,0 +1,1546 @@
+{
+  "version": "1.0.0",
+  "totalRoutes": 296,
+  "note": "Every routed page, parameterised routes expanded from the real slugs in src/content/*.js. The catch-all \"*\" (not-found) counts as one route.",
+  "routes": [
+    {
+      "path": "/",
+      "template": "template.home",
+      "group": "home"
+    },
+    {
+      "path": "/pricing",
+      "template": "template.pricing",
+      "group": "company"
+    },
+    {
+      "path": "/enterprise",
+      "template": "template.enterprise",
+      "group": "company"
+    },
+    {
+      "path": "/about-us",
+      "template": "template.about-us",
+      "group": "company"
+    },
+    {
+      "path": "/careers",
+      "template": "template.careers",
+      "group": "company"
+    },
+    {
+      "path": "/customers",
+      "template": "template.customers-index",
+      "group": "company"
+    },
+    {
+      "path": "/customers/northwind",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/customers/tidewater",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/customers/brightpath",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/customers/quillstone",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/customers/maplewood",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/customers/lumora",
+      "template": "template.customer-story",
+      "group": "company"
+    },
+    {
+      "path": "/book-a-demo",
+      "template": "template.book-a-demo",
+      "group": "company"
+    },
+    {
+      "path": "/contact-support",
+      "template": "template.contact-support",
+      "group": "company"
+    },
+    {
+      "path": "/partners",
+      "template": "template.partners",
+      "group": "company"
+    },
+    {
+      "path": "/privacy-policy",
+      "template": "template.legal",
+      "group": "company"
+    },
+    {
+      "path": "/terms-and-conditions",
+      "template": "template.legal",
+      "group": "company"
+    },
+    {
+      "path": "/data-security-policy",
+      "template": "template.legal",
+      "group": "company"
+    },
+    {
+      "path": "/blog",
+      "template": "template.blog-index",
+      "group": "content"
+    },
+    {
+      "path": "/learn",
+      "template": "template.text-index",
+      "group": "content"
+    },
+    {
+      "path": "/topics",
+      "template": "template.text-index",
+      "group": "content"
+    },
+    {
+      "path": "/blog/writing-agent-instructions-your-team-can-review",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/introducing-run-replays-for-every-agent-step",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/measuring-agent-quality-without-a-data-science-team",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/how-a-freight-broker-cleared-its-quote-backlog",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/why-small-agent-crews-beat-one-giant-prompt",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/keeping-run-costs-predictable-as-usage-grows",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/a-support-team-that-answers-overnight-tickets-by-sunrise",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/a-practical-checklist-for-escalating-to-a-human",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/shared-knowledge-folders-now-sync-every-fifteen-minutes",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/rolling-out-your-first-agent-in-thirty-days",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/what-finance-teams-learned-from-automating-invoice-checks",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/blog/a-new-home-for-evaluations-inside-the-studio",
+      "template": "template.blog-article",
+      "group": "content"
+    },
+    {
+      "path": "/learn/what-is-an-ai-agent",
+      "template": "template.guide-article",
+      "group": "content"
+    },
+    {
+      "path": "/learn/agent-memory-explained",
+      "template": "template.guide-article",
+      "group": "content"
+    },
+    {
+      "path": "/prompt-engineering/few-shot-examples-that-actually-help",
+      "template": "template.guide-article",
+      "group": "content"
+    },
+    {
+      "path": "/prompt-engineering/structured-outputs",
+      "template": "template.guide-article",
+      "group": "content"
+    },
+    {
+      "path": "/topics/lead-qualification",
+      "template": "template.topic-article",
+      "group": "content"
+    },
+    {
+      "path": "/topics/ticket-triage",
+      "template": "template.topic-article",
+      "group": "content"
+    },
+    {
+      "path": "/topics/invoice-matching",
+      "template": "template.topic-article",
+      "group": "content"
+    },
+    {
+      "path": "/posts/studio-tour",
+      "template": "template.note-article",
+      "group": "content"
+    },
+    {
+      "path": "/posts/office-hours",
+      "template": "template.note-article",
+      "group": "content"
+    },
+    {
+      "path": "/events",
+      "template": "template.hub-index",
+      "group": "content"
+    },
+    {
+      "path": "/resources",
+      "template": "template.hub-index",
+      "group": "content"
+    },
+    {
+      "path": "/events/revenue-ops-agents-live",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/events/support-agents-workshop",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/events/finance-close-fireside",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/events/agent-evaluations-deep-dive",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/events/platform-teams-meetup",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/events/first-agent-bootcamp",
+      "template": "template.event-detail",
+      "group": "content"
+    },
+    {
+      "path": "/vs",
+      "template": "template.comparison-index",
+      "group": "content"
+    },
+    {
+      "path": "/vs/legacy-rpa",
+      "template": "template.comparison-page",
+      "group": "content"
+    },
+    {
+      "path": "/vs/diy-scripts",
+      "template": "template.comparison-page",
+      "group": "content"
+    },
+    {
+      "path": "/vs/generic-chatbot",
+      "template": "template.comparison-page",
+      "group": "content"
+    },
+    {
+      "path": "/vs/spreadsheet-macros",
+      "template": "template.comparison-page",
+      "group": "content"
+    },
+    {
+      "path": "/changelog",
+      "template": "template.changelog",
+      "group": "content"
+    },
+    {
+      "path": "/frequently-asked-questions",
+      "template": "template.faq-page",
+      "group": "content"
+    },
+    {
+      "path": "/relevance-academy/meet-your-workspace",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/define-the-job",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/connect-your-tools",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/give-it-knowledge",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/add-a-trigger",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/review-and-approve",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/measure-what-matters",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/relevance-academy/launch-with-confidence",
+      "template": "template.academy-lesson",
+      "group": "academy"
+    },
+    {
+      "path": "/integrations",
+      "template": "template.integrations-index",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pipewise",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/dealhaven",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/closewren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/leadloom",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/accountry",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/funnelby",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/kinroster",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/prospectory",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/mailfern",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/inboxwell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/letterkite",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/postmoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/replyly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/threadnest",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/sendwick",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/quillpost",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/meetmoth",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/clockfern",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/timequill",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/bookwell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/hourglen",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/datebird",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/weekwren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/slotsmith",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/notewhale",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/wikifold",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pagegrove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/briefbarn",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/knowcove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/scrollmint",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/inkmeadow",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/docuthorn",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/taskfinch",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/sprintmoor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/boardhollow",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/tickety",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/roadwren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/milestonery",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/kanbird",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/planquay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/helpharbor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/ticketpine",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/caselark",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/queuefox",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/assistree",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/resolvo",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/fixhaven",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/askmarsh",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/ledgerly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/invoicewren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/billbrook",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/payroost",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/coinquill",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/expensemoth",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/taxtide",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/receiptly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/adwick",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/funnelfern",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/blastbird",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/segmint",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/brandbrook",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/promoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/newslark",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/reachwell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/metricove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/chartling",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/dashmoor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/graphfen",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/trendquay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pulseboard",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/statgrove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/cohortly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/tablewren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/rowharbor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/lakefold",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/schemadew",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pipeloom",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/warehousely",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/syncbarrow",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/columnly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/hirewell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/talentmoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/rosterly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/peoplepine",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/onboardo",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/payslate",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/benefitly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/recruitwren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/cartwren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/shopmoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/orderloft",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/stockquay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/checkoutly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/parcelfin",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/basketry",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/returnwell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/commitfox",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/buildmoor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/deploywren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/logpine",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/issuequay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/branchly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/testgrove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/hookwell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/chatterbarn",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pingmoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/huddlewren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/murmurly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/channelfin",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/echoquay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/pagerlark",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/roomfern",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/filegrove",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/boxwren",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/vaultmoss",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/folderly",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/drivequay",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/sharefin",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/archivewell",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/integrations/clipharbor",
+      "template": "template.integration-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/inbound-lead-qualifier",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/account-researcher",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/meeting-booker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/follow-up-writer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/pipeline-hygienist",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/deal-desk-helper",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/lost-lead-reviver",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/forecast-summarizer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/renewal-risk-scout",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/onboarding-guide",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/review-deck-builder",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/expansion-spotter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/survey-responder",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/adoption-coach",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/renewal-paperwork-clerk",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/sponsor-update-writer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/campaign-brief-writer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/social-post-drafter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/search-outline-builder",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/event-promoter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/newsletter-editor",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/ad-copy-tester",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/review-collector",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/launch-recap-writer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/interview-loop-coordinator",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/offer-letter-drafter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/onboarding-buddy",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/policy-answer-desk",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/referral-tracker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/time-off-planner",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/sourcing-assistant",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/exit-survey-analyst",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/support-queue-sorter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/help-article-updater",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/refund-checker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/satisfaction-follow-up",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/saved-reply-suggester",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/escalation-watcher",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/language-helper",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/weekly-queue-reporter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/invoice-match-checker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/vendor-onboarder",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/stock-reorder-planner",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/contract-renewal-tracker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/expense-auditor",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/shipment-status-updater",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/data-entry-clerk",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/spend-report-builder",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/market-signal-digest",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/competitor-tracker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/interview-synthesizer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/filing-watcher",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/survey-analyst",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/paper-reviewer",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/pricing-benchmarker",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/use-cases/trend-spotter",
+      "template": "template.use-case-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/agents",
+      "template": "template.agents-landing",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows",
+      "template": "template.workflows-index",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/meeting-notes-to-tasks",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/inbound-lead-enrichment",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/invoice-data-extraction",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/support-ticket-summaries",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/weekly-metrics-digest",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/contract-clause-review",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/job-description-drafting",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/product-review-sentiment",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/call-transcript-highlights",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/release-notes-writer",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/survey-answer-coding",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/workflows/translation-with-glossary",
+      "template": "template.workflow-detail",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-a-long-context",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-b-fast-reasoning",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-c-compact",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-d-multilingual",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-e-code-specialist",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/llm-models/model-f-vision-language",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/retail-banking",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/logistics",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/healthcare-clinics",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/insurance-claims",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/higher-education",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/industry/property-management",
+      "template": "template.seo-article",
+      "group": "catalog"
+    },
+    {
+      "path": "/knowledge",
+      "template": "template.feature-detail",
+      "group": "product"
+    },
+    {
+      "path": "/approvals-escalations",
+      "template": "template.feature-detail",
+      "group": "product"
+    },
+    {
+      "path": "/version-control",
+      "template": "template.feature-detail",
+      "group": "product"
+    },
+    {
+      "path": "/collaboration",
+      "template": "template.feature-detail",
+      "group": "product"
+    },
+    {
+      "path": "/phone-agent",
+      "template": "template.phone-agent",
+      "group": "product"
+    },
+    {
+      "path": "/workforce",
+      "template": "template.workforce",
+      "group": "product"
+    },
+    {
+      "path": "/bulk-run",
+      "template": "template.bulk-run",
+      "group": "product"
+    },
+    {
+      "path": "/tools",
+      "template": "template.tools",
+      "group": "product"
+    },
+    {
+      "path": "/gtm",
+      "template": "template.gtm",
+      "group": "product"
+    },
+    {
+      "path": "/invent",
+      "template": "template.invent",
+      "group": "product"
+    },
+    {
+      "path": "/slack",
+      "template": "template.slack",
+      "group": "product"
+    },
+    {
+      "path": "/features",
+      "template": "template.features-catalog",
+      "group": "product"
+    },
+    {
+      "path": "/self-driving-gtm",
+      "template": "template.self-driving-gtm",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/specialist-agents",
+      "template": "template.specialist-agents",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/customer-support-agent",
+      "template": "template.legacy-agent-landing",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/seo-agent",
+      "template": "template.legacy-agent-landing",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/inbound",
+      "template": "template.legacy-sdr-landing",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/outbound",
+      "template": "template.legacy-sdr-landing",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/schedule-work",
+      "template": "template.legacy-feature-page",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/for-customer-experience",
+      "template": "template.legacy-use-case",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/for-market-research",
+      "template": "template.legacy-use-case",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/ai-ops",
+      "template": "template.legacy-home-clone",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/api",
+      "template": "template.api-landing",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/multi-agents",
+      "template": "template.multi-agents",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/bdr-agent-waiting-list",
+      "template": "template.bdr-waitlist",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/agent-drop",
+      "template": "template.agent-drop",
+      "group": "product-legacy"
+    },
+    {
+      "path": "/agents-at-work",
+      "template": "template.agents-at-work",
+      "group": "product-legacy"
+    },
+    {
+      "path": "*",
+      "template": "template.not-found",
+      "group": "shell"
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/app-tools/:slug",
+      "to": "/integrations",
+      "citation": "cite.redirect-app-tools"
+    },
+    {
+      "path": "/prompt-engineering",
+      "to": "/learn",
+      "citation": "cite.redirect-prompt"
+    },
+    {
+      "path": "/changelog/:entry",
+      "to": "/changelog#entry",
+      "citation": "cite.redirect-changelog"
+    },
+    {
+      "path": "/relevance-academy",
+      "to": "/relevance-academy/meet-your-workspace",
+      "citation": "cite.redirect-academy"
+    }
+  ],
+  "excluded": [
+    {
+      "pattern": "^/academy(/.*)?$",
+      "reason": "Redirects to an external academy.* domain (Skilljar); not part of this site.",
+      "citation": "cite.spec-content-academy-ext"
+    },
+    {
+      "pattern": "^/templates(/.*)?$",
+      "reason": "External marketplace.* domain (PAGES_CATALOG Part B, M1-M4).",
+      "citation": "cite.spec-catalog-marketplace"
+    },
+    {
+      "pattern": "^/agent-templates-[^/]*(/.*)?$",
+      "reason": "External marketplace.* domain.",
+      "citation": "cite.spec-catalog-marketplace"
+    },
+    {
+      "pattern": "^/resources/[^/]+$",
+      "reason": "Seen in passing during recon, never specced.",
+      "citation": "cite.ia-exclusions"
+    },
+    {
+      "pattern": "-old(/|$)",
+      "reason": "Legacy/test page.",
+      "citation": "cite.ia-exclusions"
+    },
+    {
+      "pattern": "-copy(/|$)",
+      "reason": "Legacy/test page.",
+      "citation": "cite.ia-exclusions"
+    },
+    {
+      "pattern": "^/(backup-home|untitled-2|abm-test|scratch-pad|unsubscribe|app)(/.*)?$",
+      "reason": "Legacy/test page.",
+      "citation": "cite.ia-exclusions"
+    }
+  ]
+}

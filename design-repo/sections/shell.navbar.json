@@ -1,0 +1,173 @@
+{
+  "id": "shell.navbar",
+  "kind": "section",
+  "category": "SHELL",
+  "purpose": "Global chrome: orient and route the visitor on every page.",
+  "description": "Fixed 65px top header: Lumenfold logo, primary links that open the mega-menu panels, sign-in and primary CTA buttons; collapses to a hamburger-triggered mobile drawer.",
+  "archetype": "nav",
+  "contentRef": "#/definitions/content_nav",
+  "requiredContent": [
+    "menus",
+    "signIn",
+    "primaryCta"
+  ],
+  "maxWords": {
+    "menus[].label": 3,
+    "menus[].columns[].heading": 3,
+    "menus[].columns[].items[]": 5,
+    "signIn": 3,
+    "primaryCta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Navbar.jsx",
+      "usedBy": [
+        "academy",
+        "catalog",
+        "company",
+        "content",
+        "home",
+        "product",
+        "product-legacy",
+        "shell"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": true,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "hover-only"
+    ],
+    "reducedMotionFallback": {
+      "hover-only": "instant-state-change"
+    },
+    "trigger": {
+      "hover-only": "interaction"
+    },
+    "citations": [
+      "cite.cs-hovers",
+      "cite.cs-megamenu-fade",
+      "cite.nav-delays"
+    ],
+    "evidenceLevel": "measured",
+    "notes": "Mega-menu opens after a 200ms hover delay and closes after 150ms with NO fade (supersedes CLONE_SPEC tailwindcss-animate fade)."
+  },
+  "assetRoles": [
+    "brand.logo"
+  ],
+  "responsive": {
+    "header": "desktop nav + mega-menus",
+    "below-header": "hamburger + 320px right drawer, no slide animation"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.pricing",
+      "template.enterprise",
+      "template.about-us",
+      "template.careers",
+      "template.customers-index",
+      "template.customer-story",
+      "template.book-a-demo",
+      "template.contact-support",
+      "template.partners",
+      "template.legal",
+      "template.blog-index",
+      "template.text-index",
+      "template.blog-article",
+      "template.guide-article",
+      "template.topic-article",
+      "template.note-article",
+      "template.hub-index",
+      "template.event-detail",
+      "template.comparison-index",
+      "template.comparison-page",
+      "template.changelog",
+      "template.faq-page",
+      "template.academy-lesson",
+      "template.integrations-index",
+      "template.integration-detail",
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.workflows-index",
+      "template.workflow-detail",
+      "template.seo-article",
+      "template.feature-detail",
+      "template.phone-agent",
+      "template.workforce",
+      "template.bulk-run",
+      "template.tools",
+      "template.gtm",
+      "template.invent",
+      "template.slack",
+      "template.features-catalog",
+      "template.self-driving-gtm",
+      "template.specialist-agents",
+      "template.legacy-agent-landing",
+      "template.legacy-sdr-landing",
+      "template.legacy-feature-page",
+      "template.legacy-use-case",
+      "template.legacy-home-clone",
+      "template.api-landing",
+      "template.multi-agents",
+      "template.bdr-waitlist",
+      "template.agent-drop",
+      "template.agents-at-work",
+      "template.not-found"
+    ],
+    "routeCount": 296
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Navbar.jsx",
+    "iaScope": "Mounted once in App.jsx around the router, so every route carries it, including the not-found page and the spec-only templates once they are routed.",
+    "citations": [
+      "cite.cs-header",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product",
+      "cite.spec-product-legacy",
+      "cite.app-notfound"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 65,
+      "1280": 65,
+      "768": 65,
+      "375": 65
+    }
+  },
+  "a11y": {
+    "headingLevel": "none",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "menus": [
+      {
+        "label": "Platform",
+        "columns": [
+          {
+            "heading": "Build",
+            "items": [
+              "Agent studio",
+              "Workflow canvas"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Pricing"
+      }
+    ],
+    "signIn": "Sign in",
+    "primaryCta": "Start for free"
+  }
+}

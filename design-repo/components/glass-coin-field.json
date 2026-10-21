@@ -1,0 +1,13 @@
+{
+  "id": "component.glass-coin-field",
+  "kind": "component",
+  "description": "Six floating 44px glass coins (lg+ only) around a CTA.",
+  "implementedBy": "src/components/content/ClosingCTA.jsx; src/components/catalog/primitives.jsx > GlassCoin",
+  "composes": [
+    "primitive.avatar",
+    "primitive.icon"
+  ],
+  "citations": [
+    "cite.cta-content"
+  ]
+}

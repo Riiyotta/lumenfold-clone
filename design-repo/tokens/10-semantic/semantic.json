@@ -1,0 +1,137 @@
+{
+  "text": {
+    "primary": {
+      "$value": "{color.ink}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "secondary": {
+      "$value": "{color.muted}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "tertiary": {
+      "$value": "{color.tertiary}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "accent": {
+      "$value": "{color.indigo.brand}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "chip": {
+      "$value": "{color.chip-muted}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "chip-accent": {
+      "$value": "{color.accent-text}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "positive": {
+      "$value": "{color.eval-teal}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "tab-active": {
+      "$value": "{color.gray-900}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "tab-inactive": {
+      "$value": "{color.gray-700}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "inverse": {
+      "$value": "{color.surface.secondary-light}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "icon-muted": {
+      "$value": "{color.gray-400}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    }
+  },
+  "surface": {
+    "page": {
+      "$value": "{color.surface.light}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "alt": {
+      "$value": "{color.surface.secondary-light}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "inverse": {
+      "$value": "{color.surface.dark}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "tile": {
+      "$value": "{color.tile-base}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "panel": {
+      "$value": "{color.slate-50}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "ghost": {
+      "$value": "{color.indigo.ghost}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    }
+  },
+  "border": {
+    "default": {
+      "$value": "{color.line}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "strong": {
+      "$value": "{color.line-dark}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "inverse": {
+      "$value": "{color.grid-line-dark}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    }
+  },
+  "action": {
+    "primary-from": {
+      "$value": "{color.indigo.brand}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "primary-to": {
+      "$value": "{color.indigo.dark}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "primary-hover-from": {
+      "$value": "{color.indigo.light}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    },
+    "primary-border-top": {
+      "$value": "{color.indigo.light}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    }
+  },
+  "status": {
+    "online": {
+      "$value": "{color.status-green}",
+      "$type": "color",
+      "citation": "cite.cs-colours"
+    }
+  }
+}

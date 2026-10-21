@@ -1,0 +1,86 @@
+{
+  "id": "proof.sdg-industry-benchmark",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Self-driving GTM industry section: two-column header, a four-segment benchmark track with an indigo band, and a three-cell dark-bordered stats strip with sources.",
+  "archetype": "stats",
+  "contentRef": "#/definitions/content_stats",
+  "requiredContent": [
+    "stats"
+  ],
+  "maxWords": {
+    "title": 21,
+    "body": 58,
+    "stats[].value": 2,
+    "stats[].label": 7
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Industry",
+      "usedBy": [
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.self-driving-gtm"
+    ],
+    "routeCount": 1
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/product-legacy/SelfDrivingGtm.jsx > Industry",
+    "iaScope": "The self-driving GTM manifesto only.",
+    "citations": [
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": false
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "stats": [
+      {
+        "value": "62%",
+        "label": "tickets auto-resolved"
+      },
+      {
+        "value": "4 days",
+        "label": "to clear backlog"
+      }
+    ]
+  }
+}

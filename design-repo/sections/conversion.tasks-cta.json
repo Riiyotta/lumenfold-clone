@@ -1,0 +1,87 @@
+{
+  "id": "conversion.tasks-cta",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "TasksCTA: full-width scripted CTA where a three-column checklist ticks off, blurs out and is replaced by an h2 and a large button, looping.",
+  "archetype": "cta",
+  "contentRef": "#/definitions/content_cta",
+  "requiredContent": [
+    "title",
+    "primaryCta"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 14,
+    "titleAccent": 4,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "notes[]": 10
+  },
+  "variants": {
+    "default": {
+      "description": "Parallel copies are structurally identical; modelled as one variant.",
+      "implementedBy": "src/components/catalog/agents.jsx > TasksCTA; src/components/company/customers.jsx > TasksCTA; src/components/product/gtm.jsx > TasksCTA",
+      "usedBy": [
+        "catalog",
+        "company",
+        "product"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "scripted-loop"
+    ],
+    "reducedMotionFallback": {
+      "scripted-loop": "static-first-frame"
+    },
+    "trigger": {
+      "scripted-loop": "in-view"
+    },
+    "citations": [
+      "cite.costhero-feed"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.customer-story",
+      "template.agents-landing",
+      "template.gtm"
+    ],
+    "routeCount": 8
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/catalog/agents.jsx > TasksCTA (parallel copies: src/components/company/customers.jsx > TasksCTA, src/components/product/gtm.jsx > TasksCTA)",
+    "iaScope": "Customer stories, the agents landing and the GTM landing.",
+    "citations": [
+      "cite.spec-company",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample closing call to action",
+    "body": "One short sentence of supporting copy.",
+    "primaryCta": "Start building free"
+  }
+}

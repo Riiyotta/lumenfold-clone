@@ -1,0 +1,12 @@
+{
+  "id": "component.accordion",
+  "kind": "component",
+  "description": "Hairline-divided accordion with 32px plus/minus discs; height 0<->auto.",
+  "implementedBy": "src/components/content/FAQSection.jsx",
+  "composes": [
+    "primitive.icon"
+  ],
+  "citations": [
+    "cite.faq-content"
+  ]
+}

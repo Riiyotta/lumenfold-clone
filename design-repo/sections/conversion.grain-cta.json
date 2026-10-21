@@ -1,0 +1,112 @@
+{
+  "id": "conversion.grain-cta",
+  "kind": "section",
+  "category": "CONVERSION",
+  "purpose": "Convert intent into an action (sign-up, demo, contact, application).",
+  "description": "ClosingCTA grain panel: rounded violet (or function-palette) grain card with six floating glass coins, centred h2 with optional indigo highlight, body and a pill button pair.",
+  "archetype": "cta",
+  "contentRef": "#/definitions/content_cta",
+  "requiredContent": [
+    "title",
+    "primaryCta"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 14,
+    "titleAccent": 4,
+    "body": 58,
+    "primaryCta": 4,
+    "secondaryCta": 4,
+    "notes[]": 10
+  },
+  "variants": {
+    "violet": {
+      "description": "Violet grain card, six avatar coins; company copy supports an indigo titleAccent and a primary-only CTA.",
+      "implementedBy": "src/components/content/ClosingCTA.jsx; src/components/company/shared.jsx > GrainCTA",
+      "usedBy": [
+        "content",
+        "company"
+      ],
+      "citation": "cite.cta-company"
+    },
+    "function-palette": {
+      "description": "Function-palette grain (sales == violet values), coins may be line icons or avatars.",
+      "implementedBy": "src/components/product/lib.jsx > ClosingCTA; src/components/catalog/sections.jsx > ClosingCTA/CtaTile",
+      "usedBy": [
+        "product",
+        "catalog"
+      ],
+      "citation": "cite.cta-product"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "reveal-fade-up"
+    ],
+    "reducedMotionFallback": {
+      "reveal-fade-up": "show-final-state"
+    },
+    "trigger": {
+      "reveal-fade-up": "in-view"
+    },
+    "citations": [
+      "cite.ui-reveal"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "six floating coins visible",
+    "base": "coins hidden (hidden lg:block), py-16"
+  },
+  "usedBy": {
+    "templates": [
+      "template.enterprise",
+      "template.contact-support",
+      "template.partners",
+      "template.text-index",
+      "template.guide-article",
+      "template.hub-index",
+      "template.comparison-page",
+      "template.faq-page",
+      "template.integrations-index",
+      "template.integration-detail",
+      "template.feature-detail",
+      "template.phone-agent",
+      "template.workforce",
+      "template.bulk-run",
+      "template.tools"
+    ],
+    "routeCount": 145
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/components/content/ClosingCTA.jsx (parallel copies: src/components/company/shared.jsx > GrainCTA, src/components/product/lib.jsx > ClosingCTA, src/components/catalog/sections.jsx > ClosingCTA/CtaTile)",
+    "iaScope": "Closes most DS-shell pages: contact, partners, enterprise, hubs, guides, text indexes, the FAQ page, comparisons, the integrations index and details, and the built system-A product pages (see matrix).",
+    "citations": [
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample closing call to action",
+    "body": "One short sentence of supporting copy.",
+    "primaryCta": "Start building free"
+  }
+}

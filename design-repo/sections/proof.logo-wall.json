@@ -1,0 +1,131 @@
+{
+  "id": "proof.logo-wall",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "LogoGridSection: grid of grayscale customer wordmarks (six across at xl), some with a small indigo \"read story\" link and sliding arrow on hover.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "standard": {
+      "description": "Generic grayscale wordmark wall; links are generic \"read story\".",
+      "implementedBy": "src/components/LogoWall.jsx",
+      "usedBy": [
+        "home",
+        "catalog",
+        "product",
+        "content",
+        "product-legacy"
+      ],
+      "citation": "cite.cs-logowall"
+    },
+    "story-links": {
+      "description": "Same layout; links go to /customers/<story>.",
+      "implementedBy": "src/components/company/shared.jsx > LogoGrid",
+      "usedBy": [
+        "company"
+      ],
+      "citation": "cite.logowall-company"
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "hover-only"
+    ],
+    "reducedMotionFallback": {
+      "hover-only": "instant-state-change"
+    },
+    "trigger": {
+      "hover-only": "interaction"
+    },
+    "citations": [
+      "cite.cs-hovers"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "xl": "6 columns",
+    "lg": "5 columns",
+    "md": "4 columns",
+    "base": "3 columns, links hidden, logos h-16"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.pricing",
+      "template.enterprise",
+      "template.book-a-demo",
+      "template.contact-support",
+      "template.event-detail",
+      "template.comparison-page",
+      "template.use-case-detail",
+      "template.agents-landing",
+      "template.feature-detail",
+      "template.phone-agent",
+      "template.workforce",
+      "template.gtm",
+      "template.slack",
+      "template.features-catalog"
+    ],
+    "routeCount": 81
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/LogoWall.jsx (company pages use the parallel copy src/components/company/shared.jsx > LogoGrid, whose links go to customer stories)",
+    "iaScope": "Homepage plus most product, comparison, catalog-detail, event and company conversion pages (see matrix).",
+    "citations": [
+      "cite.cs-logowall",
+      "cite.cs-method",
+      "cite.spec-company",
+      "cite.spec-content",
+      "cite.spec-catalog",
+      "cite.spec-product"
+    ],
+    "parallelCopies": true,
+    "measuredHeightsPx": {
+      "1440": 242,
+      "1280": 242,
+      "768": 338,
+      "375": 270
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "proof.legacy-logo-row",
+  "kind": "section",
+  "category": "PROOF",
+  "purpose": "Build trust with evidence (customers, outcomes, security, press).",
+  "description": "Legacy logo row: centred label above a six-column grid of customer wordmarks.",
+  "archetype": "logos",
+  "contentRef": "#/definitions/content_logos",
+  "requiredContent": [
+    "logos"
+  ],
+  "maxWords": {
+    "label": 7,
+    "title": 21,
+    "logos[].name": 3,
+    "logos[].caption": 7,
+    "logos[].linkLabel": 3
+  },
+  "variants": {
+    "default": {
+      "description": "Parallel copies are structurally identical; modelled as one variant.",
+      "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > LogoRow; src/pages/product-legacy/UseCaseLegacy.jsx > LogoRow; src/pages/product-legacy/BdrWaitlist.jsx",
+      "usedBy": [
+        "catalog",
+        "product-legacy"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "hover-only"
+    ],
+    "reducedMotionFallback": {
+      "hover-only": "instant-state-change"
+    },
+    "trigger": {
+      "hover-only": "interaction"
+    },
+    "citations": [
+      "cite.cs-hovers"
+    ],
+    "evidenceLevel": "pattern classified from the implementing component and recon spec; timings not re-measured"
+  },
+  "assetRoles": [
+    "proof.customer-wordmark"
+  ],
+  "responsive": {
+    "evidenceLevel": "not-measured-per-section",
+    "inherits": "component.row padding/rails (cite.cs-gutter)"
+  },
+  "usedBy": {
+    "templates": [
+      "template.workflow-detail",
+      "template.legacy-use-case",
+      "template.bdr-waitlist"
+    ],
+    "routeCount": 15
+  },
+  "evidence": {
+    "level": "derived-from-recon-and-code",
+    "implementedBy": "src/pages/catalog/WorkflowDetail.jsx > LogoRow (parallel copy: src/pages/product-legacy/UseCaseLegacy.jsx > LogoRow and src/pages/product-legacy/BdrWaitlist.jsx, both a label row over src/components/LogoWall.jsx)",
+    "iaScope": "Workflow details, the legacy use-case pages and the BDR waitlist.",
+    "citations": [
+      "cite.spec-catalog",
+      "cite.spec-product-legacy"
+    ],
+    "parallelCopies": true
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "logos": [
+      {
+        "name": "Northwind"
+      },
+      {
+        "name": "Halcyon"
+      },
+      {
+        "name": "Brightpath"
+      },
+      {
+        "name": "Quillstone"
+      }
+    ]
+  }
+}

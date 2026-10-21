@@ -1,0 +1,13 @@
+{
+  "id": "primitive.pill-tabs",
+  "kind": "primitive",
+  "description": "Segmented tab track with optional \"+N more\" trigger.",
+  "implementedBy": "src/components/ui.jsx > PillTabs",
+  "props": {
+    "tabs": "string[] (1-2 words)",
+    "more": "optional"
+  },
+  "citations": [
+    "cite.ui-pilltabs"
+  ]
+}

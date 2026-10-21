@@ -1,0 +1,13 @@
+{
+  "id": "component.video-poster-modal",
+  "kind": "component",
+  "description": "Poster + play disc opening a placeholder modal (no real video).",
+  "implementedBy": "src/components/product/lib.jsx > VideoPoster/VideoModal; src/components/company/shared.jsx > VideoModal",
+  "composes": [
+    "primitive.play-disc"
+  ],
+  "citations": [
+    "cite.video-placeholder",
+    "cite.hero-video-placeholder"
+  ]
+}

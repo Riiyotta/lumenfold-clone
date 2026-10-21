@@ -1,0 +1,103 @@
+{
+  "id": "features.how-we-work",
+  "kind": "section",
+  "category": "FEATURES",
+  "purpose": "Explain how the product works and why it matters.",
+  "description": "HowWeWork expanding tiles: a row of colour-palette tiles that widen on hover/selection to reveal label, heading, body and an illustration.",
+  "archetype": "cards",
+  "contentRef": "#/definitions/content_cards",
+  "requiredContent": [
+    "title",
+    "items"
+  ],
+  "maxWords": {
+    "eyebrow": 7,
+    "title": 21,
+    "body": 58,
+    "items[].label": 7,
+    "items[].title": 14,
+    "items[].body": 58,
+    "items[].linkLabel": 4,
+    "cta": 4
+  },
+  "variants": {
+    "default": {
+      "description": "Single implementation.",
+      "implementedBy": "src/components/Tiles.jsx",
+      "usedBy": [
+        "catalog",
+        "home"
+      ]
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "mustBeFirst": false,
+    "mustBeLast": false
+  },
+  "motion": {
+    "patterns": [
+      "expand-tiles"
+    ],
+    "reducedMotionFallback": {
+      "expand-tiles": "instant-state-change"
+    },
+    "trigger": {
+      "expand-tiles": "interaction"
+    },
+    "citations": [
+      "cite.cs-tiles"
+    ],
+    "evidenceLevel": "measured"
+  },
+  "assetRoles": [
+    "people.illustrated-avatar",
+    "illustration.diagram"
+  ],
+  "responsive": {
+    "lg": "horizontal expanding tiles, hover/focus activated",
+    "base": "stacked tiles, all gradients and text visible"
+  },
+  "usedBy": {
+    "templates": [
+      "template.home",
+      "template.agents-landing"
+    ],
+    "routeCount": 2
+  },
+  "evidence": {
+    "level": "measured",
+    "implementedBy": "src/components/Tiles.jsx",
+    "iaScope": "Homepage and the agents landing (same component, same content).",
+    "citations": [
+      "cite.cs-tiles",
+      "cite.cs-method",
+      "cite.spec-catalog"
+    ],
+    "parallelCopies": false,
+    "measuredHeightsPx": {
+      "1440": 867,
+      "1280": 867,
+      "768": 1455,
+      "375": 1623
+    }
+  },
+  "a11y": {
+    "headingLevel": "h2",
+    "reducedMotion": "required (see motion.reducedMotionFallback)"
+  },
+  "sampleContent": {
+    "title": "Sample section heading",
+    "items": [
+      {
+        "title": "First card",
+        "body": "Short card description."
+      },
+      {
+        "title": "Second card",
+        "body": "Short card description."
+      }
+    ]
+  }
+}

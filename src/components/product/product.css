@@ -1,0 +1,27 @@
+/* Product (system A) page extras. Keyframes only where framer-motion would be awkward. */
+
+/* A.8 trigger node wobble while active (original keyframe name; values are our own). */
+@keyframes trigger-wobble { 0%, 100% { transform: rotate(0deg); } 20% { transform: rotate(-1.6deg); } 40% { transform: rotate(1.4deg); } 60% { transform: rotate(-.8deg); } 80% { transform: rotate(.5deg); } }
+.trigger-wobble { animation: trigger-wobble .9s ease-in-out infinite; transform-origin: 50% 100%; }
+
+/* A.12 footer spinner: 14px, 2px #6056ff, top transparent, .8s linear. */
+@keyframes workforceSpin { to { transform: rotate(360deg); } }
+.workforce-spin { width: 14px; height: 14px; border-radius: 9999px; border: 2px solid #6056ff; border-top-color: transparent; animation: workforceSpin .8s linear infinite; }
+.workforce-spin-12 { width: 12px; height: 12px; border-radius: 9999px; border: 2px solid #6056ff; border-top-color: transparent; animation: workforceSpin .8s linear infinite; }
+
+/* A.14 Invent clouds: drift by --drift over 55-80s; speech pills bob. */
+@keyframes invent-cloud-drift { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(var(--drift, 40px)); } }
+.invent-cloud-drift { animation: invent-cloud-drift 60s ease-in-out infinite; }
+@keyframes invent-cloud-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.invent-cloud-bob { animation: invent-cloud-bob 3.9s ease-in-out infinite; }
+
+/* Typing caret (workforce deploy tile) */
+@keyframes pr-caret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.pr-caret { animation: pr-caret 1s steps(1) infinite; }
+
+.pr-no-scrollbar { scrollbar-width: none; }
+.pr-no-scrollbar::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .trigger-wobble, .invent-cloud-drift, .invent-cloud-bob, .pr-caret { animation: none; }
+}
